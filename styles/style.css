@@ -24,10 +24,32 @@ body {
     display: flex;
     align-items: center;
     width: 100vw;
-    height: 75px;
-    border-bottom: 2px solid white;
+    height: 85px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);;
 }
 
 #img1 {
-    margin-left: 10px;
+    width: 280px;
+    height: 120px;
+    margin-left: 45px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+#abt {
+    margin-left: 140px;
+}
+
+.link {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-left: 40px;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: #1F71CE;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+    transition: 0.4s;
 }
