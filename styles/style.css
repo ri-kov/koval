@@ -2,5 +2,32 @@ body {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-    background-image: url(./pictures/background.PNG);
+    background-color: white;
+}
+
+.cont_box1 {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url(../pictures/background.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 75px;
+    border-bottom: 2px solid white;
+}
+
+#img1 {
+    margin-left: 10px;
 }
