@@ -21,7 +21,7 @@ body {
 }
 
 #header {
-    font-family: "Bungee", sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     align-items: center;
     width: 100vw;
@@ -98,6 +98,8 @@ body {
 }
 
 .sell_btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 750;
     border: none;
     border-radius: 50px;
     padding: 15px 40px;
@@ -109,20 +111,52 @@ body {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
     transition: 0.4s;
+
 }
 
 .modal-dialog {
-    font-family: "Bungee", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .txt_clr {
     color: #1F71CE;
 }
 
+.modal-title {
+    font-weight: 800;
+}
+
 .modal-header {
     display: block !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
 }
 
 .btn-close {
     display: flex !important;
+}
+
+.star{
+    font-size: small !important;
+    color: red !important;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+#disclaimer {
+    opacity: .7;
+    margin-top: 20px;
+}
+
+#btnSubmit {
+    width: 300px;
+    height: 80px;
+    font-family: "Poppins", sans-serif;
+    font-size: larger;
+}
+
+.modal-footer {
+    justify-content: center !important;
 }
