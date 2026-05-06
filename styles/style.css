@@ -114,3 +114,15 @@ body {
 .modal-dialog {
     font-family: "Bungee", sans-serif;
 }
+
+.txt_clr {
+    color: #1F71CE;
+}
+
+.modal-header {
+    display: block !important;
+}
+
+.btn-close {
+    display: flex !important;
+}
