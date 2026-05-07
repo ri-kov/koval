@@ -37,16 +37,16 @@ body {
 }
 
 #abt {
-    margin-left: 210px;
+    margin-left: 160px;
 }
 
 .link {
     font-weight: 400;
     font-style: normal;
+    font-size: 17px;
     color: white;
     margin-left: 40px;
     text-decoration: none;
-    font-size: 18px;
 }
 
 .link:hover {
@@ -65,12 +65,12 @@ body {
 }
 
 #whatsappIcon {
-    font-size: 40px;
-    width: 57px;
-    height: 57px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
     background-color: #02b444;
     color: white;
-    margin-left: 210px;
+    margin-left: 160px;
 }
 
 #whatsappIcon:hover {
@@ -85,16 +85,16 @@ body {
     background-color: white;
     color: #0088CC;
     margin-left: 30px;
-    font-size: 57px;
-    width: 30px;
-    height: 30px;
+    font-size: 48px;
+    width: 32px;
+    height: 32px;
 }
 
 #telegramIcon:hover {
     color: #1b6a92;
-    width: 45px;
-    height: 45px;
-    font-size: 63px;
+    width: 47px;
+    height: 47px;
+    font-size: 59px;
     transition: 0.4s;
 }
 
@@ -104,7 +104,7 @@ body {
     border: none;
     border-radius: 50px;
     padding: 15px 40px;
-    margin-left: 210px;
+    margin-left: 160px;
 }
 
 .sell_btn:hover {
