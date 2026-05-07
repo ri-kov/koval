@@ -1,21 +1,25 @@
 .cont1_txt {
     color: white;
-    margin-left: 105px;
     font-family: "Poppins", sans-serif;
     margin-top: 60px;
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.6;
+    margin-left: -88px;
 }
 
 #slogan {
-    margin-top: 90px !important;
-    font-size: 60px !important;
-    font-weight: 600 !important;
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    display: flex;
+    margin-left: -88px;
 }
 
 #cardNum {
     margin-top: 60px;
-    margin-left: 105px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +30,7 @@
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-left: -88px;
 }
 
 #phoneNum {
@@ -36,4 +41,8 @@
 
 #desc {
     margin-top: 30px !important;
+}
+
+.col-md-7 {
+    align-items: flex-start !important;
 }
