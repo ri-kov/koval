@@ -5,7 +5,6 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1.6;
-    margin-left: -88px;
 }
 
 #slogan {
@@ -15,7 +14,6 @@
     font-family: "Poppins", sans-serif;
     text-align: center;
     display: flex;
-    margin-left: -88px;
 }
 
 #cardNum {
@@ -30,7 +28,6 @@
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin-left: -88px;
 }
 
 #phoneNum {
@@ -48,4 +45,6 @@
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 700px;
+    width: 450px;
 }
