@@ -2,7 +2,7 @@
     color: white;
     font-family: "Poppins", sans-serif;
     margin-top: 60px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.6;
 }
@@ -14,6 +14,7 @@
     font-family: "Poppins", sans-serif;
     text-align: center;
     display: flex;
+    margin-top: 55px;
 }
 
 #cardNum {
@@ -45,6 +46,41 @@
     border-radius: 20px;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    height: 700px;
+    height: 682px;
     width: 450px;
+    margin-left: 100px;
+    margin-top: 55px;
+}
+
+.form_sbm_btn {
+    width: 250px !important;
+    height: 60px !important;
+    margin-top: 15px !important;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input {
+    padding-right: 40px;
+}
+
+.inp_emoji {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.form-control {
+    height: 43px;
+}
+
+.emj {
+    font-size: 26px;
 }
