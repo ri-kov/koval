@@ -166,3 +166,7 @@ h5 {
     font-size: 1rem;
     margin-left: 0px !important;
 }
+
+#step3 {
+    border-bottom: 0 !important;
+}
