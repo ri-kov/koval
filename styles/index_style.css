@@ -112,3 +112,24 @@
 .emj {
     font-size: 26px;
 }
+
+.cont_box2 {
+    background-color: white;
+    display: flex;
+}
+
+#works_img1 {
+    margin-top: 233px;
+    height: 300px;
+    border-radius: 50px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#works_img2 {
+    margin-top: 100px;
+    height: 433px;
+    border-radius: 50px;
+    margin-left: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
