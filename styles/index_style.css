@@ -213,3 +213,8 @@ h5 {
 .cards_icons {
     margin-bottom: 1.25rem;
 }
+
+#iconPic {
+    width: 4.8rem;
+    height: 4.8rem;
+}
