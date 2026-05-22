@@ -135,6 +135,7 @@
 }
 
 #processHead {
+    text-transform: uppercase;
     text-align: center;
     font-weight: 800;
     font-size: 2rem;
@@ -169,4 +170,38 @@ h5 {
 
 #step3 {
     border-bottom: 0 !important;
+}
+
+.card {
+    padding: 0px !important;
+}
+
+#choose {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2.3rem;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+#cardPhrase {
+    margin-top: 11rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 180px;
+    height: 30px;
+    background-color: rgb(169 169 169 / 20%);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#phrase {
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 0.75rem;
 }
