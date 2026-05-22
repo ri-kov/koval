@@ -177,6 +177,7 @@ h5 {
     border: 0px !important;
     box-shadow: 30px 15px 40px rgba(0, 0, 0, 0.1);
     border-radius: 30px !important;
+    text-align: center;
 }
 
 #choose {
@@ -207,4 +208,9 @@ h5 {
     color: rgb(0, 0, 0);
     font-weight: 600;
     font-size: 0.9rem;
+}
+
+.cards_icons {
+    margin-bottom: 1.25rem;
+    color: #1F71CE;
 }
