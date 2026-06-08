@@ -278,7 +278,6 @@ h5 {
 .sct4_btn:hover {
     background-color: #1F71CE;
     color: white;
-    padding: 19px 44px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
     transition: 0.4s;
 }
