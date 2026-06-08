@@ -302,3 +302,10 @@ h5 {
 .mt_card {
     margin-top: 6rem !important;
 }
+
+.card2_title {
+    margin-top: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
