@@ -309,3 +309,17 @@ h5 {
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+.quick_card1 {
+    margin-top: 8rem;
+    background-color: rgba(31, 113, 206, 0.2) !important;
+    box-shadow: none !important;
+    border: 2px solid #1F71CE !important;
+}
+
+.quick_card1_text {
+    margin-top: 0.7rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
