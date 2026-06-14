@@ -303,6 +303,49 @@ h5 {
     margin-top: 6rem !important;
 }
 
+.line {
+    display: inline-block;
+    border-left: 0.188rem solid #1F71CE;
+    height: 12.813rem;
+    margin: 1rem 0.625rem;
+    vertical-align: middle;
+}
+
+.compare {
+    margin-top: 7rem !important;
+}
+
+.comp_head {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 3.5rem 0 0 5.4rem;
+}
+
+.points {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    list-style: none;
+}
+
+.val_points {
+    font-weight: 500 !important;
+}
+
+.val_head {
+    margin-left: 4rem;
+}
+
+.pr_head {
+    margin-left: 3rem;
+}
+
+
+
+
+
+
+
 .card2_title {
     margin-top: 1.5rem;
     font-family: "Poppins", sans-serif;
@@ -311,7 +354,7 @@ h5 {
 }
 
 .quick_card1 {
-    margin-top: 8rem;
+    margin-top: 7rem;
     background-color: rgba(31, 113, 206, 0.2) !important;
     box-shadow: none !important;
     border: 2px solid #1F71CE !important;
@@ -321,12 +364,13 @@ h5 {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    margin-bottom: 1rem !important;
+    /*margin-bottom: 1rem !important;*/
+    margin: 0rem 0.625rem 1rem 0.625rem !important;
 }
 
 .quick_card2 {
-    margin-top: 8rem;
-    background-color: rgba(203, 224, 247, 0.2) !important;
+    margin-top: 7rem;
+    background-color: rgba(34, 149, 224, 0.2) !important;
     box-shadow: none !important;
-    border: 2px solid #1F71CE !important;
+    border: 2px solid #2295e0 !important;
 }
