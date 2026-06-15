@@ -341,14 +341,15 @@ h5 {
 }
 
 .cont_box7 {
-    margin-top: 10.5rem;
+    margin-top: 9rem;
 }
 
 .years_card {
-    width: 10rem;
-    height: 14.5rem !important;
+    width: 13.5rem;
+    height: 15.5rem !important;
     background-color: #1F71CE !important;
     box-shadow: none !important;
+    border-radius: 25px !important;
 }
 
 .years_txt {
@@ -367,6 +368,16 @@ h5 {
     text-transform: uppercase;
 }
 
+.sect7_pic1 {
+    background: url(../pictures/background.PNG) !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 13.5rem !important;
+    width: 13.5rem;
+    margin-top: 1.2rem;
+    border-radius: 25px !important;
+}
 
 
 
