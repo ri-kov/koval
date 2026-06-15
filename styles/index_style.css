@@ -348,11 +348,14 @@ h5 {
     width: 10rem;
     height: 14.5rem !important;
     background-color: #1F71CE !important;
+    box-shadow: none !important;
 }
 
 .years_txt {
     font-family: "Montserrat", sans-serif;
     color: white;
+    text-align: left;
+    margin-left: 0.5rem;
 }
 
 .num {
