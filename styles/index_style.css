@@ -450,12 +450,17 @@ h5 {
 }
 
 .sct9_btn:hover {
-    background-color: #ffffff;
-    color: black;
+    background-color: #2295e0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: 0.4s;
 }
 
 .city_list {
     margin-top: 8.875rem;
+}
+
+.sct9_txt {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
