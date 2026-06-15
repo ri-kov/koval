@@ -455,3 +455,7 @@ h5 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transition: 0.4s;
 }
+
+.city_list {
+    margin-top: 8.875rem;
+}
