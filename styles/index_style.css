@@ -429,3 +429,10 @@ h5 {
 .phrase2 {
     margin-left: 0 !important;
 }
+
+.sect9_head {
+    font-size: 2rem !important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-top: 1rem;
+}
