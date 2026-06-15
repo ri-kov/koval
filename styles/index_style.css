@@ -340,6 +340,30 @@ h5 {
     margin-left: 4rem !important;
 }
 
+.cont_box7 {
+    margin-top: 10.5rem;
+}
+
+.years_card {
+    width: 10rem;
+    height: 14.5rem !important;
+    background-color: #1F71CE !important;
+}
+
+.years_txt {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.num {
+    font-size: 6rem;
+}
+
+.years_desc {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
 
 
 
