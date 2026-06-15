@@ -369,15 +369,20 @@ h5 {
 }
 
 .sect7_pic1 {
-    background: url(../pictures/background.PNG) !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 13.2rem !important;
+    height: 13.2rem;
     width: 13.2rem;
     margin-top: 1.2rem;
-    border-radius: 25px !important;
+    border-radius: 25px;
+    object-fit: cover;
 }
+
+
+.sect7_pic2 {
+    height: 18.3rem;
+    width: 24.5rem;
+    border-radius: 25px;
+}
+
 
 
 
