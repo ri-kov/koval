@@ -151,3 +151,14 @@ body {
 .modal-footer {
     justify-content: center !important;
 }
+
+.footer {
+    font-family: "Montserrat", sans-serif;
+    background-color: #6ca1dc;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 8rem;
+    border-top: 2px solid rgba(255, 255, 255);
+    margin-top: 2rem;
+}
