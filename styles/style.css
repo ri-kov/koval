@@ -27,7 +27,7 @@ body {
 }
 
 .home {
-    margin-left: 7rem !important;
+    margin-left: 5.2rem !important;
 }
 
 .link {
@@ -36,7 +36,7 @@ body {
     font-size: 17px;
     color: white;
     position: relative;
-    margin-left: 2.25rem;
+    margin-left: 2.1rem;
     text-decoration: none;
 }
 
@@ -47,6 +47,15 @@ body {
     transition: 0.4s;
 }
 
+.phone_num {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5.2rem;
+    cursor: pointer;
+}
+
 .head_btn {
     font-family: "Montserrat", sans-serif;
     color: white;
@@ -54,7 +63,7 @@ body {
     font-size: 1rem;
     font-weight: 650;
     border: none;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 9px 30px;
     margin-left: 60px;
 }
