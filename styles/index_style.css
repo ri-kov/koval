@@ -29,7 +29,7 @@
 .cont1_txt {
     color: white;
     font-family: "Montserrat", sans-serif;
-    margin-top: 2rem;
+    margin: 2rem 0 0 0;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.6;
@@ -66,11 +66,17 @@
     width: 12rem;
     height: 4.5rem;
     color: white;
+    margin: 2rem 0 0 1rem;
 }
 
 .opt1 {
-    background-color: #1F71CE;
+    background-color: #1F71CE !important;
     width: 14.5rem !important;
+    margin-left: 0 !important;
+}
+
+.opt2 {
+    background-color: black !important;
 }
 
 .car_logo1 {
