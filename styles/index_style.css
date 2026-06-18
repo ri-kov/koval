@@ -125,7 +125,7 @@
     font-size: 1rem;
     color: white;
     font-weight: 400;
-    margin-top: 5rem;
+    margin-top: 4rem;
     vertical-align: middle;
 }
 
@@ -140,11 +140,11 @@
 }
 
 .divider {
-    width: 0.063rem;
+    width: 0.043rem;
     height: 4rem;
     background-color: rgba(255, 255, 255, 0.4);
     display: flex;
-    margin: 6.3rem 1rem 0 2rem;
+    margin: 4.3rem 1rem 0 2rem;
 }
 
 #infoForm {
