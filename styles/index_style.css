@@ -1,7 +1,7 @@
 .cont_box1 {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
                 url(../pictures/background.PNG);
     background-size: cover;
     background-position: center;
@@ -35,14 +35,25 @@
     line-height: 1.6;
 }
 
-#slogan {
+.bsr {
+    color: #1F71CE;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.slogan {
     font-size: 60px;
     font-weight: 600;
     color: white;
     font-family: "Poppins", sans-serif;
     text-align: center;
     display: flex;
-    margin-top: 55px;
+    margin-bottom: -1rem;
+}
+
+.tle {
+    color: #1F71CE !important;
 }
 
 #cardNum {
