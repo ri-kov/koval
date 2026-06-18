@@ -26,8 +26,8 @@ body {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
-#abt {
-    margin-left: 160px;
+.home {
+    margin-left: 7rem !important;
 }
 
 .link {
@@ -35,7 +35,8 @@ body {
     font-style: normal;
     font-size: 17px;
     color: white;
-    margin-left: 40px;
+    position: relative;
+    margin-left: 2.25rem;
     text-decoration: none;
 }
 
@@ -46,58 +47,19 @@ body {
     transition: 0.4s;
 }
 
-.icon {
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-#whatsappIcon {
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-    background-color: #02b444;
-    color: white;
-    margin-left: 160px;
-}
-
-#whatsappIcon:hover {
-    background-color: #008732;
-    width: 63px;
-    height: 63px;
-    font-size: 35px;
-    transition: 0.4s;
-}
-
-#telegramIcon {
-    background-color: white;
-    color: #0088CC;
-    margin-left: 30px;
-    font-size: 48px;
-    width: 32px;
-    height: 32px;
-}
-
-#telegramIcon:hover {
-    color: #1b6a92;
-    width: 47px;
-    height: 47px;
-    font-size: 59px;
-    transition: 0.4s;
-}
-
-.sell_btn {
+.head_btn {
     font-family: "Montserrat", sans-serif;
-    font-weight: 750;
+    color: white;
+    background-color: #1F71CE;
+    font-size: 1rem;
+    font-weight: 650;
     border: none;
-    border-radius: 50px;
-    padding: 15px 40px;
-    margin-left: 160px;
+    border-radius: 10px;
+    padding: 9px 30px;
+    margin-left: 60px;
 }
 
-.sell_btn:hover {
+.head_btn:hover {
     background-color: #1F71CE;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
