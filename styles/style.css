@@ -66,12 +66,12 @@ body {
     border-radius: 7px;
     padding: 9px 30px;
     margin-left: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
 }
 
 .head_btn:hover {
-    background-color: #1F71CE;
+    background-color: #154884;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
     transition: 0.4s;
 
 }

@@ -76,14 +76,29 @@
     vertical-align: middle;
 }
 
+.opt1:hover {
+    background-color: #154884;
+    transition: 0.4s;
+}
+
 .opt2 {
     background-color: black;
     vertical-align: middle;
 }
 
+.opt2:hover {
+    background-color: #131313;
+    transition: 0.4s;
+}
+
 .opt3 {
     color: #1F71CE !important;
     vertical-align: middle;
+}
+
+.opt3:hover {
+    background-color: #bebebe;
+    transition: 0.4s;
 }
 
 .car_logo1 {
@@ -100,11 +115,7 @@
 .brw {
     font-size: 15px !important;
     margin-bottom: 0;
-    font-weight: 500;
-}
-
-.rep {
-    
+    font-weight: 600;
 }
 
 #infoForm {
