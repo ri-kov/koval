@@ -1,7 +1,7 @@
 .cont_box1 {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
                 url(../pictures/background.PNG);
     background-size: cover;
     background-position: center;
@@ -66,7 +66,7 @@
     width: 12rem;
     height: 4.5rem;
     color: white;
-    margin: 2rem 0 0 1rem;
+    margin: 3rem 0 0 1rem;
 }
 
 .opt1 {
@@ -92,7 +92,7 @@
 }
 
 .opt3 {
-    color: #1F71CE !important;
+    color: #000000;
     vertical-align: middle;
 }
 
@@ -116,6 +116,35 @@
     font-size: 15px !important;
     margin-bottom: 0;
     font-weight: 600;
+}
+
+.stat {
+    display: flex;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+    margin-top: 6rem;
+    vertical-align: middle;
+}
+
+.car_logo2 {
+    width: 4rem;
+    height: 4rem;
+}
+
+.main_stat {
+    font-weight: 500 !important;
+    font-size: 2.4rem !important;
+}
+
+.divider {
+    width: 0.063rem;
+    height: 4rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    margin: 6.3rem 0 0 2rem;
 }
 
 #infoForm {
