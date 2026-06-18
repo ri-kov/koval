@@ -66,13 +66,11 @@
     width: 12rem;
     height: 4.5rem;
     color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: 12px;
 }
 
 .opt1 {
     background-color: #1F71CE;
-    width: 13.5rem !important;
+    width: 14.5rem !important;
 }
 
 .car_logo1 {
@@ -80,9 +78,16 @@
     height: 3rem;
 }
 
-.brw {
+.font_set {
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
+    margin: 4px 0 0 5px;
+}
+
+.brw {
+    font-size: 15px !important;
     margin-bottom: 0;
+    font-weight: 500;
 }
 
 #infoForm {
