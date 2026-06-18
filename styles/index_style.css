@@ -28,8 +28,8 @@
 
 .cont1_txt {
     color: white;
-    font-family: "Poppins", sans-serif;
-    margin-top: 60px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2rem;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.6;
@@ -46,7 +46,7 @@
     font-size: 60px;
     font-weight: 600;
     color: white;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     display: flex;
     margin-bottom: -1rem;
@@ -56,28 +56,33 @@
     color: #1F71CE !important;
 }
 
-#cardNum {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 70px;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(1px);
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-#phoneNum {
-    color: white;
-    font-weight: 700;
-    font-size: 24px;
-}
-
 #desc {
     margin-top: 30px !important;
+}
+
+.options {
+    border: none;
+    border-radius: 7px;
+    width: 12rem;
+    height: 4.5rem;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+.opt1 {
+    background-color: #1F71CE;
+    width: 13.5rem !important;
+}
+
+.car_logo1 {
+    width: 3rem;
+    height: 3rem;
+}
+
+.brw {
+    font-size: 14pxc;
+    margin-bottom: 0;
 }
 
 #infoForm {
