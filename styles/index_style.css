@@ -70,13 +70,20 @@
 }
 
 .opt1 {
-    background-color: #1F71CE !important;
+    background-color: #1F71CE;
     width: 14.5rem !important;
     margin-left: 0 !important;
+    vertical-align: middle;
 }
 
 .opt2 {
-    background-color: black !important;
+    background-color: black;
+    vertical-align: middle;
+}
+
+.opt3 {
+    color: #1F71CE !important;
+    vertical-align: middle;
 }
 
 .car_logo1 {
@@ -94,6 +101,10 @@
     font-size: 15px !important;
     margin-bottom: 0;
     font-weight: 500;
+}
+
+.rep {
+    
 }
 
 #infoForm {
