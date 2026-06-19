@@ -67,6 +67,9 @@
     height: 4.5rem;
     color: white;
     margin: 3rem 0 0 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 .opt1 {
@@ -94,6 +97,7 @@
 .opt3 {
     color: #000000;
     vertical-align: middle;
+    background-color: white;
 }
 
 .opt3:hover {
@@ -232,6 +236,8 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    margin: 0.625rem 0 0 23.75rem;
+    text-decoration: none;
 }
 
 .fa-arrow-right-long {
