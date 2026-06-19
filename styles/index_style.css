@@ -334,9 +334,10 @@
 
 .car_divider {
     height: 0.043rem;
-    width: 4rem;
+    width: 19.88rem;
     background-color: rgba(128, 128, 128, 0.23);
     display: flex;
+    margin-left: 1rem;
 }
 
 
