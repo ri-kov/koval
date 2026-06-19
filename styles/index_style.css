@@ -197,6 +197,7 @@
 
 .cont_box2 {
     margin: 5rem 0 0 5rem;
+    font-family: "Montserrat", sans-serif;
 }
 
 #quickCard {
@@ -209,7 +210,6 @@
     background-color: rgb(169 169 169 / 20%);
     backdrop-filter: blur(1px);
     border-radius: 10px;
-    font-family: "Montserrat", sans-serif;
     color: rgb(0, 0, 0);
     font-weight: 600;
     font-size: 0.9rem;
@@ -217,7 +217,6 @@
 }
 
 .feat_main {
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 2.8rem;
     margin-top: 1rem;
@@ -230,7 +229,6 @@
     background-color: white;
     color: #1F71CE;
     border-radius: 8px;
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 1rem;
     align-items: center;
@@ -245,6 +243,10 @@
     margin-left: 1.3rem;
     font-size: 1.2rem !important;
 }
+
+
+
+
 
 
 
