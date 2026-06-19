@@ -253,8 +253,8 @@
 .car_card {
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    width: 21.88rem;
-    height: 26.3rem;
+    width: 23rem;
+    height: 28.3rem;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -310,7 +310,7 @@
     position: absolute;
     border-radius: 6px;
     right: 1rem;
-    bottom: 13.3rem;
+    bottom: 15.3rem;
 }
 
 .car_make {
@@ -352,7 +352,7 @@
 .feat_icons {
     height: 1.3rem;
     width: 1.3rem;
-    margin: 0 0.55rem 0 1rem;
+    margin: 0 0.3rem 0 2rem;
 }
 
 
