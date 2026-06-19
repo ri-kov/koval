@@ -251,7 +251,6 @@
 }
 
 .car_card {
-    text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 23rem;
     height: 28.3rem;
@@ -263,7 +262,7 @@
 
 .car_img {
     width: 100%;
-    height: 14rem;
+    height: 15rem;
     object-fit: cover;
     display: block;
     border-radius: 15px 15px 0 0;
@@ -310,7 +309,7 @@
     position: absolute;
     border-radius: 6px;
     right: 1rem;
-    bottom: 15.3rem;
+    bottom: 14.3rem;
 }
 
 .car_make {
@@ -328,14 +327,14 @@
 
 .car_price {
     margin: 0.9rem 0 1rem 0.9rem;
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
     color: #1F71CE;
     font-weight: 750;
 }
 
 .car_divider {
     height: 0.043rem;
-    width: 19.88rem;
+    width: 21rem;
     background-color: rgba(128, 128, 128, 0.23);
     display: flex;
     margin-left: 1rem;
