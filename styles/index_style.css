@@ -288,17 +288,15 @@
 
 
 .btn_arrow_next {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.35rem;
+    height: 2.35rem;
     border-radius: 50px;
-    color: white;
-    background-color: rgb(0, 0, 141);
+    color: #1F71CE;
+    background-color: rgba(255, 255, 255);
+    border: 0;
+    position: absolute;
+    top: 5.075rem;
 }
-
-.next_arrow {
-
-}
-
 
 
 
