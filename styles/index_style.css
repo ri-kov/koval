@@ -347,7 +347,7 @@
     margin: 0 0.3rem 0 2rem;
 }
 
-#vdet_btn {
+.vdet_btn {
     border: 2px solid rgba(90, 90, 90, 0.441);
     width: 24.75rem;
     height: 2.6rem;
@@ -363,7 +363,11 @@
     text-decoration: none;
 }
 
-#vdet_btn_arrow
+.vdet_btn_arrow {
+    color: #1f71ce;
+    margin-left: 1.3rem;
+    font-size: 1.2rem !important;
+}
 
 .feat_info {
     display: flex;
