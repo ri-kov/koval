@@ -356,6 +356,16 @@
     font-weight: 600;
 }
 
+.feat_info {
+    display: flex;
+    justify-content: start;
+}
+
+
+
+
+
+
 
 
 
