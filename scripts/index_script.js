@@ -41,3 +41,27 @@ vdBtn1.addEventListener('mouseleave', () => {
     vdBtn1.style.color = '#1F71CE';
     vdIcon1.style.color = '#1F71CE';
 });
+
+vdBtn2.addEventListener('mouseenter', () => {
+    vdBtn2.style.backgroundColor = '#1F71CE';
+    vdBtn2.style.color = '#FFFFFF';
+    vdIcon2.style.color = '#FFFFFF';
+});
+
+vdBtn2.addEventListener('mouseleave', () => {
+    vdBtn2.style.backgroundColor = '#FFFFFF';
+    vdBtn2.style.color = '#1F71CE';
+    vdIcon2.style.color = '#1F71CE';
+});
+
+vdBtn3.addEventListener('mouseenter', () => {
+    vdBtn3.style.backgroundColor = '#1F71CE';
+    vdBtn3.style.color = '#FFFFFF';
+    vdIcon3.style.color = '#FFFFFF';
+});
+
+vdBtn3.addEventListener('mouseleave', () => {
+    vdBtn3.style.backgroundColor = '#FFFFFF';
+    vdBtn3.style.color = '#1F71CE';
+    vdIcon3.style.color = '#1F71CE';
+});
