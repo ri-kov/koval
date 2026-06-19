@@ -214,6 +214,7 @@
 }
 
 #invt_btn {
+    cursor: pointer;
     border: 3px solid #1F71CE;
     width: 14rem;
     height: 3.2rem;
