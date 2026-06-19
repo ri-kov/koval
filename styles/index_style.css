@@ -201,18 +201,9 @@
 }
 
 #quickCard {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    width: 180px;
-    height: 30px;
-    background-color: rgb(169 169 169 / 20%);
-    backdrop-filter: blur(1px);
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-    font-size: 0.9rem;
+    color: #1F71CE;
+    font-weight: 800;
+    font-size: 1.05rem;
     text-transform: capitalize;
 }
 
@@ -247,21 +238,24 @@
 .feat_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: start;
+    display: flex;
 }
 
 .car_card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    width: 25rem;
-    height: 29.8rem;
+    width: 26.75rem;
+    height: 31.8rem;
     background-color: white;
     color: black;
     border-radius: 15px;
     position: relative;
+    margin-right: 1.5rem;
 }
 
 .car_img {
     width: 100%;
-    height: 16rem;
+    height: 17rem;
     object-fit: cover;
     display: block;
     border-radius: 15px 15px 0 0;
@@ -292,7 +286,7 @@
     background-color: rgba(255, 255, 255);
     border: 0;
     position: absolute;
-    top: 6.825rem;
+    top: 7.325rem;
 }
 
 .img_count {
@@ -308,11 +302,11 @@
     position: absolute;
     border-radius: 6px;
     right: 1rem;
-    bottom: 14.8rem;
+    bottom: 15.8rem;
 }
 
 .car_make {
-    font-size: 1.05rem !important;
+    font-size: 1.1rem !important;
     font-weight: 650 !important;
     margin: 1rem 0 0.2rem 1rem;
 }
@@ -333,7 +327,7 @@
 
 .car_divider {
     height: 0.043rem;
-    width: 21rem;
+    width: 24.75rem;
     background-color: rgba(128, 128, 128, 0.23);
     display: flex;
     margin-left: 1rem;
@@ -355,10 +349,10 @@
 
 .vdet_btn {
     border: 2px solid rgba(90, 90, 90, 0.441) !important;
-    width: 21rem !important;
+    width: 24.75rem !important;
     height: 2.6rem !important;
     margin: 1rem !important;
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
     font-weight: 600;
 }
 
