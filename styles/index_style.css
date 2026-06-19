@@ -244,6 +244,20 @@
     font-size: 1.2rem !important;
 }
 
+.feat_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.975rem;
+}
+
+.car_card {
+    text-decoration: none;
+    box-shadow: 0 8px 13px rgba(0, 0, 0, 0.1);
+    width: 19rem;
+    height: 20.3rem;
+    background-color: white;
+}
+
 
 
 
