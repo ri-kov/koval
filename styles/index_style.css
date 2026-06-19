@@ -213,7 +213,7 @@
     margin-top: 1rem;
 }
 
-.invt_btn {
+#invt_btn {
     border: 3px solid #1F71CE;
     width: 14rem;
     height: 3.2rem;
@@ -229,7 +229,7 @@
     text-decoration: none;
 }
 
-.inv_btn_arrow {
+#inv_btn_arrow {
     color: #1f71ce;
     margin-left: 1.3rem;
     font-size: 1.2rem !important;
@@ -347,14 +347,23 @@
     margin: 0 0.3rem 0 2rem;
 }
 
-.vdet_btn {
-    border: 2px solid rgba(90, 90, 90, 0.441) !important;
-    width: 24.75rem !important;
-    height: 2.6rem !important;
-    margin: 1rem !important;
-    font-size: 1rem !important;
+#vdet_btn {
+    border: 2px solid rgba(90, 90, 90, 0.441);
+    width: 24.75rem;
+    height: 2.6rem;
+    margin: 1rem;
+    font-size: 1rem;
     font-weight: 600;
+    background-color: white;
+    color: #1F71CE;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
 }
+
+#vdet_btn_arrow
 
 .feat_info {
     display: flex;
