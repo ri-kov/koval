@@ -67,13 +67,13 @@ vdBtn3.addEventListener('mouseleave', () => {
 });
 
 const carImages1 = [
-    'pictures/cars/2019sonata/1.JPG',
-    'pictures/cars/2019sonata/2.JPG',
-    'pictures/cars/2019sonata/3.JPG',
-    'pictures/cars/2019sonata/4.JPG',
-    'pictures/cars/2019sonata/5.JPG',
-    'pictures/cars/2019sonata/6.JPG',
-    'pictures/cars/2019sonata/7.JPG'
+    'pictures/cars/2019sonatasample/1.JPG',
+    'pictures/cars/2019sonatasample/2.JPG',
+    'pictures/cars/2019sonatasample/3.JPG',
+    'pictures/cars/2019sonatasample/4.JPG',
+    'pictures/cars/2019sonatasample/5.JPG',
+    'pictures/cars/2019sonatasample/6.JPG',
+    'pictures/cars/2019sonatasample/7.JPG'
 ];
 
 let currentImgIndex1 = 0;
@@ -84,9 +84,7 @@ const prevImg1 = document.getElementById('btnPrev1');
 const imgCounter1 = document.getElementById('imgCounter1');
 
 function updateImage1() {
-    console.log('Trying to load', carImages1[currentImgIndex1]);
     carImg1.src = carImages1[currentImgIndex1];
-    console.log('Actual image source', carImages1.src);
     imgCounter1.textContent = `${currentImgIndex1+1} / ${carImages1.length}`;
 };
 
@@ -110,4 +108,54 @@ prevImg1.addEventListener('click', () => {
     }
 
     updateImage1();
+});
+
+const carImages2 = [
+    'pictures/cars/2012acurasample/1.jpg',
+    'pictures/cars/2012acurasample/2.jpg',
+    'pictures/cars/2012acurasample/3.jpg',
+    'pictures/cars/2012acurasample/4.jpg',
+    'pictures/cars/2012acurasample/5.jpg',
+    'pictures/cars/2012acurasample/6.jpg',
+    'pictures/cars/2012acurasample/7.jpg',
+    'pictures/cars/2012acurasample/8.jpg',
+    'pictures/cars/2012acurasample/9.jpg',
+    'pictures/cars/2012acurasample/10.jpg',
+    'pictures/cars/2012acurasample/11.jpg',
+    'pictures/cars/2012acurasample/12.jpg',
+    'pictures/cars/2012acurasample/13.jpg',
+];
+
+let currentImgIndex2 = 0;
+
+const carImg2 = document.getElementById('carImage2');
+const nextImg2 = document.getElementById('btnNext2');
+const prevImg2 = document.getElementById('btnPrev2');
+const imgCounter2 = document.getElementById('imgCounter2');
+
+function updateImage2() {
+    carImg2.src = carImages2[currentImgIndex2];
+    imgCounter2.textContent = `${currentImgIndex2+1} / ${carImages2.length}`;
+};
+
+updateImage2();
+
+nextImg1.addEventListener('click', () => {
+    currentImgIndex2++;
+    
+    if (currentImgIndex2 >= carImages2.length) {
+        currentImgIndex2 = 0;
+    }
+
+    updateImage2();
+});
+
+prevImg1.addEventListener('click', () => {
+    currentImgIndex2--;
+
+    if (currentImgIndex2 < 0) {
+        currentImgIndex2 = carImages2.length - 1;
+    }
+
+    updateImage2();
 });
