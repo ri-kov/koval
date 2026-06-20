@@ -65,3 +65,25 @@ vdBtn3.addEventListener('mouseleave', () => {
     vdBtn3.style.color = '#1F71CE';
     vdIcon3.style.color = '#1F71CE';
 });
+
+const carImages1 = [
+    '../pictures/cars/2019sonata/1.JPG',
+    '../pictures/cars/2019sonata/2.JPG',
+    '../pictures/cars/2019sonata/3.JPG',
+    '../pictures/cars/2019sonata/4.JPG',
+    '../pictures/cars/2019sonata/5.JPG',
+    '../pictures/cars/2019sonata/6.JPG',
+    '../pictures/cars/2019sonata/7.JPG',
+];
+
+let currentImgIndex1 = 0;
+
+const carImg1 = document.getElementById('carImage1');
+const nextImg1 = document.getElementById('btnNext1');
+const prevImg1 = document.getElementById('btnPrev1');
+const imgCounter1 = document.getElementById('imgCounter1');
+
+function updateImage() {
+    carImages1.src = carImages1[currentImgIndex1];
+    imgCounter1.textContent = `${currentImgIndex1+1} / ${carImages1.length}`;
+}
