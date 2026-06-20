@@ -67,13 +67,13 @@ vdBtn3.addEventListener('mouseleave', () => {
 });
 
 const carImages1 = [
-    '../pictures/cars/2019sonata/1.JPG',
-    '../pictures/cars/2019sonata/2.JPG',
-    '../pictures/cars/2019sonata/3.JPG',
-    '../pictures/cars/2019sonata/4.JPG',
-    '../pictures/cars/2019sonata/5.JPG',
-    '../pictures/cars/2019sonata/6.JPG',
-    '../pictures/cars/2019sonata/7.JPG',
+    'pictures/cars/2019sonata/1.JPG',
+    'pictures/cars/2019sonata/2.JPG',
+    'pictures/cars/2019sonata/3.JPG',
+    'pictures/cars/2019sonata/4.JPG',
+    'pictures/cars/2019sonata/5.JPG',
+    'pictures/cars/2019sonata/6.JPG',
+    'pictures/cars/2019sonata/7.JPG'
 ];
 
 let currentImgIndex1 = 0;
@@ -84,9 +84,13 @@ const prevImg1 = document.getElementById('btnPrev1');
 const imgCounter1 = document.getElementById('imgCounter1');
 
 function updateImage1() {
-    carImages1.src = carImages1[currentImgIndex1];
+    console.log('Trying to load', carImages1[currentImgIndex1]);
+    carImg1.src = carImages1[currentImgIndex1];
+    console.log('Actual image source', carImages1.src);
     imgCounter1.textContent = `${currentImgIndex1+1} / ${carImages1.length}`;
 };
+
+updateImage1();
 
 nextImg1.addEventListener('click', () => {
     currentImgIndex1++;
