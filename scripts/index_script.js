@@ -123,7 +123,6 @@ const carImages2 = [
     'pictures/cars/2012acurasample/10.jpg',
     'pictures/cars/2012acurasample/11.jpg',
     'pictures/cars/2012acurasample/12.jpg',
-    'pictures/cars/2012acurasample/13.jpg',
 ];
 
 let currentImgIndex2 = 0;
@@ -140,7 +139,7 @@ function updateImage2() {
 
 updateImage2();
 
-nextImg1.addEventListener('click', () => {
+nextImg2.addEventListener('click', () => {
     currentImgIndex2++;
     
     if (currentImgIndex2 >= carImages2.length) {
@@ -150,7 +149,7 @@ nextImg1.addEventListener('click', () => {
     updateImage2();
 });
 
-prevImg1.addEventListener('click', () => {
+prevImg2.addEventListener('click', () => {
     currentImgIndex2--;
 
     if (currentImgIndex2 < 0) {
@@ -158,4 +157,54 @@ prevImg1.addEventListener('click', () => {
     }
 
     updateImage2();
+});
+
+const carImages3 = [
+    'pictures/cars/2017subarusample/1.jpg',
+    'pictures/cars/2017subarusample/2.jpg',
+    'pictures/cars/2017subarusample/3.jpg',
+    'pictures/cars/2017subarusample/4.jpg',
+    'pictures/cars/2017subarusample/5.jpg',
+    'pictures/cars/2017subarusample/6.jpg',
+    'pictures/cars/2017subarusample/7.jpg',
+    'pictures/cars/2017subarusample/8.jpg',
+    'pictures/cars/2017subarusample/9.jpg',
+    'pictures/cars/2017subarusample/10.jpg',
+    'pictures/cars/2017subarusample/11.jpg',
+    'pictures/cars/2017subarusample/12.jpg',
+    'pictures/cars/2017subarusample/13.jpg',
+];
+
+let currentImgIndex3 = 0;
+
+const carImg3 = document.getElementById('carImage3');
+const nextImg3 = document.getElementById('btnNext3');
+const prevImg3 = document.getElementById('btnPrev3');
+const imgCounter3 = document.getElementById('imgCounter3');
+
+function updateImage3() {
+    carImg3.src = carImages3[currentImgIndex3];
+    imgCounter3.textContent = `${currentImgIndex3+1} / ${carImages3.length}`;
+};
+
+updateImage3();
+
+nextImg3.addEventListener('click', () => {
+    currentImgIndex3++;
+    
+    if (currentImgIndex3 >= carImages3.length) {
+        currentImgIndex3 = 0;
+    }
+
+    updateImage3();
+});
+
+prevImg3.addEventListener('click', () => {
+    currentImgIndex3--;
+
+    if (currentImgIndex3 < 0) {
+        currentImgIndex3 = carImages3.length - 1;
+    }
+
+    updateImage3();
 });
