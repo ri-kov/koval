@@ -83,7 +83,27 @@ const nextImg1 = document.getElementById('btnNext1');
 const prevImg1 = document.getElementById('btnPrev1');
 const imgCounter1 = document.getElementById('imgCounter1');
 
-function updateImage() {
+function updateImage1() {
     carImages1.src = carImages1[currentImgIndex1];
     imgCounter1.textContent = `${currentImgIndex1+1} / ${carImages1.length}`;
-}
+};
+
+nextImg1.addEventListener('click', () => {
+    currentImgIndex1++;
+    
+    if (currentImgIndex1 >= carImages1.length) {
+        currentImgIndex1 = 0;
+    }
+
+    updateImage1();
+});
+
+prevImg1.addEventListener('click', () => {
+    currentImgIndex1--;
+
+    if (currentImgIndex1 < 0) {
+        currentImgIndex1 = carImages1.length - 1;
+    }
+
+    updateImage1();
+});
