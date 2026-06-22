@@ -410,7 +410,7 @@
     border-radius: 8px;
     display: flex;
     border: 2px solid rgba(133, 133, 133, 0.33);
-    width: 31rem;
+    width: 32.5rem;
     height: 7.5rem;
 }
 
@@ -431,7 +431,7 @@
 
 .sell_points_desc {
     font-weight: 450;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
 }
 
 .sell_btm_head {
