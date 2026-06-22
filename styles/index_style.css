@@ -404,7 +404,15 @@
     margin: 0.3rem 2rem 0 2rem;
 }
 
-
+.sell_steps_box {
+    background-color: white;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    border: 2px solid rgba(133, 133, 133, 0.33);
+    width: 29rem;
+    height: 5.5rem;
+}
 
 
 
