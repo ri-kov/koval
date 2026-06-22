@@ -421,10 +421,18 @@
     width: 4rem;
     display: flex;
     justify-content: center;
-    margin: 0.72rem 0 0 1rem;
+    margin: 0.72rem 2rem 0 1rem;
 }
 
+.sell_points {
+    font-weight: 600;
+    margin: 0.72rem 0 0.3rem 0 !important;
+}
 
+.sell_points_desc {
+    font-weight: 450;
+    font-size: 0.85rem;
+}
 
 
 
