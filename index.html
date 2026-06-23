@@ -295,7 +295,11 @@
                     <label for="year">Vehicle Condition <span class = "star">*</span></label>
                     <div class="input-container">
                         <input id = "year" class="form-control" placeholder="Select condition" list="carCondition">
-                        
+                        <datalist id="carCondition">
+                            <option value="Starts and drives"></option>
+                            <option value="Starts, cannot drive"></option>
+                            <option value="Doesn't starts"></option>
+                        </datalist>
                         <span class = "inp_emoji"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
                     </div>
                 </div>
