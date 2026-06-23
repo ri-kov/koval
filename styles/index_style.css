@@ -184,15 +184,11 @@
     transform: translateY(-50%);
     pointer-events: none;
     font-size: 1.2rem;
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
 .form-control {
     height: 43px;
-}
-
-.emj {
-    font-size: 26px;
 }
 
 .cont_box2 {
@@ -458,6 +454,9 @@
     font-size: 1.6rem;
 }
 
+.form_input {
+    width: 19.5rem !important;
+}
 
 
 
