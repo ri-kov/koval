@@ -440,6 +440,22 @@
     margin: 0.35rem 0rem 0.3rem 0rem;
 }
 
+.sell_form {
+    width: 45rem !important;
+    margin: 3rem 0 2rem 5rem !important;
+    height: 50.625rem !important;
+}
+
+.form_circ {
+    height: 3.7rem;
+    width: 3.7rem;
+    border-radius: 100px;
+    background-color: #1F71CE12;
+}
+
+
+
+
 
 
 
