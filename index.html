@@ -294,12 +294,12 @@
                 <div class="form-group">
                     <label for="year">Vehicle Condition <span class = "star">*</span></label>
                     <div class="input-container">
-                        <input id = "year" class="form-control" placeholder="Select condition" list="carCondition">
-                        <datalist id="carCondition">
-                            <option value="Starts and drives"></option>
-                            <option value="Starts, cannot drive"></option>
-                            <option value="Doesn't starts"></option>
-                        </datalist>
+                        <select id = "condition" class = "form-control" name = "condition" required>
+                            <option value="" selected disabled>Select condition</option>
+                            <option class = "condition_option" value="Starts and drives">Starts and drives</option>
+                            <option class = "condition_option" value="Starts, cannot drive">Starts, cannot drive</option>
+                            <option class = "condition_option" value="Doesn't starts">Doesn't starts</option>
+                        </select>
                         <span class = "inp_emoji"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
                     </div>
                 </div>
