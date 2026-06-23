@@ -184,7 +184,7 @@
     transform: translateY(-50%);
     pointer-events: none;
     font-size: 1.2rem;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .form-control {
@@ -458,6 +458,14 @@
     width: 19.5rem !important;
 }
 
+.form-control::placeholder {
+    font-size: 0.9rem;
+}
+
+.form-control {
+    height: 3rem;
+    margin: 0.6rem 0 1.4rem 0;
+}
 
 
 
