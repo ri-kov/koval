@@ -551,9 +551,13 @@
     color: #545454f3;
 }
 
-.file_input {
-    display: none;
+.pictures_box {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    display: flex;
 }
+
+
 
 .upload_box {
     width: 100%;
@@ -573,6 +577,22 @@
     background-color: rgb(209, 209, 209);
 }
 
+.upload_title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.upload_subtitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #64748b;
+}
+
+.upload_title {
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
 
 
 
