@@ -280,3 +280,6 @@ sellForm.addEventListener("submit", (event) => {
         return;
     }
 });
+
+const fileInput = document.getElementById("formImages");
+const fileText = document.getElementById("fileNames");

@@ -623,6 +623,24 @@
     margin-top: 55px;
 }
 
+#sellCloseBtn {
+    background-color: white;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    font-size: 1.2rem;
+    opacity: 0.6;
+    cursor: pointer !important;
+    position: absolute;
+}
+
+
+
+
+
+
 
 
 
