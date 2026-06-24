@@ -282,4 +282,23 @@ sellForm.addEventListener("submit", (event) => {
 });
 
 const fileInput = document.getElementById("formImages");
-const fileText = document.getElementById("fileNames");
+const photoContainer = document.getElementById("photoContainer");
+const clearFilesBtn = document.getElementById("sellCloseBtn");
+
+fileInput.addEventListener("change", () => {
+    const files = Array.from(fileInput.files);
+    photoContainer.innerHTML = "";
+
+    if (files.length === 0) {
+        photoContainer.textContent = "No files chosen";
+        clearFilesBtn.classList.remove("visible");
+        return;
+    }
+
+    if (files.length > 5) {
+        alert("You can upload a maximum of 5 photos.");
+
+        fileInput.value = "";
+        photoContainer.textContent = "No files chosen";
+    }
+})
