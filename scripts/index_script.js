@@ -325,3 +325,8 @@ fileInput.addEventListener("change", () => {
     clearFilesBtn.classList.add("visible");
 });
 
+clearFilesBtn.addEventListener("click", () => {
+    fileInput.value = "";
+    photoContainer.textContent = "No files chosen";
+    clearFilesBtn.classList.remove("visible");
+});
