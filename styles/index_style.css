@@ -568,6 +568,7 @@
     cursor: pointer;
     margin-top: 0.6rem;
     text-align: center;
+    display: flex;
 }
 
 
