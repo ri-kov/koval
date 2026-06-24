@@ -300,5 +300,17 @@ fileInput.addEventListener("change", () => {
 
         fileInput.value = "";
         photoContainer.textContent = "No files chosen";
+        clearFilesBtn.classList.remove("visible");
+        return;
     }
-})
+
+    const statusText = document.createElement("div");
+    statusText.classList.add("upload_status");
+    statusText.textContent = `${files.length} photo(s) selected`;
+
+    photoContainer.appendChild(statusText);
+
+    const previewRow = document.createElement("div");
+    previewRow.classList.add("preview_row");
+
+});
