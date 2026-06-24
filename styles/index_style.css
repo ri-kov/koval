@@ -612,6 +612,17 @@
     font-weight: 500;
 }
 
+#sellForm {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: 682px;
+    width: 450px;
+    margin-left: 100px;
+    margin-top: 55px;
+}
+
 
 
 

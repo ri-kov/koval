@@ -244,7 +244,7 @@ const carMake = document.getElementById("formMake");
 const carYear = document.getElementById("formYear");
 const carMileage = document.getElementById("formMileage");
 const phoneNum = document.getElementById("formNumber");
-const sellForm = document.getElementById("formBtnSubmit");
+const sellForm = document.getElementById("sellForm");
 
 carMake.addEventListener("input", () => {
     carMake.value = carMake.value.replace(/[^a-zA-Z\s-]/g, "");
@@ -260,4 +260,23 @@ carMileage.addEventListener("input", () => {
 
 phoneNum.addEventListener("input", () => {
     phoneNum.value = phoneNum.value.replace(/[^0-9\s()+-]/g, "");
+});
+
+sellForm.addEventListener("submit", (event) => {
+    const carYearValue = Number(carYear.value);
+    const currentYear = new Date().getFullYear() + 1;
+
+    const phoneDigits = phoneNum.value.replace(/\D/g, "");
+
+    if (carYearValue < 1950 || carYearValue > currentYear) {
+        event.preventDefault();
+        alert("Please enter a valid vehicle year.");
+        return;
+    }
+
+    if (phoneDigits.length < 10) {
+        event.preventDefault();
+        alert("Please enter a valid phonenumber.");
+        return;
+    }
 });
