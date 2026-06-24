@@ -263,14 +263,14 @@
                     <div style = "display: block;">
                         <span style = "font-weight: 550;">Vehicle Make <span class = "star">*</span></span>
                         <div class="input-container form_input">
-                            <input id = "formMake" class="form-control" placeholder="Enter make">
+                            <input id = "formMake" class="form-control" placeholder="Enter Make">
                             <span class = "inp_emoji"><i class="bi bi-car-front-fill" style = "font-size: 1.2rem;"></i></span>
                         </div>
                     </div>
                     <div style = "display: block; margin-left: 1.2rem;">
                         <span style = "font-weight: 550;">Vehicle Model <span class = "star">*</span></span>
                         <div class="input-container form_input">
-                            <input id = "formModel" class="form-control" placeholder="Enter model">
+                            <input id = "formModel" class="form-control" placeholder="Enter Model">
                             <span class = "inp_emoji"><i class="fa-solid fa-car-side" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
                         </div>
                     </div>
@@ -279,35 +279,33 @@
                     <div style = "display: block;">
                         <span style = "font-weight: 550;">Vehicle Year <span class = "star">*</span></span>
                         <div class="input-container form_input">
-                            <input id = "formYear" class="form-control" placeholder="Enter year">
+                            <input id = "formYear" class="form-control" placeholder="Enter Year">
                             <span class = "inp_emoji"><i class="bi bi-calendar-event" style = "font-size: 1.2rem;"></i></span>
                         </div>
                     </div>
                     <div style = "display: block; margin-left: 1.2rem;">
                         <span style = "font-weight: 550;">Mileage <span class = "star">*</span></span>
                         <div class="input-container form_input">
-                            <input id = "formMileage" class="form-control" placeholder="Enter mileage">
+                            <input id = "formMileage" class="form-control" placeholder="Enter Mileage">
                             <span class = "inp_emoji"><i class="fa-solid fa-gauge-high" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <span style = "font-weight: 550;">Vehicle Condition <span class = "star">*</span></span>
-                    <div class="input-container">
-                        <select id = "condition" class = "form-control" name = "condition" required>
-                            <option style = "font-weight: 450;" value="" selected disabled>Select condition</option>
-                            <option style = "font-weight: 450;" value="Starts and drives">Starts and drives</option>
-                            <option style = "font-weight: 450;" value="Starts, cannot drive">Starts, cannot drive</option>
-                            <option style = "font-weight: 450;" value="Doesn't start">Doesn't start</option>
-                        </select>
-                        <span class = "inp_emoji"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                    <span>Vehicle Condition <span>*</span></span>
+                    <div class="custom_select" id="conditionSelect">
+                        <button type="button" class="select_trigger">
+                            <span class="selected_text">Select condition</span>
+                            <span class="select_arrow">⌄</span>
+                        </button>
+                        <ul class="select_options">
+                            <li data-value="starts-and-drives">Starts and drives</li>
+                            <li data-value="starts-cold-runs-and-drives">Starts cold, runs and drives</li>
+                            <li data-value="doesnt-start">Doesn't start</li>
+                        </ul>
+                        <input type="hidden" name="vehicleCondition" id="vehicleCondition" required>
                     </div>
                 </div>
-
-
-
-
-
                 <div class="form-group">
                     <label for="phone">Phone # <span class = "star">*</span></label>
                     <div class="input-container">

@@ -208,3 +208,31 @@ prevImg3.addEventListener('click', () => {
 
     updateImage3();
 });
+
+const customSelect = document.getElementById("conditionSelect");
+const trigger = customSelect.querySelector(".select_trigger");
+const selectedText = customSelect.querySelector(".selected_text");
+const options = customSelect.querySelectorAll(".select_options li");
+const hiddenInput = document.getElementById("vehicleCondition");
+
+trigger.addEventListener("click", () => {
+  customSelect.classList.toggle("open");
+});
+
+options.forEach(option => {
+  option.addEventListener("click", () => {
+    selectedText.textContent = option.textContent;
+    hiddenInput.value = option.dataset.value;
+
+    options.forEach(item => item.classList.remove("selected"));
+    option.classList.add("selected");
+
+    customSelect.classList.remove("open");
+  });
+});
+
+document.addEventListener("click", event => {
+  if (!customSelect.contains(event.target)) {
+    customSelect.classList.remove("open");
+  }
+});
