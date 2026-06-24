@@ -546,9 +546,9 @@
 }
 
 .selected_text {
-    color: var(--bs-body-color);
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 450;
+    color: #545454f3;
 }
 
 

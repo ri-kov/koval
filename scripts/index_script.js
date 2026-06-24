@@ -223,6 +223,9 @@ options.forEach(option => {
   option.addEventListener("click", () => {
     selectedText.textContent = option.textContent;
     hiddenInput.value = option.dataset.value;
+    selectedText.style.color = 'var(--bs-body-color)';
+    selectedText.style.fontWeight = '450';
+    selectedText.style.fontSize = '1rem';
 
     options.forEach(item => item.classList.remove("selected"));
     option.classList.add("selected");
