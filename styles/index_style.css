@@ -559,7 +559,7 @@
 
 .file_input {
     text-decoration: none;
-    width: 10rem;
+    width: 13rem;
     height: 3rem;
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-right: none !important;
