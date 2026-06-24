@@ -313,4 +313,15 @@ fileInput.addEventListener("change", () => {
     const previewRow = document.createElement("div");
     previewRow.classList.add("preview_row");
 
+    files.forEach((file) => {
+        const img = document.createElement("img");
+        img.src = URL.createObjectURL(file);
+        img.alt = file.name;
+        img.classList.add("preview_img");
+        previewRow.appendChild(img);
+    });
+
+    photoContainer.appendChild(previewRow);
+    clearFilesBtn.classList.add("visible");
 });
+
