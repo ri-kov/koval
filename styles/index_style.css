@@ -602,7 +602,10 @@
 .form_subtitle {
     margin-top: 0.8rem;
     opacity: 0.8;
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
 }
 
 
