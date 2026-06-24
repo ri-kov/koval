@@ -571,44 +571,16 @@
     display: flex;
 }
 
-
-
-
-
-/*.upload_box {
-    width: 100%;
-    height: 3rem;
-    border: var(--bs-border-width) solid var(--bs-border-color);
-    border-radius: var(--bs-border-radius);
+#fileNames {
+    opacity: 0.8;
+    font-weight: 450;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.35rem;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.25s ease;
+    margin-top: 0.3rem;
 }
 
-.upload_box:hover {
-    background-color: rgb(209, 209, 209);
-}
 
-.upload_title {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #1f2937;
-}
 
-.upload_subtitle {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #64748b;
-}
 
-.upload_title {
-    font-size: 0.8rem;
-    color: #94a3b8;
-}*/
 
 
 
