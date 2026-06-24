@@ -187,10 +187,6 @@
     opacity: 0.6;
 }
 
-.form-control {
-    height: 43px;
-}
-
 .cont_box2 {
     margin: 5rem 0 0 6.6rem;
     font-family: "Montserrat", sans-serif;
@@ -475,6 +471,9 @@
 .custom_select {
   position: relative;
   width: 100%;
+  margin: 0.6rem 0 1.4rem 0;
+  font-weight: 450 !important;
+  height: 3rem;
 }
 
 .select_trigger {
@@ -482,7 +481,7 @@
   height: 3.2rem;
   padding: 0 1rem;
   border: 1.5px solid #d7dfeb;
-  border-radius: 0.75rem;
+  border-radius: var(--bs-border-radius);
   background: #fff;
   display: flex;
   align-items: center;
@@ -530,6 +529,21 @@
   color: #fff;
 }
 
+.custom_select.open .inp_emoji_down {
+    opacity: 0;
+}
+
+.custom_select .inp_emoji_up {
+    opacity: 0;
+}
+
+.custom_select .inp_emoji_down {
+    opacity: 1;
+}
+
+.custom_select.open .inp_emoji_up {
+    opacity: 1;
+}
 
 
 

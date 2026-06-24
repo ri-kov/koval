@@ -214,8 +214,6 @@ const trigger = customSelect.querySelector(".select_trigger");
 const selectedText = customSelect.querySelector(".selected_text");
 const options = customSelect.querySelectorAll(".select_options li");
 const hiddenInput = document.getElementById("vehicleCondition");
-const emjDown = document.getElementById("inpEmojiDown");
-const emjUp = document.getElementById("inpEmojiUp");
 
 trigger.addEventListener("click", () => {
   customSelect.classList.toggle("open");
