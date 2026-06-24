@@ -553,13 +553,28 @@
 
 .pictures_box {
     border: var(--bs-border-width) solid var(--bs-border-color);
-    border-radius: var(--bs-border-radius);
+    border-radius: 0 0.375rem 0.375rem 0 !important;
     display: flex;
+}
+
+.file_input {
+    text-decoration: none;
+    width: 10rem;
+    height: 3rem;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-right: none !important;
+    border-radius: 0.375rem 0 0 0.375rem;
+    background-color: #f6f6f6;
+    cursor: pointer;
+    margin-top: 0.6rem;
+    text-align: center;
 }
 
 
 
-.upload_box {
+
+
+/*.upload_box {
     width: 100%;
     height: 3rem;
     border: var(--bs-border-width) solid var(--bs-border-color);
@@ -592,7 +607,7 @@
 .upload_title {
     font-size: 0.8rem;
     color: #94a3b8;
-}
+}*/
 
 
 

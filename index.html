@@ -323,10 +323,17 @@
                         </div>
                     </div>
                 </div>
-                <div class = "form-group">
-                    <span style = "font-weight: 550;">Choose Files (Optional)</span>
-                    <div class="input-container pictures_box form-control">
-                        <input type="file" class="form-control-file file_input" id="formImages" multiple accept="image/*" name = "vehiclePhotos">
+                <div class = "form-group" style = "display: block;">
+                    <span style = "font-weight: 550;">Vehicle Photos (Optional)</span>
+                    <div style = "display: flex;">
+                        <input type="file" id="formImages" multiple accept="image/*" name = "vehiclePhotos" style = "display: none;">
+                        <label for="formImages" class="file_input">
+                            <span style = "margin-top: 0.5rem;">
+                                <span style = "position: unset !important;" class = "inp_emoji"><i class = "fa-solid fa-upload" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                                <span>Choose file</span>
+                            </span>
+                        </label>
+                        <div class="input-container pictures_box form-control"></div>
                     </div>
                 </div>
 
