@@ -239,3 +239,24 @@ document.addEventListener("click", event => {
     customSelect.classList.remove("open");
   }
 });
+
+const carMake = document.getElementById("formMake");
+const carYear = document.getElementById("formYear");
+const carMileage = document.getElementById("formMileage");
+const phoneNum = document.getElementById("formNumber");
+
+carMake.addEventListener("input", () => {
+    carMake.value = carMake.value.replace(/[^a-zA-Z\s-]/g, "");
+});
+
+carYear.addEventListener("input", () => {
+    carYear.value = carYear.value.replace(/\D/g, "").slice(0, 4);
+});
+
+carMileage.addEventListener("input", () => {
+    carMileage.value = carMileage.value.replace(/\D/g, "").slice(0, 6);
+});
+
+phoneNum.addEventListener("input", () => {
+    phoneNum.value = phoneNum.value.replace(/[^0-9\s()+-]/g, "");
+});
