@@ -251,99 +251,99 @@
                 </div>
                 <div class = "col-md-7">
                     <form id = "infoForm" class = "sell_form">
-                <div class="d-flex">
-                    <div class = "form_circ"><img src="pictures/carPic3.svg" alt="car-icon" width = "48rem" height = "48rem"></div>
-                    <div class = "flex-column" style = "margin-left: 2rem;">
-                        <h1 class = "form_head">Get Your Offer Now</h1>
-                        <p class="fs-6 mb-0" style = "font-weight: 450;">Fill out the form below and we'll be in touch shortly.</p>
-                    </div>
-                </div>
-                <hr>
-                <div class="form-group" style = "display: flex;">
-                    <div style = "display: block;">
-                        <span style = "font-weight: 550;">Vehicle Make <span class = "star">*</span></span>
-                        <div class="input-container form_input">
-                            <input id = "formMake" class="form-control" maxlength="40" placeholder="Enter Make" required>
-                            <span class = "inp_emoji"><i class="bi bi-car-front-fill" style = "font-size: 1.2rem;"></i></span>
+                        <div class="d-flex">
+                            <div class = "form_circ"><img src="pictures/carPic3.svg" alt="car-icon" width = "48rem" height = "48rem"></div>
+                            <div class = "flex-column" style = "margin-left: 2rem;">
+                                <h1 class = "form_head">Get Your Offer Now</h1>
+                                <p class="fs-6 mb-0" style = "font-weight: 450;">Fill out the form below and we'll be in touch shortly.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div style = "display: block; margin-left: 1.2rem;">
-                        <span style = "font-weight: 550;">Vehicle Model <span class = "star">*</span></span>
-                        <div class="input-container form_input">
-                            <input id = "formModel" class="form-control" maxlength="50" placeholder="Enter Model" required>
-                            <span class = "inp_emoji"><i class="fa-solid fa-car-side" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                        <hr>
+                        <div class="form-group" style = "display: flex;">
+                            <div style = "display: block;">
+                                <span style = "font-weight: 550;">Vehicle Make <span class = "star">*</span></span>
+                                <div class="input-container form_input">
+                                    <input id = "formMake" class="form-control" maxlength="40" placeholder="Enter Make" required>
+                                    <span class = "inp_emoji"><i class="bi bi-car-front-fill" style = "font-size: 1.2rem;"></i></span>
+                                </div>
+                            </div>
+                            <div style = "display: block; margin-left: 1.2rem;">
+                                <span style = "font-weight: 550;">Vehicle Model <span class = "star">*</span></span>
+                                <div class="input-container form_input">
+                                    <input id = "formModel" class="form-control" maxlength="50" placeholder="Enter Model" required>
+                                    <span class = "inp_emoji"><i class="fa-solid fa-car-side" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="form-group" style = "display: flex;">
-                    <div style = "display: block;">
-                        <span style = "font-weight: 550;">Vehicle Year <span class = "star">*</span></span>
-                        <div class="input-container form_input">
-                            <input id = "formYear" class="form-control" inputmode="numeric" maxlength="4" placeholder="Enter Year" required>
-                            <span class = "inp_emoji"><i class="bi bi-calendar-event" style = "font-size: 1.2rem;"></i></span>
+                        <div class="form-group" style = "display: flex;">
+                            <div style = "display: block;">
+                                <span style = "font-weight: 550;">Vehicle Year <span class = "star">*</span></span>
+                                <div class="input-container form_input">
+                                    <input id = "formYear" class="form-control" inputmode="numeric" maxlength="4" placeholder="Enter Year" required>
+                                    <span class = "inp_emoji"><i class="bi bi-calendar-event" style = "font-size: 1.2rem;"></i></span>
+                                </div>
+                            </div>
+                            <div style = "display: block; margin-left: 1.2rem;">
+                                <span style = "font-weight: 550;">Mileage <span class = "star">*</span></span>
+                                <div class="input-container form_input">
+                                    <input id = "formMileage" class="form-control" inputmode="numeric" maxlength="7" placeholder="Enter Mileage" required>
+                                    <span class = "inp_emoji"><i class="fa-solid fa-gauge-high" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div style = "display: block; margin-left: 1.2rem;">
-                        <span style = "font-weight: 550;">Mileage <span class = "star">*</span></span>
-                        <div class="input-container form_input">
-                            <input id = "formMileage" class="form-control" inputmode="numeric" maxlength="7" placeholder="Enter Mileage" required>
-                            <span class = "inp_emoji"><i class="fa-solid fa-gauge-high" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                        <div class="form-group">
+                            <span style = "font-weight: 550;">Vehicle Condition <span class = "star">*</span></span>
+                            <div class="custom_select" id="conditionSelect">
+                                <button type="button" class="select_trigger">
+                                    <span class = "selected_text">Select Condition</span>
+                                    <span class = "inp_emoji inp_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.3rem;"></i></span>
+                                    <span class = "inp_emoji inp_emoji_up"><i class="fa-solid fa-chevron-up" style = "font-size: 1.1rem; margin-top: 0.3rem;"></i></span>
+                                </button>
+                                <ul class="select_options">
+                                    <li data-value="starts-and-drives">Starts and drives</li>
+                                    <li data-value="starts-cold-runs-and-drives">Starts, doesn't drive</li>
+                                    <li data-value="doesnt-start">Doesn't start</li>
+                                </ul>
+                                <input type="hidden" name="vehicleCondition" id="vehicleCondition" required>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <span style = "font-weight: 550;">Vehicle Condition <span class = "star">*</span></span>
-                    <div class="custom_select" id="conditionSelect">
-                        <button type="button" class="select_trigger">
-                            <span class = "selected_text">Select Condition</span>
-                            <span class = "inp_emoji inp_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem; margin-top: 0.3rem;"></i></span>
-                            <span class = "inp_emoji inp_emoji_up"><i class="fa-solid fa-chevron-up" style = "font-size: 1.1rem; margin-top: 0.3rem;"></i></span>
-                        </button>
-                        <ul class="select_options">
-                            <li data-value="starts-and-drives">Starts and drives</li>
-                            <li data-value="starts-cold-runs-and-drives">Starts, doesn't drive</li>
-                            <li data-value="doesnt-start">Doesn't start</li>
-                        </ul>
-                        <input type="hidden" name="vehicleCondition" id="vehicleCondition" required>
-                    </div>
-                </div>
-                <div class="form-group" style = "display: flex;">
-                    <div style = "display: block;">
-                        <span style = "font-weight: 550;">Phone Number <span class = "star">*</span></span>
-                        <div class="input-container form_input">
-                            <input id = "formNumber" class="form-control" maxlength="18" inputmode="tel" placeholder="(613) XXX-XXXX" required>
-                            <span class = "inp_emoji"><i class="fa-solid fa-phone" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                        <div class="form-group" style = "display: flex;">
+                            <div style = "display: block;">
+                                <span style = "font-weight: 550;">Phone Number <span class = "star">*</span></span>
+                                <div class="input-container form_input">
+                                    <input id = "formNumber" class="form-control" maxlength="18" inputmode="tel" placeholder="(613) XXX-XXXX" required>
+                                    <span class = "inp_emoji"><i class="fa-solid fa-phone" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                                </div>
+                            </div>
+                            <div style = "display: block; margin-left: 1.2rem;">
+                                <span style = "font-weight: 550;">Location (neighbourhood) <span class = "star">*</span></span>
+                                <div class="input-container form_input">
+                                    <input id = "formLocation" class="form-control" placeholder="Enter Your Location">
+                                    <span class = "inp_emoji"><i class="fa-solid fa-location-dot" style="font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div style = "display: block; margin-left: 1.2rem;">
-                        <span style = "font-weight: 550;">Location (neighbourhood) <span class = "star">*</span></span>
-                        <div class="input-container form_input">
-                            <input id = "formLocation" class="form-control" placeholder="Enter Your Location">
-                            <span class = "inp_emoji"><i class="fa-solid fa-location-dot" style="font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                        <div class = "form-group" style = "display: block;">
+                            <span style = "font-weight: 550;">Vehicle Photos (Optional)</span>
+                            <div style = "display: flex;">
+                                <input type="file" id="formImages" multiple accept="image/*" name = "vehiclePhotos" style = "display: none;">
+                                <label for="formImages" class="file_input">
+                                    <span style = "margin: 0.45rem 0 0 0.6rem;">
+                                        <span style = "position: unset !important;" class = "inp_emoji"><i class = "fa-solid fa-upload" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
+                                        <span style = "opacity: 0.7; font-weight: 500;">Choose Files</span>
+                                    </span>
+                                </label>
+                                <div class="input-container pictures_box form-control"><span id = "fileNames">No file chosen</span></div>
+                            </div>
+                            <div>
+                                <span class = "sub_title">You can upload up to 5 photos</span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class = "form-group" style = "display: block;">
-                    <span style = "font-weight: 550;">Vehicle Photos (Optional)</span>
-                    <div style = "display: flex;">
-                        <input type="file" id="formImages" multiple accept="image/*" name = "vehiclePhotos" style = "display: none;">
-                        <label for="formImages" class="file_input">
-                            <span style = "margin: 0.45rem 0 0 0.6rem;">
-                                <span style = "position: unset !important;" class = "inp_emoji"><i class = "fa-solid fa-upload" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
-                                <span style = "opacity: 0.7; font-weight: 500;">Choose Files</span>
-                            </span>
-                        </label>
-                        <div class="input-container pictures_box form-control"><span id = "fileNames">No file chosen</span></div>
-                    </div>
-                    <div>
-                        <span class = "sub_title">You can upload up to 5 photos</span>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary form_sbm_btn" id = "btnSubmit">SUBMIT <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
-                </div>
-                <div class = "form_subtitle"><img src="pictures/lockPic.svg" alt="lock-icon" class = "lock_icon">Your information is safe and secure</div>
-            </form>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary form_sbm_btn" id = "formBtnSubmit">SUBMIT <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></button>
+                        </div>
+                        <div class = "form_subtitle"><img src="pictures/lockPic.svg" alt="lock-icon" class = "lock_icon">Your information is safe and secure</div>
+                    </form>
                 </div>
             </div>
         </div>
