@@ -663,8 +663,8 @@
 }
 
 .repair_images {
-    height: 16rem;
-    width: 13rem;
+    height: 15rem;
+    width: 11rem;
     border-radius: 8px 0 0 8px;
 }
 
@@ -679,8 +679,8 @@
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    width: 27.5rem;
-    height: 16rem;
+    width: 26.5rem;
+    height: 15rem;
     margin-top: 1rem;
 }
 
