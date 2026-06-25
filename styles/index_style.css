@@ -696,6 +696,20 @@
     margin-top: 0.4rem;
 }
 
+.repair_card_learn {
+    text-decoration: none;
+    color: #1F71CE;
+    font-weight: 500;
+    margin-left: 1rem;
+    font-size: 1.04rem;
+    cursor: pointer;
+}
+
+.repair_card_learn:hover {
+    color: #154f91;
+    transition: 0.3s ease;
+}
+
 
 
 
