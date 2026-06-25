@@ -738,9 +738,9 @@
 .repair_box_btm {
     margin: 3rem 0 5rem 7rem;
     border-radius: 8px;
-    height: 6.3rem;
+    height: 7.3rem;
     width: 85.5rem;
-    background-color: #1F71CE30;
+    background-color: #1F71CE15;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     display: flex;
 }
@@ -762,8 +762,9 @@
     font-weight: 700;
     font-size: 1rem;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     display: flex;
+    margin: 2.05rem 0 0 13rem;
 }
 
 #rep_icon_btm {
@@ -775,7 +776,7 @@
 .repair_box_btm_title {
     font-weight: 650;
     font-size: 1.2rem;
-    margin: 1rem 0 0.2rem 2rem !important;
+    margin: 1.25rem 0 0.2rem 2rem !important;
 }
 
 .repair_box_btm_text {
