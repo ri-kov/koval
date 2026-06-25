@@ -360,3 +360,6 @@ repairButton.addEventListener('mouseleave', () => {
     repairButton.style.color = '#1F71CE';
     repairButtonIcon.style.color = '#1F71CE';
 });
+
+const repairBtmButton = document.getElementById("rep_btn_btm");
+const repairBtmIcon = document.getElementById("rep_icon_btm");
