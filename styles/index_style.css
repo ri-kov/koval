@@ -734,13 +734,40 @@
     text-decoration: none;
 }
 
+.repair_box_btm {
+    height: 9rem;
+    width: 100%;
+    background-color: #1F71CE30;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 .repair_box_btm_icon {
     height: 7rem;
     width: 7rem;
 }
 
+#rep_btn_btm {
+    cursor: pointer;
+    border: 3px solid #1F71CE;
+    width: 14rem;
+    height: 3.2rem;
+    background-color: #1F71CE;
+    color: white;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0.625rem 0 0 23.75rem;
+    text-decoration: none;
+}
 
-
+#rep_icon_btm {
+    color: #ffffff;
+    margin-left: 1.3rem;
+    font-size: 1.2rem !important;
+}
 
 
 
