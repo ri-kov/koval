@@ -662,7 +662,31 @@
     margin-top: 2rem;
 }
 
+.repair_images {
+    height: 16.5rem;
+    width: 12rem;
+    border-radius: 8px 0 0 8px;
+}
 
+.repair_icons {
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.repair_box {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 27rem;
+    height: 16.5rem;
+}
+
+.repair_card_title {
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-top: 1rem;
+}
 
 
 
