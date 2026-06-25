@@ -735,15 +735,18 @@
 }
 
 .repair_box_btm {
-    height: 9rem;
-    width: 100%;
+    margin: 3rem 0 5rem 6.6rem;
+    border-radius: 8px;
+    height: 6.3rem;
+    width: 50rem;
     background-color: #1F71CE30;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
 }
 
 .repair_box_btm_icon {
-    height: 7rem;
-    width: 7rem;
+    height: 5rem;
+    width: 5rem;
 }
 
 #rep_btn_btm {
