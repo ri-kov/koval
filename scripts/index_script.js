@@ -363,3 +363,18 @@ repairButton.addEventListener('mouseleave', () => {
 
 const repairBtmButton = document.getElementById("rep_btn_btm");
 const repairBtmIcon = document.getElementById("rep_icon_btm");
+
+repairBtmButton.style.transition = '0.3s ease';
+repairBtmIcon.style.transition = '0.3s ease';
+
+repairBtmButton.addEventListener('mouseenter', () => {
+    repairBtmButton.style.backgroundColor = '#ffffff';
+    repairBtmButton.style.color = '#1F71CE';
+    repairBtmIcon.style.color = '#1F71CE';
+});
+
+repairBtmButton.addEventListener('mouseleave', () => {
+    repairBtmButton.style.backgroundColor = '#1F71CE';
+    repairBtmButton.style.color = '#ffffff';
+    repairBtmIcon.style.color = '#ffffff';
+});
