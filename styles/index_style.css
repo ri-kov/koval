@@ -711,6 +711,29 @@
     transition: 0.3s ease;
 }
 
+#rep_icon {
+    color: #1f71ce;
+    margin-left: 1.3rem;
+    font-size: 1.2rem !important;
+}
+
+#rep_btn {
+    cursor: pointer;
+    border: 3px solid #1F71CE;
+    width: 14rem;
+    height: 3.2rem;
+    background-color: white;
+    color: #1F71CE;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0.625rem 0 0 23.75rem;
+    text-decoration: none;
+}
+
 
 
 

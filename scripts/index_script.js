@@ -342,3 +342,21 @@ clearFilesBtn.addEventListener("click", () => {
     fileInput.value = "";
     renderPhotos();
 });
+
+const repairButton = document.getElementById("rep_btn");
+const repairButtonIcon = document.getElementById("rep_icon");
+
+repairButton.style.transition = '0.3s ease';
+repairButtonIcon.style.transition = '0.3s ease';
+
+repairButton.addEventListener('mouseenter', () => {
+    repairButton.style.backgroundColor = '#1F71CE';
+    repairButton.style.color = 'white';
+    repairButtonIcon.style.color = 'white';
+});
+
+repairButton.addEventListener('mouseleave', () {
+    repairButton.style.backgroundColor = '#ffffff';
+    repairButton.style.color = '#1F71CE';
+    repairButtonIcon.style.color = '#1F71CE';
+});
