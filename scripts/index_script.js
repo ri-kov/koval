@@ -285,35 +285,48 @@ const fileInput = document.getElementById("formImages");
 const photoContainer = document.getElementById("photoContainer");
 const clearFilesBtn = document.getElementById("sellCloseBtn");
 
+let selectedFiles = [];
+
 fileInput.addEventListener("change", () => {
-    const files = Array.from(fileInput.files);
+    const newFiles = Array.from(fileInput.files);
     photoContainer.innerHTML = "";
 
-    if (files.length === 0) {
-        photoContainer.textContent = "No files chosen";
-        clearFilesBtn.classList.remove("visible");
+    if (newFiles.length === 0) {
         return;
     }
 
-    if (files.length > 5) {
-        alert("You can upload a maximum of 5 photos.");
+    const totalFiles = selectedFiles.length + newFiles.length;
 
+    if (totalFiles > 5) {
+        alert("You can upload a maximum of 5 photos.");
         fileInput.value = "";
+        return;
+    }
+
+    selectedFiles.push(...newFiles);
+    fileInput.value = "";
+    renderPhotos();
+});
+
+function renderPhotos() {
+    photoContainer.innerHTML = "";
+
+    if (selectedFiles == 0) {
         photoContainer.textContent = "No files chosen";
-        clearFilesBtn.classList.remove("visible");
+        clearFilesBtn.classList.remove = "visible";
         return;
     }
 
     const statusText = document.createElement("div");
     statusText.classList.add("upload_status");
-    statusText.textContent = `${files.length} photo(s) selected`;
+    statusText.textContent = `${selectedFiles.length} photo(s) selected`;
 
     photoContainer.appendChild(statusText);
 
     const previewRow = document.createElement("div");
     previewRow.classList.add("preview_row");
 
-    files.forEach((file) => {
+    selectedFiles.forEach((file) => {
         const img = document.createElement("img");
         img.src = URL.createObjectURL(file);
         img.alt = file.name;
@@ -323,10 +336,10 @@ fileInput.addEventListener("change", () => {
 
     photoContainer.appendChild(previewRow);
     clearFilesBtn.classList.add("visible");
-});
+}
 
 clearFilesBtn.addEventListener("click", () => {
+    selectedFiles = [];
     fileInput.value = "";
-    photoContainer.textContent = "No files chosen";
-    clearFilesBtn.classList.remove("visible");
+    renderPhotos();
 });
