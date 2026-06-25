@@ -355,7 +355,7 @@ repairButton.addEventListener('mouseenter', () => {
     repairButtonIcon.style.color = 'white';
 });
 
-repairButton.addEventListener('mouseleave', () {
+repairButton.addEventListener('mouseleave', () => {
     repairButton.style.backgroundColor = '#ffffff';
     repairButton.style.color = '#1F71CE';
     repairButtonIcon.style.color = '#1F71CE';
