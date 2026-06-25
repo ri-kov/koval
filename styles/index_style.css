@@ -188,7 +188,7 @@
 }
 
 .cont_box2 {
-    margin: 5rem 0 0 6.6rem;
+    margin: 5rem 0 0 7rem;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -366,6 +366,7 @@
     display: flex;
     justify-content: start;
     margin-top: 5rem;
+    margin-left: -1rem;
 }
 
 .feat_info_img {
@@ -434,7 +435,7 @@
 
 .sell_form {
     width: 45rem !important;
-    margin: 3rem 0 10rem 5rem !important;
+    margin: 3rem 0 7rem 5rem !important;
     height: 50.625rem !important;
 }
 
@@ -735,18 +736,19 @@
 }
 
 .repair_box_btm {
-    margin: 3rem 0 5rem 6.6rem;
+    margin: 3rem 0 5rem 7rem;
     border-radius: 8px;
     height: 6.3rem;
-    width: 50rem;
+    width: 85.5rem;
     background-color: #1F71CE30;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     display: flex;
 }
 
 .repair_box_btm_icon {
-    height: 5rem;
-    width: 5rem;
+    height: 5.5rem;
+    width: 5.5rem;
+    margin-left: 1rem;
 }
 
 #rep_btn_btm {
@@ -760,10 +762,8 @@
     font-weight: 700;
     font-size: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     display: flex;
-    margin: 0.625rem 0 0 23.75rem;
-    text-decoration: none;
 }
 
 #rep_icon_btm {
@@ -771,6 +771,21 @@
     margin-left: 1.3rem;
     font-size: 1.2rem !important;
 }
+
+.repair_box_btm_title {
+    font-weight: 650;
+    font-size: 1.2rem;
+    margin: 1rem 0 0.2rem 2rem !important;
+}
+
+.repair_box_btm_text {
+    font-weight: 450;
+    font-size: 0.95rem;
+    margin-left: 2rem;
+}
+
+
+
 
 
 
