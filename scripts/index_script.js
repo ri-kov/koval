@@ -289,7 +289,6 @@ let selectedFiles = [];
 
 fileInput.addEventListener("change", () => {
     const newFiles = Array.from(fileInput.files);
-    photoContainer.innerHTML = "";
 
     if (newFiles.length === 0) {
         return;
@@ -299,10 +298,10 @@ fileInput.addEventListener("change", () => {
 
     if (totalFiles > 5) {
         alert("You can upload a maximum of 5 photos.");
-        fileInput.value = "";
         return;
     }
 
+    photoContainer.innerHTML = "";
     selectedFiles.push(...newFiles);
     fileInput.value = "";
     renderPhotos();
