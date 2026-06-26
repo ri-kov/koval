@@ -842,7 +842,7 @@
   opacity: 0.6;
 }
 
-.mod_custom_select.open .mod_emoji_down {
+.mod_custom_select.exp .mod_emoji_down {
     opacity: 0;
 }
 
@@ -854,7 +854,7 @@
     opacity: 1;
 }
 
-.mod_custom_select.open .mod_emoji_up {
+.mod_custom_select.exp .mod_emoji_up {
     opacity: 1;
 }
 
