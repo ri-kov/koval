@@ -859,6 +859,7 @@
   display: none;
   width: 20rem;
   z-index: 50;
+  position: absolute;
 }
 
 .mod_custom_select.exp .mod_select_options {
