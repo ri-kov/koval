@@ -796,7 +796,7 @@
     opacity: 0.8;
     cursor: pointer;
     position: fixed;
-    right: 21rem;
+    right: 26rem;
     font-size: 1.3rem;
 }
 
@@ -807,7 +807,7 @@
 }
 
 .mod_inp input {
-    width: 100%;
+    width: 20rem;
     padding-left: 57px !important;
     padding-right: 10px !important;
 }
