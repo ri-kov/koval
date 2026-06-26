@@ -785,6 +785,13 @@
     margin-left: 2rem;
 }
 
+.rep_mod_circ {
+    height: 5rem !important;
+    width: 5rem !important;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
