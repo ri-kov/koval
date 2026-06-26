@@ -792,9 +792,11 @@
     justify-content: center;
 }
 
-.rep_mod_head {
-    font-weight: 700;
-    font-size: 1.4rem;
+.rep_mod_close {
+    opacity: 0.8;
+    cursor: pointer;
+    position: fixed;
+    right: 2rem;
 }
 
 
