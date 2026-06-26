@@ -833,13 +833,51 @@
 }
 
 .mod_emoji {
-  position: fixed;
-  right: 58.6rem;
-  top: 75.3%;
+  position: absolute;
+  left: 20rem;
+  top: 90.1%;
   transform: translateY(-50%);
   pointer-events: none;
   font-size: 1rem;
   opacity: 0.6;
+}
+
+.mod_custom_select.exp .mod_select_trigger {
+  border-color: #1F71CE;
+  box-shadow: 0 0 0 4px rgba(31, 113, 206, 0.12);
+}
+
+.mod_select_options {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1.5px solid #1F71CE;
+  border-radius: 0.75rem;
+  box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.12);
+  list-style: none;
+  padding: 0.4rem;
+  margin: 0;
+  display: none;
+  z-index: 50;
+}
+
+.mod_custom_select.exp .mod_select_options {
+  display: block;
+}
+
+.mod_select_options li {
+  padding: 0.8rem 1rem;
+  border-radius: 0.55rem;
+  cursor: pointer;
+  color: #1f2937;
+}
+
+.mod_select_options li:hover,
+.mod_select_options li.selected {
+  background: #1F71CE;
+  color: #fff;
 }
 
 .mod_custom_select.exp .mod_emoji_down {
