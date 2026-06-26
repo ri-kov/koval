@@ -812,6 +812,31 @@
     padding-right: 10px !important;
 }
 
+.mod_select_trigger{
+  width: 20rem;
+  height: 3.2rem;
+  padding: 0 1rem;
+  border: 1.5px solid #d7dfeb;
+  border-radius: var(--bs-border-radius);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #5b677a;
+  cursor: pointer;
+}
+
+.mod_emj_wrench {
+  color: var(--bs-modal-color);
+  opacity: 0.6;
+}
+
+
+
+
+
+
+
 
 
 
