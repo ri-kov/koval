@@ -833,8 +833,8 @@
 }
 
 .mod_emoji {
-  position: absolute;
-  left: 20rem;
+  position: sticky;
+  left: 50rem;
   top: 90.1%;
   transform: translateY(-50%);
   pointer-events: none;
@@ -848,10 +848,7 @@
 }
 
 .mod_select_options {
-  position: absolute;
   top: calc(100% + 0.4rem);
-  left: 0;
-  right: 0;
   background: #fff;
   border: 1.5px solid #1F71CE;
   border-radius: 0.75rem;
