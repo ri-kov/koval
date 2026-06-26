@@ -803,6 +803,7 @@
 .mod_form::placeholder {
     position: fixed;
     left: 57px;
+    font-weight: 550;
 }
 
 .mod_inp input {
