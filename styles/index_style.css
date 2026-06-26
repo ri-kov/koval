@@ -804,6 +804,7 @@
     position: fixed;
     left: 57px;
     font-weight: 550;
+    font-size: 0.9rem;
 }
 
 .mod_inp input {
@@ -822,7 +823,7 @@
   display: flex;
   align-items: center;
   font-size: 1rem;
-  color: #5b677a;
+  color: #424242de;
   cursor: pointer;
 }
 
@@ -831,6 +832,31 @@
   opacity: 0.6;
 }
 
+.mod_emoji {
+  position: fixed;
+  right: 58.6rem;
+  top: 75.3%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.mod_custom_select.open .mod_emoji_down {
+    opacity: 0;
+}
+
+.mod_custom_select .mod_emoji_up {
+    opacity: 0;
+}
+
+.mod_custom_select .mod_emoji_down {
+    opacity: 1;
+}
+
+.mod_custom_select.open .mod_emoji_up {
+    opacity: 1;
+}
 
 
 
