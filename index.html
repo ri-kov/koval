@@ -445,7 +445,11 @@
                 <p class = "repair_box_btm_text">We use quality parts and proven techniques to keep your vehicle<br>safe, reliable and road-ready.</p>
             </div>
             <button data-bs-toggle="modal" data-bs-target="#bookRepairModal" id = "rep_btn_btm">Schedule a Service<i id = "rep_icon_btm" class="fa-solid fa-arrow-right-long"></i></button>
-            <div class = "modal fade" id="bookRepairModal" tabindex="-1" aria-hidden="true"></div>
+            <div class = "modal fade" id="bookRepairModal" tabindex="-1" aria-hidden="true">
+                <div class = "modal-dialog">
+
+                </div>
+            </div>
         </div>
     </section>
     <section class = "cont_box3">
@@ -872,67 +876,67 @@
     <div class="modal fade" id="quoteModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-        <div class="modal-header" >
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
-            <div class="d-flex flex-column">
-                <h1 class="modal-title fs-3 text-center">Sell Your Car Now</h1> <br>
-                <p class="fs-6 mb-0 txt_clr fw-normal text-center">Or call: +1 (204) 999-9999</p>
+            <div class="modal-header" >
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+                <div class="d-flex flex-column">
+                    <h1 class="modal-title fs-3 text-center">Sell Your Car Now</h1> <br>
+                    <p class="fs-6 mb-0 txt_clr fw-normal text-center">Or call: +1 (204) 999-9999</p>
+                </div>
             </div>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="form-group">
-                    <label for="make">Vehicle Make <span class = "star">*</span></label>
-                    <div class = "input-container">
-                        <input id = "make" class="form-control">
-                        <span class = "inp_emoji"><i class="bi bi-car-front-fill emj"></i></span>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="make">Vehicle Make <span class = "star">*</span></label>
+                        <div class = "input-container">
+                            <input id = "make" class="form-control">
+                            <span class = "inp_emoji"><i class="bi bi-car-front-fill emj"></i></span>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="model">Vehicle Model <span class = "star">*</span></label>
-                    <div class = "input-container">
-                        <input id = "model" class="form-control">
-                        <span class = "inp_emoji"><i class="fa-solid fa-car-side"></i></span>
+                    <div class="form-group">
+                        <label for="model">Vehicle Model <span class = "star">*</span></label>
+                        <div class = "input-container">
+                            <input id = "model" class="form-control">
+                            <span class = "inp_emoji"><i class="fa-solid fa-car-side"></i></span>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="year">Vehicle Year <span class = "star">*</span></label>
-                    <div class="input-container">
-                        <input id = "year" class="form-control">
-                        <span class = "inp_emoji"><i class="bi bi-calendar-event"></i></span>
+                    <div class="form-group">
+                        <label for="year">Vehicle Year <span class = "star">*</span></label>
+                        <div class="input-container">
+                            <input id = "year" class="form-control">
+                            <span class = "inp_emoji"><i class="bi bi-calendar-event"></i></span>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone # <span class = "star">*</span></label>
-                    <div class = "input-container">
-                        <input id = "phone" class="form-control">
-                        <span class = "inp_emoji"><i class="bi bi-telephone"></i></span>
+                    <div class="form-group">
+                        <label for="phone">Phone # <span class = "star">*</span></label>
+                        <div class = "input-container">
+                            <input id = "phone" class="form-control">
+                            <span class = "inp_emoji"><i class="bi bi-telephone"></i></span>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="location">Location (neighbourhood) <span class = "star">*</span></label>
-                    <div class = "input-container">
-                        <input id = "location" class="form-control">
-                        <span class = "inp_emoji"><i class="bi bi-geo-alt"></i></span>
+                    <div class="form-group">
+                        <label for="location">Location (neighbourhood) <span class = "star">*</span></label>
+                        <div class = "input-container">
+                            <input id = "location" class="form-control">
+                            <span class = "inp_emoji"><i class="bi bi-geo-alt"></i></span>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="comments">Tell us more about your vehicle!</label>
-                    <div class = "input-container">
-                        <input id = "comments" class="form-control">
-                        <span class = "inp_emoji"><i class="bi bi-pencil-square"></i></span>
+                    <div class="form-group">
+                        <label for="comments">Tell us more about your vehicle!</label>
+                        <div class = "input-container">
+                            <input id = "comments" class="form-control">
+                            <span class = "inp_emoji"><i class="bi bi-pencil-square"></i></span>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="img">Vehicle Photos</label>
-                    <input type="file" class="form-control-file" id="img" multiple accept="image/*">
-                </div>
-                <p id="disclaimer" class="star">*mandatory fields</p>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id = "btnSubmit">SUBMIT</button>
-        </div>
+                    <div class="form-group">
+                        <label for="img">Vehicle Photos</label>
+                        <input type="file" class="form-control-file" id="img" multiple accept="image/*">
+                    </div>
+                    <p id="disclaimer" class="star">*mandatory fields</p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id = "btnSubmit">SUBMIT</button>
+            </div>
         </div>
     </div>
     </div>
