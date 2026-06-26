@@ -851,12 +851,13 @@
   top: calc(100% + 0.4rem);
   background: #fff;
   border: 1.5px solid #1F71CE;
-  border-radius: 0.75rem;
+  border-radius: 0.55rem;
   box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.12);
   list-style: none;
   padding: 0.4rem;
   margin: 0;
   display: none;
+  width: 20rem;
   z-index: 50;
 }
 
@@ -865,8 +866,8 @@
 }
 
 .mod_select_options li {
-  padding: 0.8rem 1rem;
-  border-radius: 0.55rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.25rem;
   cursor: pointer;
   color: #1f2937;
 }
