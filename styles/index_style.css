@@ -796,7 +796,8 @@
     opacity: 0.8;
     cursor: pointer;
     position: fixed;
-    right: 2rem;
+    right: 21rem;
+    font-size: 1.3rem;
 }
 
 
