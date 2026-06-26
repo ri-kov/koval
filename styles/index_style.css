@@ -800,7 +800,16 @@
     font-size: 1.3rem;
 }
 
+.mod_form::placeholder {
+    position: fixed;
+    left: 57px;
+}
 
+.mod_inp input {
+    width: 100%;
+    padding-left: 57px !important;
+    padding-right: 10px !important;
+}
 
 
 
