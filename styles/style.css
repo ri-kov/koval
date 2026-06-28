@@ -402,3 +402,9 @@ body {
     font-weight: 550;
     margin-top: 1rem;
 }
+
+.btm_mod_divider {
+    height: 0.043rem;
+    background-color: rgba(98, 98, 98, 0.33);
+    margin-top: 1rem !important;
+}
