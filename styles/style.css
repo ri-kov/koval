@@ -430,14 +430,26 @@ body {
 .mod_buttons {
     display: flex;
     justify-content: right;
+    margin-top: 0.5rem;
+}
+
+.mod_btm_cal {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
 }
 
 .mod_cancel {
     background-color: #ffffff;
-    color: #1F71CE;
-    border: 3px solid #1F71CE30;
+    color: #000000;
+    border: 3px solid #00000030;
     height: 2.5rem;
-    width: 7rem;
+    width: 9rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9rem;
 }
 
 .mod_req {
@@ -446,5 +458,10 @@ body {
     background-color: #1F71CE;
     color: white;
     height: 2.5rem;
-    width: 11rem;
+    width: 13rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.9rem;
 }
