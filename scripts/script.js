@@ -98,6 +98,9 @@ function renderCalendar() {
     let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
     firstDayOfMonth = (firstDayOfMonth + 6) % 7;
     const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+    const timeButtons = document.querySelectorAll(".time_btn");
+    const selectedRepairTime = document.getElementById("selectedRepairTime");
+    let  selectedTime = null;
 
     for (let empty = 0; empty < firstDayOfMonth; empty++) {
         const emptyDay = document.createElement("div");
@@ -134,6 +137,10 @@ function renderCalendar() {
             
             dayButton.classList.add("selected");
             document.getElementById("selectedRepairDate").value = selectedDate.toISOString().split("T")[0];
+
+            timeButtons.forEach((button) => {
+                button.classList.remove("disabled");
+            });
         });
         calendarDays.appendChild(dayButton);
     }
@@ -141,9 +148,20 @@ function renderCalendar() {
 
 renderCalendar();
 
-const timeButtons = document.querySelectorAll(".time_btn");
-const selectedRepairTime = document.getElementById("selectedRepairTime");
-let  selectedTime = null;
+timeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        selectedTime = button.textContent;
+        timeButtons.forEach((button) => {
+            timeButton.classList.remove("selected");
+        });
+        button.classList.add("selected");
+        selectedRepairTime.value = selectedTime;
+    });
+});
+
+timeButtons.forEach((button) => {
+    button.classList.add("disabled");
+});
 
 timeButtons.forEach((button) => {
     button.addEventListener("click", () =>{

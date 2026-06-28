@@ -362,3 +362,9 @@ body {
     color: white;
     border-color: #1F71CE;
 }
+
+.time_btn.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
