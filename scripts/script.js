@@ -102,10 +102,10 @@ function renderCalendar() {
     for (let empty = 0; empty < firstDayOfMonth; empty++) {
         const emptyDay = document.createElement("div");
         emptyDay.classList.add("empty_day");
-        calendarDays.appendChild(dayButton);
+        calendarDays.appendChild(emptyDay);
     }
 
-    for (let day = 1; dat <= daysInMonth; day++) {
+    for (let day = 1; day <= daysInMonth; day++) {
         const dayButton = document.createElement("button");
         dayButton.classList.add("calendar_day");
         dayButton.textContent = day;
@@ -115,7 +115,7 @@ function renderCalendar() {
 
         const buttonDate = new Date(currentYear, currentMonth, day);
 
-        if (buttonDate < today) {
+        if (buttonDate < today || buttonDate.getDay() == 0) {
             dayButton.classList.add("disabled");
             dayButton.disabled = true;
         }
