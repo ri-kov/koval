@@ -57,6 +57,10 @@ const monthNames = [
 let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDate();
 firstDayOfMonth = (firstDayOfMonth + 6) % 7;
 const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+const timeButtons = document.querySelectorAll(".time_btn");
+const selectedRepairTime = document.getElementById("selectedRepairTime");
+let  selectedTime = null;
+const hour = Number(button.dataset.hour);
 
 for (let empty = 0; empty < firstDayOfMonth; empty++) {
     const emptyDay = document.createElement("div");
@@ -71,26 +75,6 @@ for (let day = 1; day <= daysInMonth; day++) {
     calendarDays.appendChild(dayButton);
 }
 
-nextMonthBtn.addEventListener("click", () => {
-    currentMonth++;
-    if (currentMonth > 11) {
-        currentMonth = 0;
-        currentYear++
-    }
-
-    renderCalendar();
-});
-
-prevMonthBtn.addEventListener("click", () => {
-    currentMonth--;
-    if(currentMonth < 0) {
-        currentMonth = 11;
-        currentYear--;
-    }
-
-    renderCalendar();
-});
-
 function renderCalendar() {
     calendarDays.innerHTML = "";
     calendarMonth.textContent = monthNames[currentMonth] + " " + currentYear;
@@ -98,9 +82,6 @@ function renderCalendar() {
     let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
     firstDayOfMonth = (firstDayOfMonth + 6) % 7;
     const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-    const timeButtons = document.querySelectorAll(".time_btn");
-    const selectedRepairTime = document.getElementById("selectedRepairTime");
-    let  selectedTime = null;
 
     for (let empty = 0; empty < firstDayOfMonth; empty++) {
         const emptyDay = document.createElement("div");
@@ -127,7 +108,7 @@ function renderCalendar() {
             dayButton.classList.add("selected");
         }
 
-
+//!!!!DAY EVENT
         dayButton.addEventListener("click", () => {
             selectedDate = new Date(currentYear, currentMonth, day);
 
@@ -141,10 +122,52 @@ function renderCalendar() {
             timeButtons.forEach((button) => {
                 button.classList.remove("disabled");
             });
+            updateAvailableTimes();
         });
         calendarDays.appendChild(dayButton);
     }
 }
+
+function updateAvailableTimes() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const now = new Date();
+    const isToday = selectedDate && selectedDate.toDateString() == today.toDateString();
+    timeButtons.forEach((button) => {
+        const buttonHour = Number(button.dataset.hour);
+        button.classList.remove("disabled");
+
+        if (isToday && buttonHour <= now.getHours()) {
+            button.classList.add("disabled");
+            button.classList.remove("disabled");
+            
+            if (selectedTime === button.textContent) {
+                selectedTime = null;
+                selectedRepairTime.value = "";
+            }
+        }
+    });
+}
+
+nextMonthBtn.addEventListener("click", () => {
+    currentMonth++;
+    if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++
+    }
+
+    renderCalendar();
+});
+
+prevMonthBtn.addEventListener("click", () => {
+    currentMonth--;
+    if(currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+    }
+
+    renderCalendar();
+});
 
 renderCalendar();
 
