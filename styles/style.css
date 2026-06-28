@@ -426,3 +426,25 @@ body {
     opacity: 0.7;
     font-weight: 500;
 }
+
+.mod_buttons {
+    display: flex;
+    justify-content: right;
+}
+
+.mod_cancel {
+    background-color: #ffffff;
+    color: #1F71CE;
+    border: 3px solid #1F71CE30;
+    height: 2.5rem;
+    width: 7rem;
+}
+
+.mod_req {
+    margin-left: 0.8rem;
+    border: 3px solid #1F71CE;
+    background-color: #1F71CE;
+    color: white;
+    height: 2.5rem;
+    width: 11rem;
+}
