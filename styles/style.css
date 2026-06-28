@@ -388,4 +388,17 @@ body {
     width: 100%;
     margin-top: 1.5rem;
     border-radius: 8px;
+    display: flex;
+}
+
+.av_icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin:1rem 0.5rem 0 0.5rem;
+}
+
+.av_text {
+    font-size: 0.9rem;
+    font-weight: 550;
+    margin-top: 1rem;
 }
