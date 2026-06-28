@@ -909,7 +909,7 @@
     resize: none;
 }
 
-.mod_add:placeholder {
+.mod_add::placeholder {
     position: fixed;
     font-weight: 550;
     font-size: 0.9rem;
