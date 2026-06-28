@@ -131,3 +131,134 @@ body {
     border-top: 2px solid rgba(255, 255, 255);
     margin-top: 2rem;
 }
+
+/*Mod*/
+.rep_mod_circ {
+    height: 5rem !important;
+    width: 5rem !important;
+    display: flex;
+    justify-content: center;
+}
+
+.rep_mod_close {
+    opacity: 0.8;
+    cursor: pointer;
+    position: sticky;
+    left: 68rem;
+    font-size: 1.3rem;
+}
+
+.mod_form::placeholder {
+    position: fixed;
+    left: 57px;
+    font-weight: 550;
+    font-size: 0.9rem;
+}
+
+.mod_inp input {
+    width: 20rem;
+    padding-left: 57px;
+    padding-right: 10px !important;
+}
+
+.mod_select_trigger{
+  width: 20rem;
+  height: 3.2rem;
+  padding: 0 1rem;
+  border: 1.5px solid #d7dfeb;
+  border-radius: var(--bs-border-radius);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #424242de;
+  cursor: pointer;
+}
+
+.mod_emj_wrench {
+  color: var(--bs-modal-color);
+  opacity: 0.6;
+}
+
+.mod_emoji {
+  position: sticky;
+  left: 50rem;
+  top: 90.1%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.mod_custom_select.exp .mod_select_trigger {
+  border-color: #1F71CE;
+  box-shadow: 0 0 0 4px rgba(31, 113, 206, 0.12);
+}
+
+.mod_select_options {
+  top: calc(100% + 0.4rem);
+  background: #fff;
+  border: 1.5px solid #1F71CE;
+  border-radius: 0.55rem;
+  box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.12);
+  list-style: none;
+  padding: 0.4rem;
+  margin: 0;
+  display: none;
+  width: 20rem;
+  z-index: 50;
+  position: absolute;
+}
+
+.mod_custom_select.exp .mod_select_options {
+  display: block;
+}
+
+.mod_select_options li {
+  padding: 0.3rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: #1f2937;
+}
+
+.mod_select_options li:hover,
+.mod_select_options li.selected {
+  background: #1F71CE;
+  color: #fff;
+}
+
+.mod_custom_select.exp .mod_emoji_down {
+    opacity: 0;
+}
+
+.mod_custom_select .mod_emoji_up {
+    opacity: 0;
+}
+
+.mod_custom_select .mod_emoji_down {
+    opacity: 1;
+}
+
+.mod_custom_select.exp .mod_emoji_up {
+    opacity: 1;
+}
+
+.mod_note {
+    opacity: 0.7;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.mod_add {
+    height: 5rem !important;
+    padding-left: 10px !important;
+    left: 0px !important;
+    position: relative !important;
+    resize: none;
+}
+
+.mod_add::placeholder {
+    position: fixed;
+    font-weight: 550;
+    font-size: 0.9rem;
+}
