@@ -173,6 +173,10 @@ renderCalendar();
 
 timeButtons.forEach((button) => {
     button.addEventListener("click", () => {
+        if (button.classList.contains("disabled")) {
+            return;
+        }
+
         selectedTime = button.textContent;
         timeButtons.forEach((button) => {
             timeButton.classList.remove("selected");
