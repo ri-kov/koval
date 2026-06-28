@@ -368,3 +368,19 @@ body {
     cursor: not-allowed;
     pointer-events: none;
 }
+
+.preferred_time {
+    margin: 1rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.mod_divider {
+    width: 0.043rem;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+    height: 41rem;
+    margin-left: 2.7rem;
+    background-color: rgba(98, 98, 98, 0.33);
+    display: flex;
+}
