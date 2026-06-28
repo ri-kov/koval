@@ -405,8 +405,8 @@ body {
 
 .btm_mod_divider {
     height: 0.043rem;
+    width: 49.9rem !important;
     background-color: rgba(98, 98, 98, 0.33);
-    margin-top: 1rem !important;
 }
 
 .mod_btm_icon {
