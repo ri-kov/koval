@@ -55,11 +55,59 @@ const monthNames = [
 
 calendarMonth.textContent = monthNames[currentMonth] + " " + currentYear;
 
+let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDate();
+firstDayOfMonth = (firstDayOfMonth + 6) % 7;
 const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+for (let empty = 0; empty < firstDayOfMonth; empty++) {
+    const emptyDay = document.createElement("div");
+    emptyDay.classList.add(empty_day);
+    calendarDays.appendChild(emptyDay);
+}
 
 for (let day = 1; day <= daysInMonth; day++) {
     const dayButton = document.createElement("button");
     dayButton.classList.add("calendar_day");
     dayButton.textContent = day;
     calendarDays.appendChild(dayButton);
+}
+
+nextMonthBtn.addEventListener("click", () => {
+    currentMonth++;
+    if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++
+    }
+
+    renderCalendar();
+});
+
+prevMonthBtn.addEventListener("click", () => {
+    currentMonth--;
+    if(currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+    }
+
+    renderCalendar();
+});
+
+function renderCalendar() {
+    calendarDays.innerHTML = "";
+    calendarMonth.textContent = monthNames[currentMonth] + " " + currentYear;
+
+    let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
+    firstDayOfMonth = (firstDayOfMonth + 6) % 7;
+
+    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+    for (let empty = 0; empty < firstDayOfMonth; empty++) {
+        const emptyDay = document.createElement("div");
+        emptyDay.classList.add("empty_day");
+        calendarDays.appendChild(dayButton);
+    }
+
+    for (let day = 1; dat <= daysInMonth; day++) {
+        const dayButton = document.createElement
+    }
 }
