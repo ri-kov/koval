@@ -906,6 +906,7 @@
     padding-left: 10px !important;
     left: 0px !important;
     position: relative !important;
+    resize: none;
 }
 
 .mod_add:placeholder {
