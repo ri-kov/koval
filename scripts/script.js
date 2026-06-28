@@ -140,3 +140,18 @@ function renderCalendar() {
 }
 
 renderCalendar();
+
+const timeButtons = document.querySelectorAll(".time_btn");
+const selectedRepairTime = document.getElementById("selectedRepairTime");
+let  selectedTime = null;
+
+timeButtons.forEach((button) => {
+    button.addEventListener("click", () =>{
+        selectedTime = button.textContent;
+        timeButtons.forEach((timeButton) => {
+            timeButton.classList.remove("selected");
+        });
+        button.classList.add("selected");
+        selectedRepairTime.value = selectedTime;
+    });
+});
