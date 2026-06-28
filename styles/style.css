@@ -434,22 +434,20 @@ body {
 }
 
 .mod_btm_cal {
-    width: 2rem;
-    height: 2rem;
-    margin-left: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .mod_cancel {
     background-color: #ffffff;
     color: #000000;
-    border: 3px solid #00000030;
+    border: 1.5px solid #00000030;
     height: 2.5rem;
     width: 9rem;
-    display: flex;
-    justify-content: center;
     text-align: center;
     border-radius: 5px;
     font-size: 0.9rem;
+    font-weight: 650;
 }
 
 .mod_req {
@@ -458,10 +456,10 @@ body {
     background-color: #1F71CE;
     color: white;
     height: 2.5rem;
-    width: 13rem;
-    display: flex;
-    justify-content: center;
+    width: 15rem;
     text-align: center;
     border-radius: 5px;
     font-size: 0.9rem;
+    font-weight: 550;
+    display: flex;
 }
