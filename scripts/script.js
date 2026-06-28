@@ -33,3 +33,33 @@ const calendarMonth = document.getElementById("calendarMonth");
 const calendarDays = document.getElementById("calendarDays");
 const prevMonthBtn = document.getElementById("prevMonth");
 const nextMonthBtn = document.getElementById("nextMonth");
+
+let currentDate = new Date();
+let currentMonth = currentDate.getMonth();
+let currentYear = currentDate.getFullYear();
+
+const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+];
+
+calendarMonth.textContent = monthNames[currentMonth] + " " + currentYear;
+
+const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+for (let day = 1; day <= daysInMonth; day++) {
+    const dayButton = document.createElement("button");
+    dayButton.classList.add("calendar_day");
+    dayButton.textContent = day;
+    calendarDays.appendChild(dayButton);
+}
