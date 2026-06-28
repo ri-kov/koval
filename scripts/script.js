@@ -111,6 +111,13 @@ function renderCalendar() {
         dayButton.addEventListener("click", () => {
             selectedDate = new Date(currentYear, currentMonth, day);
 
+            selectedTime = null;
+            selectedRepairTime.value = "";
+
+            timeButtons.forEach((button) => {
+                button.classList.remove("selected");
+            });
+
             document.querySelectorAll(".calendar_day").forEach((button) => {
                 button.classList.remove("selected");
             });
