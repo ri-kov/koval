@@ -60,7 +60,6 @@ const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
 const timeButtons = document.querySelectorAll(".time_btn");
 const selectedRepairTime = document.getElementById("selectedRepairTime");
 let  selectedTime = null;
-const hour = Number(button.dataset.hour);
 
 for (let empty = 0; empty < firstDayOfMonth; empty++) {
     const emptyDay = document.createElement("div");
@@ -133,6 +132,7 @@ function updateAvailableTimes() {
     today.setHours(0, 0, 0, 0);
     const now = new Date();
     const isToday = selectedDate && selectedDate.toDateString() == today.toDateString();
+    const hour = Number(button.dataset.hour);
     timeButtons.forEach((button) => {
         const buttonHour = Number(button.dataset.hour);
         button.classList.remove("disabled");
@@ -169,6 +169,10 @@ prevMonthBtn.addEventListener("click", () => {
     renderCalendar();
 });
 
+timeButtons.forEach((button) => {
+    button.classList.add("disabled");
+});
+
 renderCalendar();
 
 timeButtons.forEach((button) => {
@@ -177,21 +181,6 @@ timeButtons.forEach((button) => {
             return;
         }
 
-        selectedTime = button.textContent;
-        timeButtons.forEach((button) => {
-            timeButton.classList.remove("selected");
-        });
-        button.classList.add("selected");
-        selectedRepairTime.value = selectedTime;
-    });
-});
-
-timeButtons.forEach((button) => {
-    button.classList.add("disabled");
-});
-
-timeButtons.forEach((button) => {
-    button.addEventListener("click", () =>{
         selectedTime = button.textContent;
         timeButtons.forEach((timeButton) => {
             timeButton.classList.remove("selected");
