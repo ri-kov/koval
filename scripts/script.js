@@ -120,6 +120,10 @@ function renderCalendar() {
             dayButton.disabled = true;
         }
 
+        if (selectedDate && buttonDate.toDateString() === selectedDate.toDateString()) {
+            dayButton.classList.add("selected");
+        }
+
 
         dayButton.addEventListener("click", () => {
             selectedDate = new Date(currentYear, currentMonth, day);
