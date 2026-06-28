@@ -342,8 +342,8 @@ body {
 .time_options {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem;
-    max-height: 8.5rem;
+    gap: 0.6rem;
+    max-height: 11rem;
     overflow-y: auto;
     padding-right: 0.25rem;
 }
@@ -370,17 +370,22 @@ body {
 }
 
 .preferred_time {
-    margin: 1rem 0 1rem 0;
+    margin: 1.25rem 0 1rem 0;
     font-weight: 600;
 }
 
 .mod_divider {
     width: 0.043rem;
-    padding-right: 0;
-    padding-left: 0;
-    margin-top: 0;
     height: 41rem;
     margin-left: 2.7rem;
     background-color: rgba(98, 98, 98, 0.33);
     display: flex;
+}
+
+.confirm_availability {
+    background-color: #1F71CE40;
+    height: 4.5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 8px;
 }
