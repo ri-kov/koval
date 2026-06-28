@@ -37,6 +37,7 @@ const nextMonthBtn = document.getElementById("nextMonth");
 let currentDate = new Date();
 let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
+let selectedDate = null;
 
 const monthNames = [
     "January",
@@ -52,8 +53,6 @@ const monthNames = [
     "November",
     "December"
 ];
-
-calendarMonth.textContent = monthNames[currentMonth] + " " + currentYear;
 
 let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDate();
 firstDayOfMonth = (firstDayOfMonth + 6) % 7;
@@ -98,7 +97,6 @@ function renderCalendar() {
 
     let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
     firstDayOfMonth = (firstDayOfMonth + 6) % 7;
-
     const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
 
     for (let empty = 0; empty < firstDayOfMonth; empty++) {
@@ -108,6 +106,11 @@ function renderCalendar() {
     }
 
     for (let day = 1; dat <= daysInMonth; day++) {
-        const dayButton = document.createElement
+        const dayButton = document.createElement("button");
+        dayButton.classList.add("calendar_day");
+        dayButton.textContent = day;
+        calendarDays.appendChild(dayButton);
     }
 }
+
+renderCalendar();
