@@ -109,6 +109,28 @@ function renderCalendar() {
         const dayButton = document.createElement("button");
         dayButton.classList.add("calendar_day");
         dayButton.textContent = day;
+
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        const buttonDate = new Date(currentYear, currentMonth, day);
+
+        if (buttonDate < today) {
+            dayButton.classList.add("disabled");
+            dayButton.disabled = true;
+        }
+
+
+        dayButton.addEventListener("click", () => {
+            selectedDate = new Date(currentYear, currentMonth, day);
+
+            document.querySelectorAll(".calendar_day").forEach((button) => {
+                button.classList.remove("selected");
+            });
+            
+            dayButton.classList.add("selected");
+            document.getElementById("selectedRepairDate").value = selectedDate.toISOString().split("T")[0];
+        });
         calendarDays.appendChild(dayButton);
     }
 }
