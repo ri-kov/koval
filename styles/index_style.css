@@ -840,10 +840,11 @@
 .choose_circ {
     width: 5.5rem;
     height: 5.5rem;
-    background-color: #001f4115;
+    background-color: #001f4112;
     display: flex;
     justify-content: center;
     border-radius: 50px;
+    align-self: center;
 }
 
 .choose_pic {
@@ -854,21 +855,23 @@
 
 .choose_card_head {
     margin-top: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
 .choose_card_divider {
     background-color: #1F71CE;
-    height: 0.1rem;
+    height: 0.15rem;
     width: 2rem;
     border-radius: 8px;
-    margin: 1.5rem 0 1.5rem 0;
+    margin: 1rem 0 1rem 0;
+    align-self: center;
 }
 
 .choose_card_txt {
     font-size: 1rem;
     font-weight: 450;
+    opacity: 0.9;
 }
 
 
