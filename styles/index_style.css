@@ -879,7 +879,7 @@
     margin: 3rem 0 5rem 0rem;
     border-radius: 8px;
     height: 7.3rem;
-    width: 83rem;
+    width: 85rem;
     background-color: #001f4112;
     border: 2px solid #1F71CE15;
     display: flex;
@@ -894,7 +894,7 @@
     width: 8rem;
     position: relative;
     bottom: 1rem;
-    right: 3.5rem;
+    right: 2.5rem;
 }
 
 .choose_footer_head {
@@ -911,7 +911,7 @@
 
 .choose_btn {
     height: 3.5rem;
-    width: 11.5rem;
+    width: 12.5rem;
     border: 2px solid #1F71CE;
     border-radius: 5px;
     display: flex;
@@ -921,6 +921,7 @@
     font-weight: 600;
     position: relative;
     top: 2rem;
+    cursor: pointer;
 }
 
 .choose_sell_btn {
