@@ -451,9 +451,16 @@ body {
     font-weight: 650;
 }
 
+.mod_cancel:hover {
+    background-color: #1F71CE;
+    border: 1.5px solid #1F71CE;
+    color: white;
+    transition: 0.3s ease;
+}
+
 .mod_req {
     margin-left: 0.8rem;
-    border: 3px solid #1F71CE;
+    border: 1.5px solid #1F71CE;
     background-color: #1F71CE;
     color: white;
     height: 3rem;
@@ -463,4 +470,11 @@ body {
     font-size: 0.9rem;
     font-weight: 550;
     display: flex;
+}
+
+.mod_req:hover {
+    background-color: #ffffff;
+    border: 1.5px solid #00000030;
+    color: #000000;
+    transition: 0.3s ease;
 }
