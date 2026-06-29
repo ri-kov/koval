@@ -831,14 +831,45 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.choose_circ {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: #001f4115;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
 }
 
 .choose_pic {
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-top: 0.2rem;
 }
 
+.choose_card_head {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
+.choose_card_divider {
+    background-color: #1F71CE;
+    height: 0.1rem;
+    width: 2rem;
+    border-radius: 8px;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.choose_card_txt {
+    font-size: 1rem;
+    font-weight: 450;
+}
 
 
 
