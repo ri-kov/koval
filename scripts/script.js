@@ -62,18 +62,19 @@ const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
 const timeButtons = document.querySelectorAll(".time_btn");
 let  selectedTime = null;
 
-for (let empty = 0; empty < firstDayOfMonth; empty++) {
-    const emptyDay = document.createElement("div");
-    emptyDay.classList.add(empty_day);
-    calendarDays.appendChild(emptyDay);
-}
+//for (let empty = 0; empty < firstDayOfMonth; empty++) {
+//    const emptyDay = document.createElement("div");
+//    emptyDay.classList.add(empty_day);
+//    calendarDays.appendChild(emptyDay);
+//}
 
-for (let day = 1; day <= daysInMonth; day++) {
-    const dayButton = document.createElement("button");
-    dayButton.classList.add("calendar_day");
-    dayButton.textContent = day;
-    calendarDays.appendChild(dayButton);
-}
+//for (let day = 1; day <= daysInMonth; day++) {
+//    const dayButton = document.createElement("button");
+//    dayButton.type = "button";
+//    dayButton.classList.add("calendar_day");
+//    dayButton.textContent = day;
+//    calendarDays.appendChild(dayButton);
+//}
 
 function renderCalendar() {
     calendarDays.innerHTML = "";
@@ -91,6 +92,7 @@ function renderCalendar() {
 
     for (let day = 1; day <= daysInMonth; day++) {
         const dayButton = document.createElement("button");
+        dayButton.type = "button";
         dayButton.classList.add("calendar_day");
         dayButton.textContent = day;
 
@@ -202,8 +204,8 @@ function resetRepairBooking () {
     selectedDate = null;
     selectedTime = null;
     
-    selectedRepairDate = "";
-    selectedRepairTime = "";
+    selectedRepairDate.value = "";
+    selectedRepairTime.value = "";
 
     document.querySelectorAll(".calendar_day").forEach((button) => {
         button.classList.remove("selected");
@@ -219,12 +221,7 @@ function resetRepairBooking () {
 }
 
 const modCancel = document.getElementById("modCancel");
-const modSubmit = document.getElementById("modSubmit");
 
 modCancel.addEventListener("click", () => {
-    resetRepairBooking();
-});
-
-modSubmit.addEventListener("click", () => {
     resetRepairBooking();
 });
