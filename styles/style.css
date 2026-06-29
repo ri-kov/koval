@@ -144,7 +144,7 @@ body {
     opacity: 0.8;
     cursor: pointer;
     position: sticky;
-    left: 68rem;
+    left: 67rem;
     font-size: 1.3rem;
 }
 
@@ -482,3 +482,5 @@ body {
     fill: #000000 !important;
     transition: 0.3s ease;
 }
+
+/*mod end*/
