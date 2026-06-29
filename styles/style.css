@@ -434,9 +434,8 @@ body {
 }
 
 .mod_btm_cal {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-left: 0.2rem;
+    width: 2rem;
+    margin: -0.15rem 0.4rem 0 0.45rem;
 }
 
 .mod_cancel {
