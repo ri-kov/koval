@@ -35,6 +35,7 @@ const prevMonthBtn = document.getElementById("prevMonth");
 const nextMonthBtn = document.getElementById("nextMonth");
 const selectedRepairDate = document.getElementById("selectedRepairDate");
 const selectedRepairTime = document.getElementById("selectedRepairTime");
+const repairForm = document.getElementById("repairForm");
 
 let currentDate = new Date();
 let currentMonth = currentDate.getMonth();

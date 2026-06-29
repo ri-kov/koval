@@ -192,7 +192,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-#quickCard {
+.quick_card {
     color: #1F71CE;
     font-weight: 800;
     font-size: 1.05rem;
@@ -784,6 +784,16 @@
     font-size: 0.95rem;
     margin-left: 2rem;
 }
+
+.sect_5 {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    margin-top: 2rem;
+}
+
+
+
+
 
 
 
