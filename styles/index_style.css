@@ -785,12 +785,44 @@
     margin-left: 2rem;
 }
 
+#emptyDiv {
+    height: 1rem;
+}
+
 .sect_5 {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
+.choose_card {
+    color: #1F71CE;
+    font-weight: 700;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.choose_head {
+    font-size: 3rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+
+.choose_dot {
+    color: #1F71CE;
+    margin-right: 0.6rem;
+}
+
+.choose_text {
+    font-size: 1.1rem;
+    font-weight: 450;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
 
 
