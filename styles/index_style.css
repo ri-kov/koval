@@ -928,6 +928,7 @@
     background-color: white;
     color: #1F71CE;
     margin-left: 0.5rem;
+    font-weight: 680 !important;
 }
 
 .choose_browse_btn {
