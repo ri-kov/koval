@@ -884,10 +884,27 @@
     border: 2px solid #1F71CE15;
     display: flex;
     justify-self: center;
+    justify-content: center;
     align-self: center; 
     margin-top: 3rem;
 }
 
+.choose_car_icon {
+    height: 5rem;
+    width: 5rem;
+}
+
+.choose_footer_head {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem !important;
+}
+
+.choose_footer_txt {
+    font-weight: 450;
+    font-size: 1rem;
+    opacity: 0.9;
+}
 
 
 
