@@ -33,6 +33,8 @@ const calendarMonth = document.getElementById("calendarMonth");
 const calendarDays = document.getElementById("calendarDays");
 const prevMonthBtn = document.getElementById("prevMonth");
 const nextMonthBtn = document.getElementById("nextMonth");
+const selectedRepairDate = document.getElementById("selectedRepairDate");
+const selectedRepairTime = document.getElementById("selectedRepairTime");
 
 let currentDate = new Date();
 let currentMonth = currentDate.getMonth();
@@ -196,3 +198,9 @@ timeButtons.forEach((button) => {
         selectedRepairTime.value = selectedTime;
     });
 });
+
+function resetRepairBooking () {
+    selectedDate = null;
+    selectedTime = null;
+    
+}
