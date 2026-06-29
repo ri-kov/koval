@@ -906,6 +906,22 @@
     opacity: 0.9;
 }
 
+.choose_btn {
+    height: 3rem;
+    width: 8rem;
+    border: 2px solid #1F71CE;
+}
+
+.choose_sell_btn {
+    background-color: white;
+    color: #1F71CE;
+}
+
+.choose_browse_btn {
+    background-color: #1F71CE;
+    color: white;
+}
+
 
 
 
