@@ -60,7 +60,6 @@ let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDate();
 firstDayOfMonth = (firstDayOfMonth + 6) % 7;
 const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
 const timeButtons = document.querySelectorAll(".time_btn");
-const selectedRepairTime = document.getElementById("selectedRepairTime");
 let  selectedTime = null;
 
 for (let empty = 0; empty < firstDayOfMonth; empty++) {
@@ -125,7 +124,7 @@ function renderCalendar() {
             });
             
             dayButton.classList.add("selected");
-            document.getElementById("selectedRepairDate").value = selectedDate.toISOString().split("T")[0];
+            selectedRepairDate.value = selectedDate.toISOString().split("T")[0];
 
             timeButtons.forEach((button) => {
                 button.classList.remove("disabled");
@@ -203,4 +202,29 @@ function resetRepairBooking () {
     selectedDate = null;
     selectedTime = null;
     
+    selectedRepairDate = "";
+    selectedRepairTime = "";
+
+    document.querySelectorAll(".calendar_day").forEach((button) => {
+        button.classList.remove("selected");
+    });
+
+    timeButtons.forEach((button) => {
+        button.classList.remove("selected");
+        button.classList.add("disabled");
+    });
+
+    repairForm.reset();
+    renderCalendar();
 }
+
+const modCancel = document.getElementById("modCancel");
+const modSubmit = document.getElementById("modSubmit");
+
+modCancel.addEventListener("click", () => {
+    resetRepairBooking();
+});
+
+modSubmit.addEventListener("click", () => {
+    resetRepairBooking();
+});
