@@ -961,18 +961,18 @@
     transition: 0.3s ease;
 }
 
-#chooseBtn1:hover .chooseImg1 {
-    fill: #1F71CE;
+#chooseBtn1:hover .choose_img1 {
+    fill: #1F71CE !important;
     transition: 0.3s ease;
 }
 
-#chooseBtn2:hover .chooseImg2 {
-    fill: #ffffff;
+#chooseBtn2:hover .choose_img2 {
+    fill: #ffffff !important;
     transition: 0.3s ease;
 }
 
-#chooseBtn3:hover .chooseImg3 {
-    fill: #ffffff;
+#chooseBtn3:hover .choose_img3 {
+    fill: #ffffff !important;
     transition: 0.3s ease;
 }
 
