@@ -943,6 +943,33 @@
     margin-left: 0.1rem;
 }
 
+#chooseBtn1:hover {
+    background-color: white;
+    color: #1F71CE;
+    transition: 0.3s ease;
+}
+
+#chooseBtn2:hover {
+    background-color: #1F71CE;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#chooseBtn3:hover {
+    background-color: #1F71CE;
+    color: white;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
