@@ -961,6 +961,20 @@
     transition: 0.3s ease;
 }
 
+#chooseBtn1:hover .chooseImg1 {
+    fill: #1F71CE;
+    transition: 0.3s ease;
+}
+
+#chooseBtn2:hover .chooseImg2 {
+    fill: #ffffff;
+    transition: 0.3s ease;
+}
+
+#chooseBtn3:hover .chooseImg3 {
+    fill: #ffffff;
+    transition: 0.3s ease;
+}
 
 
 
