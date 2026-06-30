@@ -1012,6 +1012,24 @@
     justify-content: center;
 }
 
+.works_step_num {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #1F71CE;
+    color: white;
+    font-size: 1.5rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.break_div {
+    height: 4rem;
+    border-left: 2px dashed #1F71CE;
+}
+
 
 
 
