@@ -990,6 +990,17 @@
     width: 6rem;
 }
 
+.works_head {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 650;
+}
+
+.works_txt {
+    font-size: 0.9rem;
+    font-weight: 450;
+    opacity: 0.9;
+}
 
 
 
