@@ -1069,39 +1069,6 @@
     transition: 0.3s ease;
 }
 
-.works_foot_head {
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
-.works_foot_btn {
-    cursor: pointer;
-    border: 3px solid #1F71CE;
-    width: 13rem;
-    height: 3.2rem;
-    background-color: #1F71CE;
-    color: white;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top: 1rem;
-    text-decoration: none;
-}
-
-.works_foot_btn:hover {
-    background-color: white;
-    color: #1F71CE;
-    transition: 0.3s ease;
-}
-
-.works_foot_btn:hover i {
-    color: #1F71CE !important;
-    transition: 0.3s ease;
-}
-
 
 
 
