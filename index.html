@@ -20,11 +20,11 @@
             <a class = "link home" href="index.html">Home</a>
             <a class = "link">Inventory</a>
             <a class = "link" href = "#sellForm">Sell Your Car</a>
-            <a class = "link">Repair Services</a>
+            <a href="#bookRepairModal" data-bs-toggle="modal" class = "link">Repair Services</a>
             <a class = "link">About Us</a>
             <a class = "link">Contact</a>
             <a class = "phone_num"><i class="fa-solid fa-phone" style="color: #1F71CE;"></i> (204) 999-9999</a>
-            <a class = "head_btn">Book Repair</a>
+            <a href="#bookRepairModal" data-bs-toggle="modal" class = "head_btn">Book Repair</a>
         </div>
         <div class="container mt-5">
             <div class = "row">
@@ -45,7 +45,7 @@
                             </span>
                         </div>
                     </a>
-                    <a data-bs-toggle="modal" data-bs-target="#quoteModal" type="button" class = "btn-primary align-items-center options opt2">
+                    <a href = "#sellForm" type="button" class = "btn-primary align-items-center options opt2">
                         <div style = "display: flex;"><img src="pictures/tagPic.svg" alt="car-logo-1" class = "car_logo1" style = "margin-top: -6px;">
                             <span class = "font_set">
                                 <p class = "brw">Sell Your Car</p>
@@ -53,7 +53,7 @@
                             </span>
                         </div>
                     </a>
-                    <a type="button" class = "btn-primary align-items-center options opt3">
+                    <a  href="#bookRepairModal" data-bs-toggle="modal" type="button" class = "btn-primary align-items-center options opt3">
                         <div style = "display: flex;"><img src="pictures/wrenchPic.svg" alt="car-logo-1" class = "car_logo1"  style = "margin-top: -3px;">
                             <span class = "font_set">
                                 <p class = "brw" style = "color: #1F71CE !important;">Book Repair</p>
@@ -713,7 +713,7 @@
                         <p class = "works_st_txt"  style = "margin-bottom: 2.5rem;">Accept our offer and get paid<br>quickly and securely.</p>
                     </div>
                 </div>
-                <a class = "works_view_btn repair_card_learn">Get a Free Quote <i class="fa-solid fa-arrow-right-long" style="color: #1f71ce; margin-left: 0.5rem;"></i></a>
+                <a href="#sellForm" class = "works_view_btn repair_card_learn">Get a Free Quote <i class="fa-solid fa-arrow-right-long" style="color: #1f71ce; margin-left: 0.5rem;"></i></a>
             </div>
             <div class = "works_divider"></div>
             <div class = "works_card" style = "width: 25rem;">
@@ -743,7 +743,7 @@
                         <p class = "works_st_txt" style = "margin-bottom: 2.5rem;">We'll take care of your car and get you back on the road.</p>
                     </div>
                 </div>
-                <a class = "works_view_btn repair_card_learn">Book an Appointment<i class="fa-solid fa-arrow-right-long" style="color: #1f71ce; margin-left: 0.5rem;"></i></a>
+                <a href="#bookRepairModal" data-bs-toggle="modal" class = "works_view_btn repair_card_learn">Book an Appointment<i class="fa-solid fa-arrow-right-long" style="color: #1f71ce; margin-left: 0.5rem;"></i></a>
             </div>
         </div>    
     </section>
