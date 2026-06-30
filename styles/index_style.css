@@ -1006,9 +1006,10 @@
 
 .works_card {
     display: block;
+    background-color: #1F71CE12;
     height: 27rem;
     width: 21rem;
-    margin-left: 4rem;
+    margin-left: 3rem;
 }
 
 .works_step_num {
@@ -1042,6 +1043,14 @@
     font-size: 0.9rem;
     font-weight: 450;
     opacity: 0.9;
+}
+
+.works_divider {
+    width: 0.043rem;
+    height: 30rem;
+    background-color: rgba(98, 98, 98, 0.33);
+    display: flex;
+    margin: -1.5rem 0 0 3rem;
 }
 
 
