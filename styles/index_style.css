@@ -983,7 +983,7 @@
     background-color: #001f4112;
     display: flex;
     justify-content: center;
-    margin-top: 1.5rem;
+    margin: 1.6rem;
 }
 
 .works_icons {
@@ -1005,11 +1005,10 @@
 }
 
 .works_card {
-    display: flex;
+    display: block;
     background-color: #1F71CE12;
     height: 27rem;
     width: 21rem;
-    justify-content: center;
 }
 
 .works_step_num {
@@ -1024,11 +1023,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 2.8rem;
 }
 
 .break_div {
     height: 4rem;
     border-left: 2px dashed #1F71CE;
+    margin-left: 3.95rem;
 }
 
 
