@@ -1032,6 +1032,17 @@
     margin-left: 3.95rem;
 }
 
+.works_st_head {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem !important;
+}
+
+.works_st_txt {
+    font-size: 0.9rem;
+    font-weight: 450;
+    opacity: 0.9;
+}
 
 
 
