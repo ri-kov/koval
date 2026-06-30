@@ -976,6 +976,20 @@
     transition: 0.3s ease;
 }
 
+.works_square {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 20px;
+    background-color: #001f4112;
+    display: flex;
+    justify-content: center;
+}
+
+.works_icons {
+    height: 6rem;
+    width: 6rem;
+}
+
 
 
 
