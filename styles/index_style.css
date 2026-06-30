@@ -1053,15 +1053,14 @@
 }
 
 .works_view_btn {
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-left: 7.3rem;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    margin-left: 7.3rem !important;
     color: #1F71CE !important;
 }
 
 .works_view_btn:hover {
-   color: #154f91 !important;
+    color: #154f91 !important;
     transition: 0.3s ease;
 }
 
@@ -1089,10 +1088,10 @@
 
 
 
-
 .cont_box3 {
     background-color: white;
     display: flex;
+    margin-top: 5rem;
 }
 
 #worksImg1 {
