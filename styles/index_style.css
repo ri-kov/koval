@@ -1052,7 +1052,23 @@
     margin: -0.5rem 0 0 3rem;
 }
 
+.works_view_btn {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 7.3rem;
+    color: #1F71CE !important;
+}
 
+.works_view_btn:hover {
+   color: #154f91 !important;
+    transition: 0.3s ease;
+}
+
+.works_view_btn:hover i {
+    color: #154f91 !important;
+    transition: 0.3s ease;
+}
 
 
 
