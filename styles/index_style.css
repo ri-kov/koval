@@ -1070,14 +1070,20 @@
 }
 
 .faq_div {
-    height: 0.1rem;
-    width: 3rem;
-    color: #1F71CE;
+    height: 0.15rem;
+    width: 3.5rem;
+    margin: 0.4rem 0 1rem 0;
+    border-radius: 20px;
+    background-color: #1F71CE;
+    display: flex;
+    justify-self: center;
 }
 
 .faq_cont {
     text-decoration: none;
     color: #1F71CE !important;
+    margin: 0 0.4rem 0 0.4rem;
+    cursor: pointer;
 }
 
 .faq_cont:hover {
