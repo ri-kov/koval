@@ -1117,15 +1117,18 @@
 
 .accordion-button {
     font-weight: 600;
+    font-size: 1.1rem !important;
+    margin-top: 0.4rem;
 }
 
 .acc_pic_box {
-    height: 2.4rem;
-    width: 2.4rem;
-    border-radius: 6px;
+    height: 3.2rem;
+    width: 3.541rem;
+    border-radius: 8px;
     background-color: #001f4112;
     justify-content: center;
     display: flex;
+    margin: 0.5rem 0 0.4rem 1rem;
 }
 
 
