@@ -1162,6 +1162,18 @@
     color: #154f91 !important;
 }
 
+.acc_ins_c {
+    text-decoration: none;
+    color: #1F71CE !important;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.acc_ins_c:hover {
+    transition: 0.3s ease;
+    color: #154f91 !important;
+}
+
 
 
 
