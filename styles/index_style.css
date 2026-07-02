@@ -1069,23 +1069,6 @@
     transition: 0.3s ease;
 }
 
-.works_foot_circ {
-    background-color: #1F71CE;
-    display: flex;
-    justify-content: center;
-}
-
-.works_foot_head {
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-.works_foot_txt {
-    font-size: 0.9rem;
-    font-weight: 450;
-    opacity: 0.9;
-}
-
 
 
 
