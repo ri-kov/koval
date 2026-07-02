@@ -1102,6 +1102,11 @@
     display: none;
 }
 
+.faq_icon {
+    right: 1rem;
+    position: absolute;
+}
+
 
 
 
