@@ -1197,6 +1197,12 @@
     margin: 0.9rem 0 0 1rem;
 }
 
+.faq_arrow {
+    height: 20rem;
+    margin: -7rem 0 0 -2rem;
+    opacity: 0.5;
+}
+
 
 
 
