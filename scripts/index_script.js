@@ -378,3 +378,24 @@ repairBtmButton.addEventListener('mouseleave', () => {
     repairBtmButton.style.color = '#ffffff';
     repairBtmIcon.style.color = '#ffffff';
 });
+
+
+const faqItems = document.querySelectorAll(".accordion-collapse");
+
+faqItems.forEach((item) => {
+    item.addEventListener("show.bs.collapse", () => {
+        const button = document.querySelector(`[data-bs-target="#${item.id}"]`);
+        const icon = button.querySelector(".faq_icon");
+
+        icon.classList.remove("fa-plus");
+        icon.classList.add("fa-minus");
+    });
+
+    item.addEventListener("hide.bs.collapse", () => {
+        const button = document.querySelector(`[data-bs-target="#${item.id}"]`);
+        const icon = button.querySelector(".faq_icon");
+
+        icon.classList.remove("fa-minus");
+        icon.classList.add("fa-plus");
+    });
+});

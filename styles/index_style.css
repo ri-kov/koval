@@ -1098,6 +1098,9 @@
     justify-self: center;
 }
 
+.accordion-button::after {
+    display: none;
+}
 
 
 
