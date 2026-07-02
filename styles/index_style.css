@@ -1184,6 +1184,19 @@
     margin: 0.9rem 5rem 0 1rem;
 }
 
+.faq_foot_div {
+    height: 5.5rem;
+    width: 0.07rem;
+    margin: 0.7rem 0 1rem 2.3rem;
+    border-radius: 20px;
+    background-color: rgba(98, 98, 98, 0.2);;
+}
+
+.faq_foot_btn {
+    font-size: 1rem;
+    margin: 0.9rem 0 0 1rem;
+}
+
 
 
 
