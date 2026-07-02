@@ -1069,6 +1069,10 @@
     transition: 0.3s ease;
 }
 
+.works_foot_circ {
+    background-color: #1F71CE;
+}
+
 .works_foot_head {
     font-size: 1.1rem;
     font-weight: 700;
