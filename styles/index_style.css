@@ -1107,6 +1107,15 @@
     position: absolute;
 }
 
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+
 
 
 
