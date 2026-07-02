@@ -1069,6 +1069,29 @@
     transition: 0.3s ease;
 }
 
+.faq_div {
+    height: 0.1rem;
+    width: 3rem;
+    color: #1F71CE;
+}
+
+.faq_cont {
+    text-decoration: none;
+    color: #1F71CE !important;
+}
+
+.faq_cont:hover {
+    color: #154f91 !important;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
 
 
 
