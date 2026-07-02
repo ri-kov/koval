@@ -1091,6 +1091,13 @@
     transition: 0.3s ease;
 }
 
+.fa_questions {
+    width: 60rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
 
 
 
