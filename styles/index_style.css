@@ -1115,6 +1115,20 @@
     box-shadow: none !important;
 }
 
+.accordion-button {
+    font-weight: 600;
+}
+
+.acc_pic_box {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 20px;
+    background-color: #001f4112;
+    display: flex;
+    justify-content: center;
+    margin: 1.6rem;
+}
+
 
 
 
