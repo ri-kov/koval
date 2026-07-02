@@ -1072,6 +1072,7 @@
 .works_foot_circ {
     background-color: #1F71CE;
     display: flex;
+    justify-content: center;
 }
 
 .works_foot_head {
