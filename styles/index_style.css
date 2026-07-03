@@ -1213,15 +1213,15 @@
 }
 
 .about_picture {
-    height: 20rem;
-    width: 12rem;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
 
 .about_picture_sm {
-    height: 10rem;
-    width: 15rem;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
