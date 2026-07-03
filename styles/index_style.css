@@ -821,8 +821,6 @@
 .choose_text {
     font-size: 1.1rem;
     font-weight: 450;
-    display: flex;
-    justify-content: center;
     text-align: center;
 }
 
@@ -1082,7 +1080,6 @@
 .faq_cont {
     text-decoration: none;
     color: #1F71CE !important;
-    margin: 0 0.4rem 0 0.4rem;
     cursor: pointer;
 }
 
