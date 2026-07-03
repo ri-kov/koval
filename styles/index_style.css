@@ -1216,14 +1216,14 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .about_picture_sm {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 
