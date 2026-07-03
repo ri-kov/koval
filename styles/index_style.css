@@ -1212,6 +1212,19 @@
     margin: -0.06rem 0 0 0.01rem;
 }
 
+.about_picture {
+    height: 20rem;
+    width: 12rem;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.about_picture_sm {
+    height: 10rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 15px;
+}
 
 
 
