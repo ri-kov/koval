@@ -1217,6 +1217,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    margin-left: 5rem;
 }
 
 .about_picture_sm {
@@ -1224,6 +1225,11 @@
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+#chooseBtn1:hover i {
+    color: #1F71CE;
+    transition: 0.3s ease;
 }
 
 
