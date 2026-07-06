@@ -1255,6 +1255,12 @@
     margin: 0 1rem 0.5rem 1rem;
 }
 
+.about_footer {
+    border-radius: 12px;
+    border: 2px solid rgba(98, 98, 98, 0.33);
+    background-color: white;
+}
+
 
 
 
