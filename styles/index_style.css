@@ -1338,7 +1338,9 @@
 
 .form_send_msg {
     margin-top: 1.4rem !important;
-    font-size: larger;
+    height: 3.5rem;
+    width: 13rem;
+    font-size: 1.1rem !important;
 }
 
 
