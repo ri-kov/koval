@@ -1346,7 +1346,7 @@
 .footer_logo {
     width: 18rem;
     height: 7rem;
-    margin: 1.3rem 0 0 3rem;
+    margin-left: 3rem;
 }
 
 .footer {
@@ -1354,6 +1354,13 @@
     font-family: 'Montserrat', sans-serif;
     border-top: 2px solid #48484812;
     height: auto;
+}
+
+.foot_div {
+    width: 0.06rem;
+    height: 15rem;
+    border-right: 0.08rem solid #48484840;
+    margin: 1.3rem 3rem 0 3rem;
 }
 
 
