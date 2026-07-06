@@ -1268,6 +1268,7 @@
     color: #1F71CE;
     margin-bottom: 0rem !important;
     font-weight: 650;
+    margin-left: 1rem;
 }
 
 .about_foot_head {
@@ -1287,10 +1288,11 @@
     flex-direction: column;
     align-items: center;
     margin: 0.5rem 0 0.5rem 0rem;
+    text-align: center;
 }
 
 .about_div {
-    height: 6rem;
+    height: 7.5rem;
     width: 0.06rem;
     background-color:rgba(98, 98, 98, 0.25);
     margin: 1rem 2rem 0 2rem;
