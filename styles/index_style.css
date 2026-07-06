@@ -1232,18 +1232,20 @@
 }
 
 .about_note {
-    background-color: #ffffff50;
+    background-color: #ffffff90;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    position: absolute;
+    position: relative;
     border-radius: 12px;
+    bottom: 6rem;
+    justify-self: center;
+    width: 28rem;
 }
 
 .about_note_head {
     font-weight: 600;
-    font-size: 0.9rem;
     margin: 0.5rem 0 0.3rem 0;
 }
 
