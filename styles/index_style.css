@@ -1331,6 +1331,16 @@
     margin-left: 2rem;
 }
 
+#formMessage::placeholder {
+    font-size: 1rem;
+    font-weight: 450;
+}
+
+.form_send_msg {
+    margin-top: 1.4rem !important;
+    font-size: larger;
+}
+
 
 
 
