@@ -1257,17 +1257,37 @@
 
 .about_footer {
     border-radius: 12px;
-    border: 2px solid rgba(98, 98, 98, 0.33);
+    border: 1.5px solid rgba(98, 98, 98, 0.33);
     background-color: white;
     display: flex;
+    margin-top: 2rem;
 }
 
 .about_num {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #1F71CE;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem !important;
+    font-weight: 700;
 }
 
+.about_foot_head {
+    font-weight: 600;
+    margin-bottom: 0.2rem !important;
+    font-size: 1.2rem;
+}
+
+.about_foot_txt {
+    font-weight: 450;
+    font-size: 1.1rem;
+    margin-bottom: 0 !important;
+}
+
+.about_foot_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 0 0.5rem 3rem !important;
+}
 
 
 
