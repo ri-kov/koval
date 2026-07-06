@@ -1231,6 +1231,23 @@
     transition: 0.3s ease;
 }
 
+.about_note {
+    background-color: #1F71CE70;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.about_note_head {
+    font-weight: 600;
+}
+
+.about_note_txt {
+    font-weight: 500;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
 
 
 
