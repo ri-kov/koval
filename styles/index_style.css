@@ -1344,15 +1344,16 @@
 }
 
 .footer_logo {
-    width: 23rem;
-    height: 21rem;
-    margin-top: 2.5rem;
+    width: 18rem;
+    height: 7rem;
+    margin: 1.3rem 0 0 3rem;
 }
 
 .footer {
     background-color: #f1f1f1;
     font-family: 'Montserrat', sans-serif;
     border-top: 2px solid #48484812;
+    height: auto;
 }
 
 
