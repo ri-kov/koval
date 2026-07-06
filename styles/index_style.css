@@ -1261,6 +1261,7 @@
     background-color: white;
     display: flex;
     margin-top: 2rem;
+    width: max-content;
 }
 
 .about_num {
