@@ -1348,6 +1348,12 @@
     height: 17.78rem;
 }
 
+.footer {
+    background-color: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 2px solid #48484812;
+}
+
 
 
 
