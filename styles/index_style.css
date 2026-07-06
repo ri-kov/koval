@@ -1259,6 +1259,7 @@
     border-radius: 12px;
     border: 2px solid rgba(98, 98, 98, 0.33);
     background-color: white;
+    display: flex;
 }
 
 
