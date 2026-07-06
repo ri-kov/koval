@@ -1296,8 +1296,9 @@
 .about_div {
     height: 7.5rem;
     width: 0.06rem;
-    background-color:rgba(98, 98, 98, 0.25);
     margin: 1rem 2rem 0 2rem;
+    border-right: 0.09rem solid rgba(98, 98, 98, 0.2);
+    border-radius: 10px;
 }
 
 .contact_info_box {
@@ -1315,7 +1316,7 @@
 .contact_info_div {
     height: 0.07rem;
     width: 35rem;
-    background-color:rgba(98, 98, 98, 0.2);
+    border-bottom: 0.09rem solid rgba(98, 98, 98, 0.2);
     margin: 1rem 0rem 1rem 4.5rem;
     border-radius: 10px;
 }
