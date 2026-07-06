@@ -1264,28 +1264,28 @@
 }
 
 .about_num {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: #1F71CE;
     margin-bottom: 0rem !important;
-    font-weight: 700;
+    font-weight: 650;
 }
 
 .about_foot_head {
     font-weight: 600;
     margin-bottom: 0.2rem !important;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .about_foot_txt {
     font-weight: 450;
-    font-size: 1.1rem;
-    margin-bottom: 0 !important;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem !important;
 }
 
 .about_foot_box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin: 0.5rem 0 0.5rem 3rem !important;
 }
 
