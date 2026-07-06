@@ -1313,10 +1313,11 @@
 }
 
 .contact_info_div {
-    height: 0.06rem;
-    width: 10rem;
-    background-color:rgba(98, 98, 98, 0.25);
-    margin: 1rem 0rem 1rem 0rem;
+    height: 0.07rem;
+    width: 35rem;
+    background-color:rgba(98, 98, 98, 0.2);
+    margin: 1rem 0rem 1rem 4.5rem;
+    border-radius: 10px;
 }
 
 
