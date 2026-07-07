@@ -404,12 +404,14 @@ const hamburger = document.getElementById("hamburger");
 const closeMenu = document.getElementById("closeMenu");
 const mobileMenu = document.getElementById("mobileMenu");
 
-mobileMenu.addEventListener("show.bs.collapse", () => {
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
     hamburger.style.display = "none";
-    closeMenu.style.display = "block"
+    closeMenu.style.display = "block";
 });
 
-mobileMenu.addEventListener("hide.bs.collapse", () => {
+closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
     hamburger.style.display = "block";
     closeMenu.style.display = "none";
 });
