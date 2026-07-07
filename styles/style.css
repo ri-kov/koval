@@ -504,6 +504,18 @@ body {
 @media (min-width: 769px) {
     .nav_links.collapse {
         display: flex !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        max-width: 320px;
+        height: 100%;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+    }
+
+    .nav_links.collapse.show {
+        transform: translateX(0);
     }
     
     .nav_links .link {
