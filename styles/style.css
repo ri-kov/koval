@@ -485,3 +485,13 @@ body {
 }
 
 /*mod end*/
+
+@media (max-width: 768px) {
+    .nav_links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
