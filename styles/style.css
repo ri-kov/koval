@@ -513,7 +513,12 @@ body {
     border-radius: 100px;
     margin: 5px 0;
 }
+
 .hamburger_logo {
+    display: none;
+}
+
+.link_icons {
     display: none;
 }
 
@@ -560,6 +565,17 @@ body {
         
     }
 
+    .nav_links.collapse .link {
+        display: flex;
+    }
+
+    .nav_links.collapse .link_icons {
+        display: block;
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 0.8rem;
+    }
+
     .nav_links.collapse .home {
         margin-left: 2.1rem !important;
         margin-top: -3rem;
@@ -567,7 +583,7 @@ body {
 
     .nav_links.collapse .phone_num {
         font-size: 1.2rem;
-        margin: 2rem 0 1rem 2.1rem !important;
+        margin: 2rem 0 1.5rem 2.1rem !important;
         border-bottom: none !important;
     }
 
@@ -586,10 +602,10 @@ body {
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     }
 
-    nav_links .head_btn {
-        width: 100%;
+    .nav_links .head_btn {
+        width: 13rem;
         text-align: center;
-        margin-top: 1rem;
+        margin-left: 2.1rem !important;
     }
     
 }
