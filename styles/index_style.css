@@ -1334,6 +1334,9 @@
 #formMessage::placeholder {
     font-size: 1rem;
     font-weight: 450;
+    position: static;
+    transform: none;
+    line-height: normal;
 }
 
 .form_send_msg {

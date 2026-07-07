@@ -22,7 +22,7 @@ html, body {
     align-items: center;
     width: 100vw;
     height: 85px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 #logo {
@@ -491,9 +491,11 @@ html, body {
 
 /*mod end*/
 
-body.menu_open {
+/*body.menu_open {
     overflow: hidden;
-}
+    position: fixed;
+    width: 100%;
+}*/
 
 .hamburger {
     display: none;
@@ -533,22 +535,28 @@ body.menu_open {
 
 @media (max-width: 768px) {
     .nav_links {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
-        width: 80%;
+        width: 75%;
         max-width: 320px;
-        height: 100%;
+        min-height: 100vh;
+        padding: 2rem;
         flex-direction: column;
         transition: transform 0.3s ease;
-        transform: translateX(100%);
+        transform: translateX(110%);
         display: flex;
         z-index: 999;
-        background-color: #050a12;
+        background: #050a12;
     }
 
     .nav_links.active {
         transform: translateX(0);
+    }
+
+    #header {
+        position: relative;
+        overflow: visible;
     }
 
     .close_menu {
@@ -587,7 +595,7 @@ body.menu_open {
 
     .nav_links .home {
         margin-left: 2.1rem !important;
-        margin-top: -3rem;
+        margin-top: -3rem !important;
     }
 
     .nav_links .phone_num {
