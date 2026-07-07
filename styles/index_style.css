@@ -1358,9 +1358,23 @@
 
 .foot_div {
     width: 0.06rem;
-    height: 10rem;
+    height: 13rem;
     border-right: 0.08rem solid #48484840;
-    margin: 1.3rem 3rem 0 3rem;
+    margin: 1.2rem 3rem 0 3rem;
+}
+
+.footer_head {
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin: 2rem 0 0.7rem 0 !important;
+}
+
+.footer_links {
+    font-weight: 450;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    color: #000000;
+    text-decoration: none;
 }
 
 
