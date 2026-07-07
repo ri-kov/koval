@@ -497,6 +497,11 @@ body {
 
 .close_menu {
     display: none;
+    background: none;
+    color: #1F71CE;
+    display: flex;
+    justify-self: right;
+    margin-left: 1rem;
 }
 
 .hamburger span {

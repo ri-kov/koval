@@ -409,7 +409,7 @@ mobileMenu.addEventListener("show.bs.collapse", () => {
     closeMenu.style.display = "block"
 });
 
-mobileMenu.addEventListener("show.bs.collapse", () => {
+mobileMenu.addEventListener("hide.bs.collapse", () => {
     hamburger.style.display = "block";
     closeMenu.style.display = "none";
 });
