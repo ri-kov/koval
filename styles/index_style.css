@@ -1382,6 +1382,11 @@
     transition: 0.3s ease;
 }
 
+.footer_icon {
+    width: 2rem;
+    height: 2rem;
+}
+
 
 
 
