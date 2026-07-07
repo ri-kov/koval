@@ -140,7 +140,7 @@
 
 .main_stat {
     font-weight: 500 !important;
-    font-size: 2rem !important;
+    font-size: 2rem;
 }
 
 .divider {
@@ -1435,5 +1435,22 @@
         width: 2.5rem !important;
         height: 2.5rem !important;
         margin: 0.2rem 0.7rem 0 1rem !important;
+    }
+
+    .stats_main_wrap {
+        display: block !important;
+    }
+
+    .car_logo2 {
+        width: 3.5rem !important;
+        height: 3.5rem !important;
+    }
+
+    .main_stat {
+        font-size: 1.8rem !important;
+    }
+
+    .stat p {
+        font-size: 0.9rem;
     }
 }
