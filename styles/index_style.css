@@ -1505,4 +1505,23 @@
         margin: 2rem 0 0 1rem;
     }
 
+    #featVehCard {
+        font-size: 0.9rem;
+    }
+
+    #featMain h1 {
+        font-size: 2rem !important;
+        width: 17rem;
+        margin-top: 0.4rem !important;
+    }
+
+    #featMain {
+        display: block !important;
+    }
+
+    .feat_main_txt {
+        font-size: 0.9rem !important;
+    }
+
+
 }
