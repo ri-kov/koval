@@ -399,3 +399,17 @@ faqItems.forEach((item) => {
         icon.classList.add("fa-plus");
     });
 });
+
+const hamburger = document.getElementById("hamburger");
+const closeMenu = document.getElementById("closeMenu");
+const mobileMenu = document.getElementById("mobileMenu");
+
+mobileMenu.addEventListener("show.bs.collapse", () => {
+    hamburger.style.display = "none";
+    closeMenu.style.display = "block"
+});
+
+mobileMenu.addEventListener("show.bs.collapse", () => {
+    hamburger.style.display = "block";
+    closeMenu.style.display = "none";
+});
