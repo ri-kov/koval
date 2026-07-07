@@ -578,8 +578,6 @@ html, body {
         display: block;
         width: 15rem;
         height: 15rem;
-        margin-left: 2.4rem;
-        
     }
 
     .nav_links .link {
@@ -594,13 +592,13 @@ html, body {
     }
 
     .nav_links .home {
-        margin-left: 2.1rem !important;
+        margin-left: 0rem !important;
         margin-top: -3rem !important;
     }
 
     .nav_links .phone_num {
         font-size: 1.2rem;
-        margin: 2rem 0 1.5rem 2.1rem !important;
+        margin: 2rem 0 1.5rem 0rem !important;
         border-bottom: none !important;
     }
 
@@ -617,12 +615,13 @@ html, body {
         margin-top: 1rem;
         color: white;
         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        margin-left: 0rem;
     }
 
     .nav_links .head_btn {
         width: 13rem;
         text-align: center;
-        margin-left: 2.1rem !important;
+        margin-left: 0rem !important;
     }
     
 }
