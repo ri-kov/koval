@@ -486,12 +486,31 @@ body {
 
 /*mod end*/
 
+.hamburger {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .nav_links {
-        display: none;
+        flex-direction: column;
+        width: 100%;
     }
 
     .hamburger {
         display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav_links.collapse {
+        display: flex !important;
+    }
+    
+    .nav_links .link {
+        margin-top: 0.5rem;
+    }
+
+    .nav_links .phone_num {
+        margin-top: 0.5rem;
     }
 }
