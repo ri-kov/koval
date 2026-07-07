@@ -1398,6 +1398,13 @@
     color: white;
 }
 
+.wraps_div {
+    display: none;
+    width: 25rem;
+    height: 0.07rem;
+    border-bottom: 1.5px solid rgba(98, 98, 98, 0.33);
+}
+
 @media (max-width: 768px) {
     /*hero*/
     .bsr {
@@ -1477,5 +1484,13 @@
 
     .stats_pics2 {
         margin-left: 4.5rem !important;
+    }
+
+    .wrap1 {
+        margin-top: 2rem !important;
+    }
+
+    .wraps_div {
+        display: block !important;
     }
 }
