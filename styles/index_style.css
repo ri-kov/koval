@@ -1430,7 +1430,7 @@
     }
 
     .options {
-        width: 25rem !important;
+        width: 24rem !important;
         margin-left: 0rem !important;
         height: 3.5rem !important;
         font-size: 0.9rem !important;
@@ -1492,6 +1492,17 @@
 
     .wraps_div {
         display: block !important;
-    } 
-    /* hero section */
+    }
+
+    .container.mt-5 {
+        margin-left: 1rem;
+    }
+
+    /* hero section end */
+
+    /* feat vehicles */
+    .cont_box2 {
+        margin: 2rem 0 0 1rem;
+    }
+
 }
