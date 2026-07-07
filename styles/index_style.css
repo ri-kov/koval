@@ -74,8 +74,8 @@
 
 .opt1 {
     background-color: #1F71CE;
-    width: 14.5rem !important;
-    margin-left: 0 !important;
+    width: 14.5rem;
+    margin-left: 0;
     vertical-align: middle;
 }
 
@@ -1396,4 +1396,44 @@
     justify-content: center;
     font-size: 0.85rem;
     color: white;
+}
+
+@media (max-width: 768px) {
+    /*hero*/
+    .bsr {
+        font-size: 0.9rem !important;
+        margin-top: -1rem;
+        margin-bottom: 1rem !important;
+    }
+
+    .slogan {
+        font-size: 2rem !important;
+        margin-bottom: 0rem !important;
+    }
+
+    .cont1_txt {
+        font-size: 1rem !important;
+        width: 16rem;
+        margin-top: 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .hero_buttons {
+        display: block !important;
+    }
+
+    .options {
+        width: 25rem !important;
+        margin-left: 0rem !important;
+        height: 3.5rem !important;
+        font-size: 0.9rem !important;
+        justify-content: left !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .hero_buttons img {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        margin: 0.2rem 0.7rem 0 1rem !important;
+    }
 }
