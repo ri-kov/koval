@@ -1377,6 +1377,11 @@
     text-decoration: none;
 }
 
+.footer_links:hover {
+    color: #3f3f3f;
+    transition: 0.3s ease;
+}
+
 
 
 
