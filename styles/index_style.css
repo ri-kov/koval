@@ -1442,15 +1442,40 @@
     }
 
     .car_logo2 {
-        width: 3.5rem !important;
-        height: 3.5rem !important;
+        width: 2.5rem !important;
+        height: 2.5rem !important;
     }
 
     .main_stat {
-        font-size: 1.8rem !important;
+        font-size: 1.3rem !important;
     }
 
     .stat p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
+        margin-right: 1.2rem;
+    }
+
+    .stats_pics {
+        margin-left: 2rem !important;
+    }
+
+    .stats_main_wrap {
+        display: block !important;
+    }
+
+    .stats_little_wrap {
+        display: flex;
+    }
+
+    .divider {
+        display: none !important;
+    }
+
+    .stat {
+        margin-top: 1rem !important;
+    }
+
+    .stats_pics2 {
+        margin-left: 4.5rem !important;
     }
 }
