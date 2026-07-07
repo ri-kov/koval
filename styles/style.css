@@ -568,8 +568,8 @@ html, body {
     }
 
     .close_menu {
-        position: relative;
-        left: 11rem;
+        right: 1rem;
+        position: absolute;
         z-index: 1001;
         color: white;
         font-size: 1.7rem;
@@ -579,8 +579,8 @@ html, body {
 
     .hamburger {
         display: block;
-        left: 11rem;
-        position: relative;
+        right: 1rem;
+        position: absolute;
     }
 
     .hamburger_logo {
@@ -643,8 +643,8 @@ html, body {
 
     .phone_head_link {
         display: block;
+        right: 5rem;
         position: absolute;
-        margin: 0.3rem 0 0 20rem;
     }
     /*header end*/
 }
