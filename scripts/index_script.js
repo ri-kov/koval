@@ -242,6 +242,7 @@ const carImg3 = document.getElementById('carImage3');
 const nextImg3 = document.getElementById('btnNext3');
 const prevImg3 = document.getElementById('btnPrev3');
 const imgCounter3 = document.getElementById('imgCounter3');
+let startX3 = 0;
 
 function updateImage3() {
     carImg3.src = carImages3[currentImgIndex3];
@@ -265,6 +266,36 @@ prevImg3.addEventListener('click', () => {
 
     if (currentImgIndex3 < 0) {
         currentImgIndex3 = carImages3.length - 1;
+    }
+
+    updateImage3();
+});
+
+
+carImg3.addEventListener("pointerdown", (e) => {
+    startX3 = e.clientX;
+});
+
+carImg3.addEventListener("pointerup", (e) => {
+    const endX3 = e.clientX;
+    const swipeDistance3 = endX3 - startX3;
+
+    if (Math.abs(swipeDistance3) < 40) {
+        return;
+    }
+
+    if (swipeDistance3 < 0) {
+        currentImgIndex3++;
+
+        if (currentImgIndex3 >= carImages3.length) {
+            currentImgIndex3 = 0;
+        }
+    } else {
+        currentImgIndex3--;
+
+        if (currentImgIndex3 < 0) {
+            currentImgIndex3 = carImages3.length - 1;
+        }
     }
 
     updateImage3();
