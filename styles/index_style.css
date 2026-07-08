@@ -1599,7 +1599,24 @@
     } 
 
     .feat_icons {
-        margin: 0 0.3rem 0 0.5rem !important;
+        margin: 0 0.5rem 0 0.5rem !important;
+        
+    }
+
+    .feat_btm_icon {
+        right: 11.65rem;
+        top: 1.7rem;
+        position: relative;
+    }
+
+    .feat_btm_text {
+        position: relative;
+        right: 11.65rem;
+        top: 1.9rem;
+    }
+    
+    .feat_km {
+        width: 4rem;
     }
 
 }
