@@ -1411,6 +1411,10 @@
     -webkit-user-drag: none;
 }
 
+.exp_car {
+    display: none;
+}
+
 @media (max-width: 768px) {
     /*hero*/
     .bsr {
@@ -1544,10 +1548,11 @@
     .car_card {
         width: 24rem !important;
         height: 10.5rem !important;
+        display: flex;
     }
 
     .car_img {
-        width: 12rem !important;
+        width: 10rem !important;
         height: 100% !important;
         border-radius: 15px 0 0 15px !important;
     }
@@ -1577,10 +1582,6 @@
         display: none;
     }
 
-    .car_card {
-        display: flex;
-    }
-
     .vdet_btn {
         display: none !important;
     }
@@ -1590,12 +1591,23 @@
     }
 
     .car_make {
-        font-size: 1rem !important;
-        margin: 0.5rem 0 0.2rem 1rem;
+        font-size: 0.9rem !important;
+        margin: 0.8rem 0 0.2rem 1rem;
+    }
+
+    .car_details {
+        font-size: 0.7rem !important;
+    }
+
+    .car_price {
+        margin-top: 1rem !important;
+        font-size: 1.15rem !important;
+        display: flex;
     }
 
     .feat_desc {
         font-size: 0.7rem !important;
+        margin-top: 1.2rem !important;
     } 
 
     .feat_icons {
@@ -1617,6 +1629,17 @@
     
     .feat_km {
         width: 4rem;
+    }
+
+    .exp_car {
+        display: block !important;
+        font-size: 1.8rem;
+        margin-left: 6.5rem;
+    }
+
+    .feat_grid {
+        display: block !important;
+        margin-top: 6rem;
     }
 
 }
