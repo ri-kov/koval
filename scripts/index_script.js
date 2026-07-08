@@ -82,7 +82,7 @@ const carImg1 = document.getElementById('carImage1');
 const nextImg1 = document.getElementById('btnNext1');
 const prevImg1 = document.getElementById('btnPrev1');
 const imgCounter1 = document.getElementById('imgCounter1');
-let touchStartX = 0;
+let startX1 = 0;
 
 function updateImage1() {
     carImg1.src = carImages1[currentImgIndex1];
@@ -111,19 +111,20 @@ prevImg1.addEventListener('click', () => {
     updateImage1();
 });
 
-carImg1.addEventListener("touchstart", (e) => {
-    touchStartX = e.touches[0].clientX;
+
+carImg1.addEventListener("pointerdown", (e) => {
+    startX1 = e.clientX;
 });
 
-carImg1.addEventListener("touchend", (e) => {
-    const touchEndX = e.changedTouches[0].clientX;
-    const swipeDistance = touchEndX - touchStartX;
+carImg1.addEventListener("pointerup", (e) => {
+    const endX1 = e.clientX;
+    const swipeDistance1 = endX1 - startX1;
 
-    if (Math.abs(swipeDistance) < 40) {
+    if (Math.abs(swipeDistance1) < 40) {
         return;
     }
 
-    if (swipeDistance < 0) {
+    if (swipeDistance1 < 0) {
         currentImgIndex1++;
 
         if (currentImgIndex1 >= carImages1.length) {
@@ -135,9 +136,9 @@ carImg1.addEventListener("touchend", (e) => {
         if (currentImgIndex1 < 0) {
             currentImgIndex1 = carImages1.length - 1;
         }
-        
-        updateImage1();
     }
+
+    updateImage1();
 });
 
 const carImages2 = [
