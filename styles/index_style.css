@@ -1576,6 +1576,14 @@
     .btn_arrow_next {
         display: none;
     }
+
+    .car_card {
+        display: flex;
+    }
+
+    .vdet_btn {
+        display: none !important;
+    }
 }
 
 @media (max-width: 429px) {
