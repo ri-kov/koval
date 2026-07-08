@@ -1527,6 +1527,15 @@
         height: auto !important;
         min-height: 100vh;
     }
+}
 
+@media (max-width: 430px) {
+    /* hero section */
+    .slogan.tle {
+        text-align: left !important;
+    }
 
+    .options {
+        width: 20rem !important;
+    }
 }
