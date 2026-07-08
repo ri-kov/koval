@@ -1584,6 +1584,20 @@
     .vdet_btn {
         display: none !important;
     }
+
+    .car_divider {
+        display: none !important;
+    }
+
+    .car_make {
+        font-size: 1rem !important;
+        margin: 0.5rem 0 0.2rem 1rem;
+    }
+
+    .feat_desc {
+        font-size: 0.7rem !important;
+    } 
+
 }
 
 @media (max-width: 429px) {
