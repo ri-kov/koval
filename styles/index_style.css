@@ -1405,6 +1405,12 @@
     border-bottom: 1.5px solid rgba(98, 98, 98, 0.33);
 }
 
+#carImage1 {
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 @media (max-width: 768px) {
     /*hero*/
     .bsr {

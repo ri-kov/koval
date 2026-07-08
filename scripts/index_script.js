@@ -83,7 +83,6 @@ const nextImg1 = document.getElementById('btnNext1');
 const prevImg1 = document.getElementById('btnPrev1');
 const imgCounter1 = document.getElementById('imgCounter1');
 let touchStartX = 0;
-let touchEndX = 0;
 
 function updateImage1() {
     carImg1.src = carImages1[currentImgIndex1];
@@ -113,20 +112,24 @@ prevImg1.addEventListener('click', () => {
 });
 
 carImg1.addEventListener("touchstart", (e) => {
-    touchStartX = e.changedTouches[0].screenX;
+    touchStartX = e.touches[0].clientX;
 });
 
-carImg2.addEventListener("touchend", (e) => {
-    touchEndX = e.changedTouches[0].screenX;
+carImg1.addEventListener("touchend", (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const swipeDistance = touchEndX - touchStartX;
 
-    if (touchStartX - touchEndX > 50) {
+    if (Math.abs(swipeDistance) < 40) {
+        return;
+    }
+
+    if (swipeDistance < 0) {
         currentImgIndex1++;
 
         if (currentImgIndex1 >= carImages1.length) {
             currentImgIndex1 = 0;
         }
-    }
-    if (touchEndX - touchStartX > 50) {
+    } else {
         currentImgIndex1--;
 
         if (currentImgIndex1 < 0) {
