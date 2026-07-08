@@ -387,6 +387,7 @@
     font-size: 0.8rem;
     color: black;
     margin-bottom: 0 !important;
+    width: 11rem;
 }
 
 .feat_info_divider {
@@ -1664,6 +1665,24 @@
         justify-content: center;
     }
 
+    .feat_info {
+        display: block !important;
+    }
+
+    .feat_info_img {
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+
+    .feat_info_head {
+        font-size: 0.9rem !important;
+        margin-top: -0.1rem;
+    }
+
+    .feat_info_txt {
+        width: 20rem !important;
+        font-size: 0.7rem !important;
+    }
 }
 
 @media (max-width: 429px) {
