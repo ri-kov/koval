@@ -1523,5 +1523,10 @@
         font-size: 0.9rem !important;
     }
 
+    .cont_box1 {
+        height: auto !important;
+        min-height: 100vh;
+    }
+
 
 }
