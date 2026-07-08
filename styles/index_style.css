@@ -1502,7 +1502,7 @@
 
     /* feat vehicles */
     .cont_box2 {
-        margin: 2rem 0 0 1rem;
+        margin: 2rem 0 0 1.5rem;
     }
 
     #featVehCard {
@@ -1535,7 +1535,7 @@
     }
 
     .car_card {
-        width: 25rem !important;
+        width: 24rem !important;
         height: 10.5rem !important;
     }
 
@@ -1545,18 +1545,27 @@
         border-radius: 15px 0 0 15px !important;
     }
 
+    /*#btnPrev1 {
+        left: 0.4rem !important;
+    }
+
+    #btnNext1 {
+        right: 13.4rem !important;
+    }*/
+
     .btn_arrow_next {
-        width: 1.35rem;
+        /*width: 1.35rem;
         height: 1.35rem;
         margin-top: -2.5rem;
         display: flex;
-        justify-content: center;
+        justify-content: center;*/
+        display: none;
     }
 
-    .btn_arrow_next i {
+    /*.btn_arrow_next i {
         font-size: 0.9rem;
         margin-top: 0.15625rem;
-    }
+    } */
 }
 
 @media (max-width: 429px) {
