@@ -1551,27 +1551,30 @@
         border-radius: 15px 0 0 15px !important;
     }
 
-    /*#btnPrev1 {
-        left: 0.4rem !important;
+    .fead_note {
+        width: 4rem !important;
+        height: 1rem !important;
+        font-size: 0.55rem !important;
+        border-radius: 3px !important;
+        left: 0.6rem !important;
+        top: 0.6rem !important;
     }
 
-    #btnNext1 {
-        right: 13.4rem !important;
-    }*/
+    .img_count {
+        width: 3rem !important;
+        height: 1rem !important;
+        font-size: 0.55rem !important;
+        left: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+    .img_count i {
+        font-size: 0.55rem;
+    }
 
     .btn_arrow_next {
-        /*width: 1.35rem;
-        height: 1.35rem;
-        margin-top: -2.5rem;
-        display: flex;
-        justify-content: center;*/
         display: none;
     }
-
-    /*.btn_arrow_next i {
-        font-size: 0.9rem;
-        margin-top: 0.15625rem;
-    } */
 }
 
 @media (max-width: 429px) {
