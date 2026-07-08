@@ -1415,6 +1415,11 @@
     display: none;
 }
 
+.exp_car_link {
+    display: none;
+    text-decoration: none;
+}
+
 @media (max-width: 768px) {
     /*hero*/
     .bsr {
@@ -1640,6 +1645,11 @@
     .feat_grid {
         display: block !important;
         margin-top: 6rem;
+    }
+
+    .exp_car_link {
+        display: flex !important;
+        justify-content: center;
     }
 
 }
