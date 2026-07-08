@@ -1420,6 +1420,18 @@
     text-decoration: none;
 }
 
+#carImage2 {
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#carImage3 {
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 @media (max-width: 768px) {
     /*hero*/
     .bsr {
@@ -1621,19 +1633,19 @@
     }
 
     .feat_btm_icon {
-        right: 11.65rem;
+        right: 11.9rem;
         top: 1.7rem;
         position: relative;
     }
 
     .feat_btm_text {
         position: relative;
-        right: 11.65rem;
+        right: 11.9rem;
         top: 1.9rem;
     }
     
     .feat_km {
-        width: 4rem;
+        width: 4.25rem;
     }
 
     .exp_car {
