@@ -1521,15 +1521,21 @@
 
     .feat_main_txt {
         font-size: 0.9rem !important;
+        margin-top: -5.7rem;
+        margin-bottom: 4.5rem;
     }
 
     .cont_box1 {
         height: auto !important;
         min-height: 100vh;
     }
+
+    #invt_btn {
+        margin: 3rem 0 0 0 !important;
+    }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 429px) {
     /* hero section */
     .slogan.tle {
         text-align: left !important;
@@ -1537,5 +1543,18 @@
 
     .options {
         width: 20rem !important;
+    }
+
+    #wrapsDiv1 {
+        margin-left: 5rem !important;
+    }
+
+    .car_logo2 {
+        width: 3rem !important;
+        height: 2rem !important;
+    }
+    
+    .stats_pics2 {
+        margin-left: 3.5rem !important;
     }
 }
