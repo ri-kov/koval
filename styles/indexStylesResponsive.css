@@ -288,6 +288,14 @@
         display: flex;
         justify-content: center;
     }
+
+    #sellMain {
+        font-size: 2rem !important;
+        width: 20rem;
+        text-align: center;
+        justify-self: center !important;
+        margin-left: 2.5rem;
+    }
 }
 
 @media (max-width: 429px) {
