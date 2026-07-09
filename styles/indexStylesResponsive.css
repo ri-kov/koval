@@ -296,6 +296,41 @@
         justify-self: center !important;
         margin-left: 2.5rem;
     }
+
+    #sellText {
+        text-align: center;
+        font-size: 0.9rem !important;
+    }
+
+    .sell_steps_box {
+        width: 22.5rem !important;
+        height: 6.5rem !important;
+        margin-left: 1.5rem;
+    }
+    
+    .sell_circ {
+        height: 3.5rem !important;
+        width: 3.5rem !important;
+        margin: 1.37em 1rem 0 1rem !important;
+    }
+
+    .sell_circ_icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .sell_points {
+        font-size: 0.95rem;
+        margin-top: 1.37rem !important;
+    }
+
+    .sell_points_desc {
+        font-size: 0.75rem !important;
+    }
+
+    #sellCircIcon3 {
+        margin-top: 0.35rem !important;
+    }
 }
 
 @media (max-width: 429px) {
