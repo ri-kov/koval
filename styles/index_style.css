@@ -1691,8 +1691,14 @@
 
     .phone_info_divider {
         height: 0.043rem;
-        width: 4rem;
-        background-color: rgba(98, 98, 98, 0.33);
+        width: 23rem;
+        border-bottom: 0.043rem solid rgba(98, 98, 98, 0.33);
+        display: block !important;
+        margin: 0.3rem 2rem 0 1rem;
+    }
+
+    .feat_info_divider {
+        display: none !important;
     }
 }
 
