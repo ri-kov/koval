@@ -269,30 +269,30 @@
                         </span>
                     </div>
                     <div style = "display: flex; margin-top: 3rem;">
-                        <img src = "pictures/timePic.svg" alt = "time-icon" width="50rem" height="50rem"">
-                        <span style = "display: block;">
+                        <img class = "sell_btm_img" src = "pictures/timePic.svg" alt = "time-icon" width="50rem" height="50rem"">
+                        <span style = "display: block;" class = "sell_btm_txt_box">
                             <p class = "sell_btm_head">Same-Day Offers</p>
-                            <p style = "font-weight: 450; font-size: 0.8rem;">Quick response<br>you can count on.</p>
+                            <p class = "sell_btm_txt" style = "font-weight: 450; font-size: 0.8rem;">Quick response<br>you can count on.</p>
                         </span>
-                        <img src = "pictures/noObligationPic.svg" alt = "time-icon" width="50rem" height="50rem" style = "margin-left: 1rem;">
-                        <span style = "display: block;">
+                        <img class = "sell_btm_img" src = "pictures/noObligationPic.svg" alt = "time-icon" width="50rem" height="50rem" style = "margin-left: 1rem;">
+                        <span style = "display: block;" class = "sell_btm_txt_box">
                             <p class = "sell_btm_head">No Obligation</p>
-                            <p style = "font-weight: 450; font-size: 0.8rem;">Get an offer with<br>no commitment.</p>
+                            <p class = "sell_btm_txt" style = "font-weight: 450; font-size: 0.8rem;">Get an offer with<br>no commitment.</p>
                         </span>
-                        <img src = "pictures/locationPic.svg" alt = "time-icon" width="50rem" height="50rem" style = "margin-left: 1rem;">
-                        <span style = "display: block;">
+                        <img class = "sell_btm_img" src = "pictures/locationPic.svg" alt = "time-icon" width="50rem" height="50rem" style = "margin-left: 1rem;">
+                        <span style = "display: block;" class = "sell_btm_txt_box">
                             <p class = "sell_btm_head">Local & Trusted</p>
-                            <p style = "font-weight: 450; font-size: 0.7rem;">Proudly serving<br>Winnipeg.</p>
+                            <p style = "font-weight: 450; font-size: 0.7rem;" class = "sell_btm_txt">Proudly serving<br>Winnipeg.</p>
                         </span>
                     </div>
                 </div>
                 <div class = "col-md-7">
                     <form id = "sellForm" class = "sell_form">
                         <div class="d-flex">
-                            <div class = "form_circ"><img src="pictures/carPic3.svg" alt="car-icon" width = "48rem" height = "48rem"></div>
+                            <div class = "form_circ" id = "sellFormCirc"><img id = "formCircImage" src="pictures/carPic3.svg" alt="car-icon" width = "48rem" height = "48rem"></div>
                             <div class = "flex-column" style = "margin-left: 2rem;">
                                 <h1 class = "form_head">Get Your Offer Now</h1>
-                                <p class="fs-6 mb-0" style = "font-weight: 450;">Fill out the form below and we'll be in touch shortly.</p>
+                                <p class="mb-0 sell_form_txt" style = "font-weight: 450;">Fill out the form below and we'll be in touch shortly.</p>
                             </div>
                         </div>
                         <hr>
@@ -304,7 +304,7 @@
                                     <span class = "inp_emoji"><i class="bi bi-car-front-fill" style = "font-size: 1.2rem;"></i></span>
                                 </div>
                             </div>
-                            <div style = "display: block; margin-left: 1.2rem;">
+                            <div class = "sell_form_inp" style = "display: block; margin-left: 1.2rem;">
                                 <span style = "font-weight: 550;">Vehicle Model <span class = "star">*</span></span>
                                 <div class="input-container form_input">
                                     <input id = "formModel" class="form-control" maxlength="50" placeholder="Enter Model" required>
@@ -320,7 +320,7 @@
                                     <span class = "inp_emoji"><i class="bi bi-calendar-event" style = "font-size: 1.2rem;"></i></span>
                                 </div>
                             </div>
-                            <div style = "display: block; margin-left: 1.2rem;">
+                            <div class = "sell_form_inp" style = "display: block; margin-left: 1.2rem;">
                                 <span style = "font-weight: 550;">Mileage <span class = "star">*</span></span>
                                 <div class="input-container form_input">
                                     <input id = "formMileage" class="form-control" inputmode="numeric" maxlength="7" placeholder="Enter Mileage" required>
@@ -352,7 +352,7 @@
                                     <span class = "inp_emoji"><i class="fa-solid fa-phone" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
                                 </div>
                             </div>
-                            <div style = "display: block; margin-left: 1.2rem;">
+                            <div class = "sell_form_inp" style = "display: block; margin-left: 1.2rem;">
                                 <span style = "font-weight: 550;">Location (neighbourhood) <span class = "star">*</span></span>
                                 <div class="input-container form_input">
                                     <input id = "formLocation" class="form-control" placeholder="Enter Your Location">
@@ -365,9 +365,9 @@
                             <div style = "display: flex;">
                                 <input type="file" id="formImages" multiple accept="image/*" name = "vehiclePhotos" style = "display: none;">
                                 <label for="formImages" class="file_input">
-                                    <span style = "margin: 0.45rem 0 0 0.6rem;">
+                                    <span class = "upload_box" style = "margin: 0.45rem 0 0 0.6rem;">
                                         <span style = "position: unset !important;" class = "inp_emoji"><i class = "fa-solid fa-upload" style = "font-size: 1.1rem; margin-top: 0.35rem;"></i></span>
-                                        <span style = "opacity: 0.7; font-weight: 500;">Choose Files</span>
+                                        <span class = "upload_txt" style = "opacity: 0.7; font-weight: 500;">Choose Files</span>
                                     </span>
                                 </label>
                                 <div class="input-container pictures_box form-control">

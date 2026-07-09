@@ -1436,3 +1436,7 @@
 .phone_info_divider {
     display: none;
 }
+
+.sell_box {
+    display: flex;
+}
