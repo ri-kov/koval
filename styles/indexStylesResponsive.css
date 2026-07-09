@@ -405,6 +405,16 @@
     .preview_row {
         margin-left: 0.5rem !important;
         gap: 0.2rem;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        max-width: 7.9rem;
+        padding-bottom: 0.5rem;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .preview_img {
+        flex: 0 0 auto;
     }
 }
 
