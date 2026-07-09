@@ -1433,6 +1433,10 @@
     -webkit-user-drag: none;
 }
 
+.phone_info_divider {
+    display: none;
+}
+
 @media (max-width: 768px) {
     /*hero*/
     .bsr {
@@ -1670,18 +1674,25 @@
     }
 
     .feat_info_img {
-        width: 3rem !important;
-        height: 3rem !important;
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        margin: -0.2rem 1rem 0 0.8rem;
     }
 
     .feat_info_head {
-        font-size: 0.9rem !important;
+        font-size: 0.85rem !important;
         margin-top: -0.1rem;
     }
 
     .feat_info_txt {
         width: 20rem !important;
-        font-size: 0.7rem !important;
+        font-size: 0.65rem !important;
+    }
+
+    .phone_info_divider {
+        height: 0.043rem;
+        width: 4rem;
+        background-color: rgba(98, 98, 98, 0.33);
     }
 }
 
