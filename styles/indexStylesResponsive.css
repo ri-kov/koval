@@ -428,6 +428,11 @@
     #picDel {
         color: rgba(0, 0, 0, 0.85);
     }
+    /* end of section 3 */
+
+    #sct4Wrap {
+
+    }
 }
 
 @media (max-width: 429px) {
