@@ -7,7 +7,6 @@
     }
 
     .slogan {
-        font-size: 2rem !important;
         margin-bottom: 0rem !important;
     }
 
@@ -103,7 +102,6 @@
     }
 
     #featMain h1 {
-        font-size: 2rem !important;
         width: 17rem;
         margin-top: 0.4rem !important;
     }
@@ -292,7 +290,6 @@
     }
 
     #sellMain {
-        font-size: 2rem !important;
         width: 20rem;
         text-align: center;
         justify-self: center !important;
@@ -431,7 +428,15 @@
     /* end of section 3 */
 
     #sct4Wrap {
-        
+        margin-left: 1.5rem !important;
+    }
+
+    .feat_main {
+        font-size: 2rem !important;
+    }
+
+    #sellForm {
+        margin-bottom: 3.5rem !important;
     }
 }
 
