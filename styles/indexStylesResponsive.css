@@ -461,7 +461,12 @@
 
     .repair_box {
         width: 24.7rem;
-        height: 9rem;
+        height: 8.3rem;
+        margin-top: 1rem !important;
+    }
+
+    .repHeaderBox {
+        margin-top: 0.3rem !important;
     }
 
     .repair_images {
@@ -473,15 +478,37 @@
         height: 3.5rem;
         width: 3.5rem;
         margin-left: 0.5rem !important;
+        margin-top: -0.2rem;
     }
 
     .repair_card_title {
-        margin-top: 0.7rem !important;
+        margin-top: 0.5rem !important;
     }
 
     .repair_card_desc {
         font-size: 0.9rem !important;
         margin-top: 0 !important;
+        width: 15rem !important;
+    }
+
+    #oilText {
+        margin-top: -0.4rem !important;
+    }
+
+    .rep_cards_box {
+        margin-left: 0 !important;
+    }
+
+    #repDiag {
+        margin-top: -0.6rem !important;
+    }
+
+    #repElec {
+        margin-top: -0.4rem !important;
+    }
+
+    #repSusp {
+        margin-top: -0.3rem !important;
     }
 }
 
