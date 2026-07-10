@@ -1440,3 +1440,7 @@
 .sell_box {
     display: flex;
 }
+
+#repHeadText {
+    width: 33rem;
+}

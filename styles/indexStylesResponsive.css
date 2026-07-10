@@ -102,6 +102,7 @@
     }
 
     #featMain h1 {
+        font-size: 2rem !important;
         width: 17rem;
         margin-top: 0.4rem !important;
     }
@@ -294,6 +295,7 @@
         text-align: center;
         justify-self: center !important;
         margin-left: 2.5rem;
+        font-size: 2rem !important;
     }
 
     #sellText {
@@ -431,12 +433,34 @@
         margin-left: 1.5rem !important;
     }
 
-    .feat_main {
-        font-size: 2rem !important;
-    }
-
     #sellForm {
         margin-bottom: 3.5rem !important;
+    }
+
+    #repHeadWrap {
+        display: block !important;
+    }
+
+    #repHead {
+        font-size: 1.8rem !important;
+    }
+
+    #repHeadText {
+        font-size: 0.9rem !important;
+        margin-top: -8.5rem;
+        margin-bottom: 5rem;
+        width: 20rem !important;
+    }
+
+    #rep_btn {
+        margin-top: 6rem !important;
+        margin-left: 0 !important;
+        width: 24rem !important;
+    }
+
+    .repair_box {
+        width: 24.7rem;
+        height: 9rem;
     }
 }
 
