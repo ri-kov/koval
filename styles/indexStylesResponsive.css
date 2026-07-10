@@ -513,7 +513,7 @@
 
     .repair_box_btm {
         margin: 3rem 0 0rem 0rem !important;
-        width: 24rem !important;
+        width: 24.7rem !important;
         justify-self: center;
         height: 5.8rem;
     }
@@ -530,7 +530,17 @@
 
     .repair_box_btm_icon {
         margin-top: -0.75rem;
-    } 
+    }
+
+    #rep_icon_btm {
+        font-size: 1rem !important;
+    }
+
+    #rep_btn_btm {
+        width: 40rem;
+        font-size: 0.8rem;
+        margin: 2.05rem 0 0 0rem;
+    }
 }
 
 @media (max-width: 429px) {
