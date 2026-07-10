@@ -697,6 +697,7 @@
     font-weight: 490;
     margin-left: 1rem;
     margin-top: 0.4rem;
+    justify-self: center;
 }
 
 .repair_card_learn {
@@ -1443,4 +1444,10 @@
 
 #repHeadText {
     width: 33rem;
+}
+
+/*temp*/
+
+.repair_card_learn {
+    display: none;
 }

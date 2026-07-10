@@ -8,6 +8,7 @@
 
     .slogan {
         margin-bottom: 0rem !important;
+        font-size: 2rem !important;
     }
 
     .cont1_txt {
@@ -461,6 +462,26 @@
     .repair_box {
         width: 24.7rem;
         height: 9rem;
+    }
+
+    .repair_images {
+        height: 100%;
+        width: 7rem;
+    }
+
+    .repair_icons {
+        height: 3.5rem;
+        width: 3.5rem;
+        margin-left: 0.5rem !important;
+    }
+
+    .repair_card_title {
+        margin-top: 0.7rem !important;
+    }
+
+    .repair_card_desc {
+        font-size: 0.9rem !important;
+        margin-top: 0 !important;
     }
 }
 
