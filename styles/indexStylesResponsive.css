@@ -510,6 +510,27 @@
     #repSusp {
         margin-top: -0.3rem !important;
     }
+
+    .repair_box_btm {
+        margin: 3rem 0 0rem 0rem !important;
+        width: 24rem !important;
+        justify-self: center;
+        height: 5.8rem;
+    }
+
+    .repair_box_btm_text {
+        display: none !important;
+    }
+
+    .repair_box_btm_title {
+        width: 10rem;
+        font-size: 1rem !important;
+        margin: 0.7rem 0 0rem 1rem !important;
+    }
+
+    .repair_box_btm_icon {
+        margin-top: -0.75rem;
+    } 
 }
 
 @media (max-width: 429px) {
