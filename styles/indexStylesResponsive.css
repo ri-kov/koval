@@ -611,10 +611,20 @@
 
     .mod_inp input {
         width: 18rem !important;
+        height: 2.7rem;
     }
 
     #modSelect {
         width: 18rem;
+        height: 2.7rem;
+    }
+
+    .mod_form::placeholder {
+        font-size: 0.8rem;
+    }
+
+    .modEmj {
+        font-size: 1rem !important;
     }
 }
 
