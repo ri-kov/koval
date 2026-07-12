@@ -512,7 +512,7 @@
     }
 
     .repair_box_btm {
-        margin: 3rem 0 0rem 0rem !important;
+        margin: 3rem 0 0rem 1rem !important;
         width: 24.7rem !important;
         justify-self: center;
         height: 5.8rem;
@@ -534,12 +534,17 @@
 
     #rep_icon_btm {
         font-size: 1rem !important;
+        margin-left: 0.5rem !important;
     }
 
     #rep_btn_btm {
-        width: 40rem;
-        font-size: 0.8rem;
-        margin: 2.05rem 0 0 0rem;
+        width: 35rem;
+        font-size: 0.782rem;
+        margin: 1.4rem 1rem 1rem 0rem;
+    }
+
+    .sct_grid {
+        padding-bottom: 2rem;
     }
 }
 
