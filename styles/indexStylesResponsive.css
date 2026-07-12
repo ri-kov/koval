@@ -554,6 +554,19 @@
     .modal-dialog {
         margin-left: 0 !important;
     }
+
+    #modBox {
+        display: block !important;
+    }
+
+    .mod_divider {
+        display: none !important;
+    }
+
+    .modal-content {
+        width: 23rem;
+        margin-left: 1.9rem;
+    }
 }
 
 @media (max-width: 429px) {
