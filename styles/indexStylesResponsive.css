@@ -571,6 +571,7 @@
     .rep_mod_circ {
         height: 3.4rem !important;
         width: 3.4rem !important;
+        margin-bottom: 0.5rem;
     }
 
     #imgMod {
@@ -591,6 +592,15 @@
     .rep_mod_close {
         margin-right: 0.7rem;
     }
+
+    .form-control::placeholder {
+        position: static;
+    }
+
+    .mod_inp {
+        margin-bottom: -0.5rem;
+    }
+
 }
 
 @media (max-width: 429px) {
