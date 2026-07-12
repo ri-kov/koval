@@ -550,6 +550,10 @@
     .sect_w {
         margin-top: 2rem !important;
     }
+
+    .modal-dialog {
+        margin-left: 0 !important;
+    }
 }
 
 @media (max-width: 429px) {
