@@ -543,8 +543,12 @@
         margin: 1.4rem 1rem 1rem 0rem;
     }
 
-    .sct_grid {
+    .sct_gr {
         padding-bottom: 2rem;
+    }
+
+    .sect_w {
+        margin-top: 2rem !important;
     }
 }
 
