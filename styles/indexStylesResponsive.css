@@ -580,7 +580,16 @@
     }
 
     #modHead {
+        font-size: 1.2rem !important;
+        margin-top: 1rem;
+    }
 
+    #modText {
+        display: none;
+    }
+
+    .rep_mod_close {
+        margin-right: 0.7rem;
     }
 }
 
