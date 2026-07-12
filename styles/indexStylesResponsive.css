@@ -601,6 +601,21 @@
         margin-bottom: -0.5rem;
     }
 
+    #infoMod {
+        margin-bottom: 0 !important;
+    }
+
+    .mod_labels {
+        font-size: 0.9rem;
+    }
+
+    .mod_inp input {
+        width: 18rem !important;
+    }
+
+    #modSelect {
+        width: 18rem;
+    }
 }
 
 @media (max-width: 429px) {
