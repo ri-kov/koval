@@ -89,6 +89,13 @@ function getDefaultSelectedDate() {
 }
 
 function renderCalendar() {
+    if (!selectedDate) {
+        selectedDate = getDefaultSelectedDate();
+        currentMonth = selectedDate.getMonth();
+        currentYear = selectedDate.getFullYear();
+
+        selectedRepairDate.value = selectedDate.toISOString().split("T")[0];
+    }
     calendarDays.innerHTML = "";
     calendarMonth.textContent = monthNames[currentMonth] + " " + currentYear;
 
@@ -159,15 +166,29 @@ function updateAvailableTimes() {
         const buttonHour = Number(button.dataset.hour);
         button.classList.remove("disabled");
 
-        if (isToday && buttonHour <= now.getHours()) {
-            button.classList.add("disabled");
-            button.classList.remove("disabled");
-            
-            if (selectedTime === button.textContent) {
-                selectedTime = null;
-                selectedRepairTime.value = "";
+        if (isToday) {
+            const firstAvailableHour = now.getHours() + 2;
+
+            if (buttonHour < firstAvailableHour) {
+                button.classList.add("disabled");
+
+                if (selectedTime === button.textContent) {
+                    selectedTime = null;
+                    selectedRepairTime.value = "";
+                    button.classList.remove("selected");
+                }
             }
         }
+
+//        if (isToday && buttonHour <= now.getHours()) {
+//            button.classList.add("disabled");
+//            button.classList.remove("disabled");
+//            
+//            if (selectedTime === button.textContent) {
+//                selectedTime = null;
+//                selectedRepairTime.value = "";
+//            }
+//        } 
     });
 }
 
