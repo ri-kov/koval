@@ -643,7 +643,7 @@
     .mod_select_options {
         width: 22.5rem !important;
         max-height: 11rem;
-        overflow-y: auto;
+        overflow-y: scroll;
     }
 
     .formS {
