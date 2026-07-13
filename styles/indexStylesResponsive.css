@@ -642,10 +642,13 @@
 
     .mod_select_options {
         width: 22.5rem !important;
+        max-height: 11rem;
+        overflow-y: auto;
     }
 
     .formS {
         width: 11rem !important;
+        padding-left: 45px !important;
     }
 
     .d_flex {
@@ -654,6 +657,10 @@
 
     .mod_mg_left {
         margin-left: -8rem;
+    }
+
+    #mod_more {
+        width: 22.5rem !important;
     }
 }
 
