@@ -563,9 +563,13 @@
         display: none !important;
     }
 
-    .modal-content {
+    /*.modal-content {
         width: 23rem !important;
         margin-left: 1.9rem !important;
+    }*/
+    .modal-content {
+        width: 25rem !important;
+        margin-left: 1rem !important;
     }
 
     .rep_mod_circ {
@@ -610,8 +614,9 @@
     }
 
     .mod_inp input {
-        width: 18rem !important;
+        width: 22.5rem;
         height: 2.7rem;
+        font-size: 0.9rem;
     }
 
     #modSelect {
@@ -637,6 +642,18 @@
 
     .mod_select_options {
         width: 18rem !important;
+    }
+
+    .formS {
+        width: 11rem !important;
+    }
+
+    .d_flex {
+        display: flex !important;
+    }
+
+    .mod_mg_left {
+        margin-left: -8rem;
     }
 }
 
