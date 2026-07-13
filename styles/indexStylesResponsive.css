@@ -626,6 +626,18 @@
     .modEmj {
         font-size: 1rem !important;
     }
+
+    .mod_custom_select .mod_emoji_down { 
+        margin-top: 1.6rem; 
+    }
+
+    .mod_custom_select .mod_emoji_up { 
+        margin-top: 1.6rem; 
+    }
+
+    .mod_select_options {
+        width: 18rem !important;
+    }
 }
 
 @media (max-width: 429px) {
