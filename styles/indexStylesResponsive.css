@@ -662,6 +662,10 @@
     #mod_more {
         width: 22.5rem !important;
     }
+
+    .calendar_days > :nth-child(n+8) {
+        display: none;
+    }
 }
 
 @media (max-width: 429px) {

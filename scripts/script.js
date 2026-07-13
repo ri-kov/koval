@@ -77,6 +77,7 @@ let  selectedTime = null;
 //    calendarDays.appendChild(dayButton);
 //}
 
+
 function renderCalendar() {
     calendarDays.innerHTML = "";
     calendarMonth.textContent = monthNames[currentMonth] + " " + currentYear;
