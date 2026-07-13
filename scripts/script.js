@@ -77,6 +77,16 @@ let  selectedTime = null;
 //    calendarDays.appendChild(dayButton);
 //}
 
+function getDefaultSelectedDate() {
+    const defaultDate = new Date();
+
+    defaultDate.setHours(0, 0, 0, 0);
+    if (defaultDate.getDay() === 0) {
+        defaultDate.setDate(defaultDate.getDate() + 1);
+    }
+
+    return defaultDate;
+}
 
 function renderCalendar() {
     calendarDays.innerHTML = "";
