@@ -620,7 +620,7 @@
     }
 
     #modSelect {
-        width: 18rem;
+        width: 22.5rem;
         height: 2.7rem;
     }
 
@@ -641,7 +641,7 @@
     }
 
     .mod_select_options {
-        width: 18rem !important;
+        width: 22.5rem !important;
     }
 
     .formS {
