@@ -96,6 +96,7 @@ function renderCalendar() {
 
         selectedRepairDate.value = selectedDate.toISOString().split("T")[0];
     }
+
     calendarDays.innerHTML = "";
     calendarMonth.textContent = monthNames[currentMonth] + " " + currentYear;
 
@@ -154,6 +155,7 @@ function renderCalendar() {
         });
         calendarDays.appendChild(dayButton);
     }
+    updateAvailableTimes();
 }
 
 function updateAvailableTimes() {
@@ -161,7 +163,6 @@ function updateAvailableTimes() {
     today.setHours(0, 0, 0, 0);
     const now = new Date();
     const isToday = selectedDate && selectedDate.toDateString() == today.toDateString();
-    const hour = Number(button.dataset.hour);
     timeButtons.forEach((button) => {
         const buttonHour = Number(button.dataset.hour);
         button.classList.remove("disabled");
