@@ -149,13 +149,39 @@ function renderCalendar() {
     }
 
     const startDay = isMobileCalendar() ? displayedWeekStart.getDate() : 1;
-    const endDay = isMobileCalendar() ? startDay + 6 : daysInMonth;
+    const mobileEmptyDays = isMobileCalendar() && startDay === 1 ? (displayedWeekStart.getDay() + 6) % 7 : 0;
+    const endDay = isMobileCalendar() ? startDay + (6 - mobileEmptyDays) : daysInMonth;
+
+    if (isMobileCalendar()) {
+        for (let empty = 0; empty < mobileEmptyDays; empty++) {
+            const emptyDay = document.createElement("div");
+            emptyDay.classList.add("empty_day");
+            calendarDays.appendChild(emptyDay);
+        }
+    }
 
     for (let day = startDay; day <= endDay; day++) {
         const dayButton = document.createElement("button");
         dayButton.type = "button";
         dayButton.classList.add("calendar_day");
-        let
+        let buttonDate;
+        if (isMobileCalendar()) {
+            buttonDate = new Date(displayedWeekStart);
+            buttonDate.setDate(displayedWeekStart.getDate() + (day - startDay));
+        } else {
+            buttonDate = new Date(currentYear, currentMonth, day);
+        }
+
+        if(isMobileCalendar() && buttonDate.getMonth() != currentMonth) {
+            const emptyDay = document.createElement("div");
+            emptyDay.classList.add("empty_day");
+            continue;
+        }
+
+        dayButton.textContent = buttonDate.getDate();
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
         //dayButton.textContent = day;
 
         //const today = new Date();
@@ -237,7 +263,22 @@ function updateAvailableTimes() {
 
 nextMonthBtn.addEventListener("click", () => {
     if (isMobileCalendar()) {
-        displayedWeekStart.setDate(displayedWeekStart.getDate() + 7);
+        const nextWeekStart = new Date(displayedWeekStart);
+
+        nextWeekStart.setDate(nextWeekStart.getDate() + 7);
+
+        if (
+            nextWeekStart.getMonth() !== displayedWeekStart.getMonth()
+        ) {
+            displayedWeekStart = new Date(
+                nextWeekStart.getFullYear(),
+                nextWeekStart.getMonth(),
+                1
+            );
+        } else {
+            displayedWeekStart = nextWeekStart;
+        }
+
         currentMonth = displayedWeekStart.getMonth();
         currentYear = displayedWeekStart.getFullYear();
     } else {
@@ -245,9 +286,10 @@ nextMonthBtn.addEventListener("click", () => {
 
         if (currentMonth > 11) {
             currentMonth = 0;
-            currentYear++
+            currentYear++;
         }
     }
+
     renderCalendar();
 });
 
