@@ -138,24 +138,30 @@ function renderCalendar() {
 
     let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
     firstDayOfMonth = (firstDayOfMonth + 6) % 7;
-    const daysInMonth = isMobileCalendar() ? 7 : new Date(currentYear, currentMonth + 1, 0).getDate();
+    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
 
-    for (let empty = 0; empty < firstDayOfMonth; empty++) {
-        const emptyDay = document.createElement("div");
-        emptyDay.classList.add("empty_day");
-        calendarDays.appendChild(emptyDay);
+    if (!isMobileCalendar()) {
+        for (let empty = 0; empty < firstDayOfMonth; empty++) {
+            const emptyDay = document.createElement("div");
+            emptyDay.classList.add("empty_day");
+            calendarDays.appendChild(emptyDay);
+        }
     }
 
-    for (let day = 1; day <= daysInMonth; day++) {
+    const startDay = isMobileCalendar() ? displayedWeekStart.getDate() : 1;
+    const endDay = isMobileCalendar() ? startDay + 6 : daysInMonth;
+
+    for (let day = startDay; day <= endDay; day++) {
         const dayButton = document.createElement("button");
         dayButton.type = "button";
         dayButton.classList.add("calendar_day");
-        dayButton.textContent = day;
+        let
+        //dayButton.textContent = day;
 
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
+        //const today = new Date();
+        //today.setHours(0, 0, 0, 0);
 
-        const buttonDate = new Date(currentYear, currentMonth, day);
+        //const buttonDate = new Date(currentYear, currentMonth, day);
 
         if (buttonDate < today || buttonDate.getDay() == 0) {
             dayButton.classList.add("disabled");
@@ -230,12 +236,18 @@ function updateAvailableTimes() {
 }
 
 nextMonthBtn.addEventListener("click", () => {
-    currentMonth++;
-    if (currentMonth > 11) {
-        currentMonth = 0;
-        currentYear++
-    }
+    if (isMobileCalendar()) {
+        displayedWeekStart.setDate(displayedWeekStart.getDate() + 7);
+        currentMonth = displayedWeekStart.getMonth();
+        currentYear = displayedWeekStart.getFullYear();
+    } else {
+        currentMonth++;
 
+        if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++
+        }
+    }
     renderCalendar();
 });
 
