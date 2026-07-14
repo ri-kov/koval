@@ -727,6 +727,18 @@
         width: 12rem !important;
         margin-left: 0.95rem !important;
     }
+
+    .choose_circ {
+        width: 4rem !important;
+        height: 4rem !important;
+        margin-top: 6rem;
+    }
+
+    .choose_pic {
+        width: 2.5rem !important;
+        height: 4.5rem !important;
+        margin-top: -0.3rem !important;
+    }
 }
 
 @media (max-width: 429px) {
