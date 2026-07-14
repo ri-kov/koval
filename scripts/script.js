@@ -93,7 +93,16 @@ function getMonday(date) {
     return result;
 }
 
+function getInitialWeekStart() {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
 
+    if (today.getDay() === 0) {
+        const nextMonday = newDate(today);
+        nextMonday.setDate(today.getDate() + 1);
+        return nextMonday;
+    }
+}
 
 function getDefaultSelectedDate() {
     const defaultDate = new Date();
