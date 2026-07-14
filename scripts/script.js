@@ -88,7 +88,12 @@ function getMonday(date) {
 
     const dayOfWeek = result.getDay();
     const daysSinceMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
+    result.setDate(result.getDate() - daysSinceMonday);
+
+    return result;
 }
+
+
 
 function getDefaultSelectedDate() {
     const defaultDate = new Date();
