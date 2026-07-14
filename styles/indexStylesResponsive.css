@@ -715,6 +715,11 @@
     .choose_text {
         width: 24rem;
         font-size: 0.85rem;
+        margin-left: 1.3rem;
+    }
+
+    .choose_box_dis {
+        display: block !important;
     }
 }
 
