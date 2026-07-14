@@ -673,6 +673,34 @@
 
     .time_options {
         max-height: 8rem !important;
+        overflow-y: scroll !important;
+    }
+
+    .calendar {
+        margin-top: 2rem;
+    }
+
+    .av_text {
+        font-size: 0.8rem !important;
+        font-weight: 600 !important;
+    }
+
+    .btm_mod_divider {
+        margin: 1rem 0 0 0rem !important;
+        width: 22rem !important;
+    }
+
+    #modDivHide {
+        display: none;
+    }
+
+    .mod_btm_cal {
+        margin: -0.15rem 0.4rem 0 0rem !important;
+    }
+
+    .req_app_mod {
+        margin: 0.81rem 0 0 0 !important;
+        font-size: 0.81rem !important;
     }
 }
 
