@@ -62,6 +62,7 @@ firstDayOfMonth = (firstDayOfMonth + 6) % 7;
 const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
 const timeButtons = document.querySelectorAll(".time_btn");
 let  selectedTime = null;
+let displayedWeekStart = getInitialWeekStart();
 
 //for (let empty = 0; empty < firstDayOfMonth; empty++) {
 //    const emptyDay = document.createElement("div");
@@ -76,6 +77,18 @@ let  selectedTime = null;
 //    dayButton.textContent = day;
 //    calendarDays.appendChild(dayButton);
 //}
+
+function isMobileCalendar() {
+    return window.matchMedia("(max-width: 600px)").matches;
+}
+
+function getMonday(date) {
+    const result = new Date(date);
+    result.setHours(0, 0, 0, 0);
+
+    const dayOfWeek = result.getDay();
+    const daysSinceMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
+}
 
 function getDefaultSelectedDate() {
     const defaultDate = new Date();

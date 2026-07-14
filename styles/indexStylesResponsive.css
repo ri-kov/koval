@@ -663,8 +663,16 @@
         width: 22.5rem !important;
     }
 
-    .calendar_days > :nth-child(n+8) {
+    /*.calendar_days > :nth-child(n+8) {
         display: none;
+    }*/
+
+    .modal_hide {
+        display: none !important;
+    }
+
+    .time_options {
+        max-height: 8rem !important;
     }
 }
 
