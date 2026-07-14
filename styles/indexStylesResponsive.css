@@ -721,6 +721,12 @@
     .choose_box_dis {
         display: block !important;
     }
+
+    .choose_card {
+        height: 18rem !important;
+        width: 12rem !important;
+        margin-left: 0.95rem !important;
+    }
 }
 
 @media (max-width: 429px) {
