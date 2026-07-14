@@ -703,6 +703,19 @@
         font-size: 0.81rem !important;
     }
     /* end of section4 */
+
+    /* section5 */
+
+    .choose_head {
+        display: block;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .choose_text {
+        width: 24rem;
+        font-size: 0.85rem;
+    }
 }
 
 @media (max-width: 429px) {

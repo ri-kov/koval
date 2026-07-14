@@ -824,6 +824,8 @@
     font-size: 1.1rem;
     font-weight: 450;
     text-align: center;
+    width: 38rem;
+    justify-self: center;
 }
 
 .choose_card {
