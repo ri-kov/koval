@@ -102,6 +102,8 @@ function getInitialWeekStart() {
         nextMonday.setDate(today.getDate() + 1);
         return nextMonday;
     }
+
+    return getMonday(today);
 }
 
 function getDefaultSelectedDate() {
@@ -125,11 +127,18 @@ function renderCalendar() {
     }
 
     calendarDays.innerHTML = "";
+
+    if (isMobileCalendar()) {
+        console.log(displayedWeekStart);
+        //renderWeeklyCalendar();
+    }// else {
+      //  renderMonthlyCalendar
+    //}
     calendarMonth.textContent = monthNames[currentMonth] + " " + currentYear;
 
     let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
     firstDayOfMonth = (firstDayOfMonth + 6) % 7;
-    const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+    const daysInMonth = isMobileCalendar() ? 7 : new Date(currentYear, currentMonth + 1, 0).getDate();
 
     for (let empty = 0; empty < firstDayOfMonth; empty++) {
         const emptyDay = document.createElement("div");
