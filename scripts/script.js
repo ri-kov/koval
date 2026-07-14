@@ -128,12 +128,6 @@ function renderCalendar() {
 
     calendarDays.innerHTML = "";
 
-    if (isMobileCalendar()) {
-        console.log(displayedWeekStart);
-        //renderWeeklyCalendar();
-    }// else {
-      //  renderMonthlyCalendar
-    //}
     calendarMonth.textContent = monthNames[currentMonth] + " " + currentYear;
 
     let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
@@ -265,7 +259,11 @@ nextMonthBtn.addEventListener("click", () => {
     if (isMobileCalendar()) {
         const nextWeekStart = new Date(displayedWeekStart);
 
-        nextWeekStart.setDate(nextWeekStart.getDate() + 7);
+        if ( displayedWeekStart.getDate() === 1 && displayedWeekStart.getDay() !== 1) {
+            nextWeekStart.setDate(displayedWeekStart.getDate() + (8 - displayedWeekStart.getDay()));
+        } else {
+            nextWeekStart.setDate(displayedWeekStart.getDate() + 7);
+        }
 
         if (
             nextWeekStart.getMonth() !== displayedWeekStart.getMonth()
@@ -294,10 +292,29 @@ nextMonthBtn.addEventListener("click", () => {
 });
 
 prevMonthBtn.addEventListener("click", () => {
-    currentMonth--;
-    if(currentMonth < 0) {
-        currentMonth = 11;
-        currentYear--;
+    if (isMobileCalendar()) {
+        const previousWeekStart = new Date(displayedWeekStart);
+
+        if (
+            displayedWeekStart.getDate() === 3 &&
+            displayedWeekStart.getDay() === 1
+        ) {
+            previousWeekStart.setDate(1);
+        } else {
+            previousWeekStart.setDate(displayedWeekStart.getDate() - 7);
+        }
+
+        displayedWeekStart = previousWeekStart;
+
+        currentMonth = displayedWeekStart.getMonth();
+        currentYear = displayedWeekStart.getFullYear();
+    } else {
+        currentMonth--;
+
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        }
     }
 
     renderCalendar();
