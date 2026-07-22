@@ -1071,6 +1071,12 @@
         width: 5rem;
         margin-top: 0.1rem;
     }
+
+    #faqFootHead {
+        display: block !important;
+        font-size: 0.9rem;
+        margin: -0.7rem 0 0 4.5rem !important;
+    }
 }
 
 @media (max-width: 429px) {
