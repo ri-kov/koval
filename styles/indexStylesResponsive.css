@@ -289,6 +289,7 @@
         font-size: 0.9rem !important;
         display: flex;
         justify-content: center;
+        margin-left: -1rem;
     }
 
     #sellMain {
@@ -829,6 +830,13 @@
 
     .choose_btn_txt2 {
         margin-top: 0.9rem !important;
+    }
+    /* end of sct 5 */
+    /*start of sct 6*/
+
+    .works_card_n {
+        font-size: 0.9rem !important;
+        margin-left: -1rem;
     }
 }
 
