@@ -985,6 +985,13 @@
     .works_st_txt_p2 {
         margin-left: -1.15rem !important;
     }
+
+    .works_view_btn {
+        font-size: 0.8rem !important;
+        margin-top: -1.5rem;
+        margin-bottom: 1rem;
+        margin-left: 9.3rem !important;
+    }
 }
 
 @media (max-width: 429px) {

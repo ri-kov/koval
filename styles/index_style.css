@@ -1063,6 +1063,7 @@
     font-weight: 600 !important;
     margin-left: 7.3rem !important;
     color: #1F71CE !important;
+    display: block !important;
 }
 
 .works_view_btn:hover {
