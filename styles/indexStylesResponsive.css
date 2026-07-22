@@ -720,6 +720,7 @@
 
     .choose_box_dis {
         display: block !important;
+        margin-top: 2rem !important;
     }
 
     .choose_card {
@@ -734,7 +735,19 @@
         height: 4rem !important;
     }
 
-    #cardCirc1 {
+    .card_circ_mg {
+        margin-top: 1rem;
+    }
+
+    #chooseCirc1 {
+        margin-top: -0.27rem;
+    }
+
+    #cardPic1 {
+        margin-top: -0.45rem !important;
+    }
+
+    .chooseBtmCards {
         margin-top: 1rem;
     }
 
