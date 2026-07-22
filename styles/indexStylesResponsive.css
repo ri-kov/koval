@@ -909,7 +909,7 @@
         font-size: 0.8rem;
         width: 8.5rem;
         margin-top: -1.5rem !important;
-        margin-left: 0.6rem;
+        margin-left: 1.3rem;
         font-weight: 680;
     }
 
@@ -928,6 +928,36 @@
 
     .works_st_txt {
         font-size: 0.7rem;
+        width: 7rem;
+        text-align: center;
+    }
+
+    .works_st_txt1 {
+        margin-left: -1rem;
+    }
+
+    .works_st_txt3 {
+        margin-left: 0.25rem;
+    }
+
+    .works_st_txt2 {
+        margin-left: 0.75rem;
+    }
+
+    .works_card {
+        height: auto !important;
+        width: auto !important;
+        margin-left: 0rem !important;
+    }
+
+    .works_divider {
+        height: 24rem !important;
+        rotate: 90deg;
+        margin: -12.5rem 0 -11.5rem 13.3rem !important;
+    }
+
+    .works_st_head_n1 {
+        width: 9.5rem !important;
     }
 }
 
