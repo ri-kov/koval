@@ -837,6 +837,49 @@
     .works_card_n {
         font-size: 0.9rem !important;
         margin-left: -1rem;
+        margin-top: -2rem !important;
+    }
+
+    .works_head_n {
+        font-size: 1.6rem !important;
+        width: 40rem;
+        justify-self: center;
+        margin-left: -6rem;
+    }
+
+    .works_head_part {
+        margin-left: 0rem !important;
+    }
+
+    .works_wrap {
+        display: block !important;
+        margin-top: 1rem !important;
+    }
+
+    .works_text_n {
+        margin-bottom: 0 !important;
+    }
+
+    .works_square {
+        height: 4rem;
+        width: 4rem;
+        flex-shrink: 0;
+    }
+
+    .works_icons {
+        height: 3rem;
+        width: 3rem;
+        margin-top: 0.15rem;
+    }
+
+    .works_head {
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+    }
+
+    .works_txt {
+        font-size: 0.8rem;
+        width: 20rem !important;
     }
 }
 
