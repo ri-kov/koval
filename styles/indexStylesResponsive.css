@@ -977,6 +977,14 @@
     .works_txt2 {
         width: 10rem;
     }
+
+    .works_st_head_p2 {
+        margin-left: -0.5rem !important;
+    }
+
+    .works_st_txt_p2 {
+        margin-left: -1.15rem !important;
+    }
 }
 
 @media (max-width: 429px) {
