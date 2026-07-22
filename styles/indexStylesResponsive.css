@@ -899,8 +899,27 @@
 
     .break_div {
         rotate: 90deg;
-        margin: -2rem 1rem 0 3.5rem;
+        margin: -2rem 0.5rem 0 3.2rem;
         height: 6rem;
+    }
+
+    .works_st_head {
+        font-size: 0.9rem;
+        width: 8.5rem;
+        margin-top: -1rem !important;
+        margin-left: 0.6rem;
+    }
+
+    .works_st_head2 {
+        width: 10rem;
+    }
+
+    .works_st_head1 {
+        margin-left: -1rem !important;
+    }
+
+    .works_step_num1 {
+        margin-left: 3.5rem !important;
     }
 }
 
