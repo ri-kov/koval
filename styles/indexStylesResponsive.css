@@ -1020,6 +1020,15 @@
     .empt_div {
         height: 1.5rem !important;
     }
+
+    .fa_questions {
+        width: 25rem !important;
+    }
+
+    .accordion-button {
+        font-size: 1rem !important;
+        line-height: 1.5;
+    }
 }
 
 @media (max-width: 429px) {
