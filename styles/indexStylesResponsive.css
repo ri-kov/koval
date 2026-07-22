@@ -797,9 +797,9 @@
 
     .choose_btn {
         height: 3rem;
-        width: 7.5rem;
+        width: 7.5rem !important;
         margin-top: -1rem;
-        font-size: 0.7rem;
+        font-size: 0.7rem !important;
     }
 
     .choose_btn_icon {
@@ -1076,6 +1076,22 @@
         display: block !important;
         font-size: 0.9rem;
         margin: -0.7rem 0 0 4.5rem !important;
+    }
+
+    .faq_foot_div {
+        display: none;
+    }
+
+    .faq_foot_button {
+        margin-left: 1rem !important;
+    }
+
+    .faq_foot_btn {
+        font-size: 0.7rem !important;
+    }
+
+    .faq_arr {
+        font-size: 0.8rem !important;
     }
 }
 

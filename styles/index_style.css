@@ -939,6 +939,7 @@
 .choose_browse_btn {
     background-color: #1F71CE;
     color: white;
+    z-index: 1000;
 }
 
 .choose_btn_icon {
