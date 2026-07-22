@@ -741,7 +741,7 @@
     .choose_pic {
         width: 2.5rem !important;
         height: 4.5rem !important;
-        margin-top: -0.3rem !important;
+        margin-top: -0.4rem;
     }
 
     .choose_card_head {
