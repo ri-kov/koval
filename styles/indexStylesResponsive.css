@@ -769,6 +769,67 @@
         font-size: 0.85rem;
         width: 10rem !important;
     }
+
+    .choose_box {
+        height: 5rem;
+        width: 25rem;
+        margin-top: 1.5rem !important;
+        margin-left: 1rem;
+    }
+
+    .choose_footer_txt {
+        display: none !important;
+    }
+
+    .choose_car_icon {
+        /*left: 4rem;
+        right: 0rem !important;
+        height: 9rem;
+        width: 9rem;
+        bottom: 2rem !important;*/
+        display: none !important;
+    }
+
+    .choose_footer_head {
+        display: none !important;
+    }
+
+    .choose_btn {
+        height: 3rem;
+        width: 7.5rem;
+        margin-top: -1rem;
+        font-size: 0.7rem;
+    }
+
+    .choose_btn_icon {
+        margin-left: 0rem !important;
+        margin-top: 0.4rem !important;
+    }
+
+    .choose_btn_txt {
+        margin-top: 0.4rem;
+    }
+
+    #chooseBtnText1 {
+        margin-top: 0.4rem !important;
+    }
+
+    .choose_btn_icon1 {
+        margin-left: 0.5rem !important;
+    }
+
+    .choose_btn_txt3 {
+        margin-top: 0.9rem !important;
+        margin-left: 0rem !important;
+    }
+
+    .choose_btn_icon3 {
+        margin-left: -0.3rem !important;
+    }
+
+    .choose_btn_txt2 {
+        margin-top: 0.9rem !important;
+    }
 }
 
 @media (max-width: 429px) {
