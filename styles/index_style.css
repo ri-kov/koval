@@ -1130,12 +1130,13 @@
 
 .acc_pic_box {
     height: 3.2rem;
-    width: 3.541rem;
+    width: 3.2rem;
     border-radius: 8px;
     background-color: #001f4112;
     justify-content: center;
     display: flex;
     margin: 0.5rem 0 0.4rem 1rem;
+    flex-shrink: 0;
 }
 
 .acc_div {

@@ -1023,11 +1023,39 @@
 
     .fa_questions {
         width: 25rem !important;
+        margin-left: 1rem;
     }
 
     .accordion-button {
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
         line-height: 1.5;
+        font-weight: 650;
+        height: auto;
+        padding: 0 2.5rem 0 1rem !important;
+    }
+
+    .acc_pic_box {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .faq_icons {
+        height: 2.8rem !important;
+        margin-top: -0.1rem;
+    }
+
+    .accordion-body {
+        font-size: 0.8rem !important;
+    }
+
+    .acc_div {
+        margin: 0.7rem -0.2rem 1rem 3.5rem !important;
+        height: auto !important;
+    }
+
+    .faq_btm_box {
+        width: 25rem !important;
+        margin-left: 0 !important;
     }
 }
 
