@@ -1090,6 +1090,7 @@
     text-decoration: none;
     color: #1F71CE !important;
     cursor: pointer;
+    margin-right: 0.2rem;
 }
 
 .faq_cont:hover {

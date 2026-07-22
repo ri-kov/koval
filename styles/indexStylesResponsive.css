@@ -992,6 +992,34 @@
         margin-bottom: 1rem;
         margin-left: 9.3rem !important;
     }
+    
+    /*sect6 end */
+    /*sect7 start */
+    .faq_card {
+        font-size: 0.9rem !important;
+    }
+
+    .faq_head {
+        font-size: 2rem;
+        display: grid;
+    }
+    
+    .faq_div {
+        width: 2.5rem;
+        margin-left: 12.25rem;
+    }
+
+    .sct7 {
+        margin-top: 2rem !important;
+    }
+
+    .choose_text {
+        margin-bottom: 2rem !important;
+    }
+
+    .empt_div {
+        height: 1.5rem !important;
+    }
 }
 
 @media (max-width: 429px) {
