@@ -876,7 +876,8 @@
     font-weight: 450;
     opacity: 0.9;
     width: 14rem;
-    justify-self: center;
+    align-self: center;
+    text-align: center;
 }
 
 .choose_box {

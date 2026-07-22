@@ -732,7 +732,10 @@
     .choose_circ {
         width: 4rem !important;
         height: 4rem !important;
-        margin-top: -2.5rem;
+    }
+
+    #cardCirc1 {
+        margin-top: 1rem;
     }
 
     .choose_pic {
@@ -751,6 +754,7 @@
 
     .choose_card_txt {
         font-size: 0.85rem;
+        width: 10rem !important;
     }
 }
 
