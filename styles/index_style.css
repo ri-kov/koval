@@ -875,6 +875,8 @@
     font-size: 1rem;
     font-weight: 450;
     opacity: 0.9;
+    width: 14rem;
+    justify-self: center;
 }
 
 .choose_box {

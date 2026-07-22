@@ -726,18 +726,31 @@
         height: 18rem !important;
         width: 12rem !important;
         margin-left: 0.95rem !important;
+        border: 0.5px solid #8080803d;
     }
 
     .choose_circ {
         width: 4rem !important;
         height: 4rem !important;
-        margin-top: 6rem;
+        margin-top: -2.5rem;
     }
 
     .choose_pic {
         width: 2.5rem !important;
         height: 4.5rem !important;
         margin-top: -0.3rem !important;
+    }
+
+    .choose_card_head {
+        font-size: 0.95rem;
+    }
+
+    .choose_card_divider {
+        margin: 0.7rem 0 1rem 0 !important;
+    }
+
+    .choose_card_txt {
+        font-size: 0.85rem;
     }
 }
 
