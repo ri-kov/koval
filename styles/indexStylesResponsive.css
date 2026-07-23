@@ -1166,6 +1166,20 @@
         position: relative;
         right: 0.4rem;
     }
+
+    .about_pict2 {
+        position: relative;
+        left: 3.07rem;
+    }
+
+    .abt_points_head2 {
+        position: relative;
+        right: 0.2rem !important;
+    }
+
+    .abt_points_txt2 {
+        width: auto !important;
+    }
 }
 
 @media (max-width: 429px) {
