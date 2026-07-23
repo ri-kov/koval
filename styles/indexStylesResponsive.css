@@ -1217,6 +1217,26 @@
 
     .about_note {
         bottom: 0rem !important;
+        background-color: #1F71CE;
+        color: white;
+        margin-top: 0.5rem;
+        width: 14rem;
+        height: 6.56rem;
+        padding-right: 0.5rem;
+    }
+
+    .about_note_head {
+        font-size: 0.85rem;
+    }
+
+    .about_note_txt {
+        width: 13rem !important;
+        font-size: 0.7rem;
+        margin-left: 0.4rem;
+    }
+
+    .abt_pic_box {
+        margin-top: 1rem !important;
     }
 }
 
