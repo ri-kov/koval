@@ -1126,6 +1126,46 @@
     .abt_us_box {
         margin-left: -0.2rem !important;
     }
+
+    .abt_wrap {
+        justify-items: center;
+    }
+
+    .abt_wrap .choose_circ {
+        margin-left: -4rem;
+    }
+
+    .about_pic {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-top: 0.2rem;
+    }
+
+    .about_pic2 {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: 0.05rem;
+    }
+
+    .about_pic3 {
+        margin-left: -2rem;
+    }
+
+    .abt_points_head1 {
+        font-size: 0.75rem;
+        position: relative;
+        right: 2.9rem;
+        white-space: nowrap;
+        margin-top: -0.5rem !important;
+    }
+
+    .abt_points_txt1 {
+        width: auto !important;
+        font-size: 0.65rem;
+        text-align: left;
+        position: relative;
+        right: 1.5rem;
+    }
 }
 
 @media (max-width: 429px) {
