@@ -1278,6 +1278,10 @@
     justify-self: center;
 }
 
+.about_footer_divider {
+    display: none;
+}
+
 .about_num {
     font-size: 2.2rem;
     color: #1F71CE;

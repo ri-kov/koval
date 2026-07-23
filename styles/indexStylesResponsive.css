@@ -1240,17 +1240,33 @@
     }
 
     .about_num {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .about_foot_head {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .about_foot_txt {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
- 
+
+    .abt_foot_box1 {
+        margin-left: 1rem !important;
+    }
+
+    .abt_div3 {
+        display: none !important;
+    }
+
+    .abt_foot_box3 {
+        margin-left: 0.5rem !important;
+    }
+
+    .about_footer {
+        border: none;
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 429px) {
