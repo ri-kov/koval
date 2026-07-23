@@ -1204,6 +1204,7 @@
 .faq_foot_btn {
     font-size: 1rem;
     margin: 0.9rem 0 0 1rem;
+    white-space: nowrap;
 }
 
 .faq_arrow {

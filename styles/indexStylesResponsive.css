@@ -212,6 +212,7 @@
     
     .feat_km {
         width: 4.25rem;
+        white-space: nowrap;
     }
 
     .exp_car {
@@ -1056,6 +1057,7 @@
     .faq_btm_box {
         width: 25rem !important;
         margin-left: 0 !important;
+        margin-bottom: 0 !important;
     }
 
     .faq_circ {
@@ -1084,14 +1086,45 @@
 
     .faq_foot_button {
         margin-left: 1rem !important;
+        position: relative;
+        right: 3.5rem;
     }
 
     .faq_foot_btn {
         font-size: 0.7rem !important;
+        margin-left: 0.8rem;
     }
 
     .faq_arr {
         font-size: 0.8rem !important;
+        margin: 1rem 2rem 0 0.8rem !important;
+    }
+
+    .faq_arrow {
+        height: 12rem;
+        margin: -4rem 0 0 -7rem;
+    }
+    /* sect7 end*/
+    /*sect8 start*/
+
+    #AboutUs {
+        font-size: 0.9rem;
+    }
+
+    .abt_us_head {
+        font-size: 2rem;
+        justify-self: baseline;
+        text-align: justify;
+    }
+
+    .abt_us_txt {
+        font-size: 0.85rem;
+        margin-left: 0;
+        margin-top: 0 !important;
+    }
+
+    .abt_us_box {
+        margin-left: -0.2rem !important;
     }
 }
 
