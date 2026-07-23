@@ -1186,7 +1186,8 @@
     }
 
     .abt_points_txt3 {
-        right: 6.3rem !important;
+        right: 1.6rem !important;
+        white-space: nowrap;
     }
 }
 
