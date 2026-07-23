@@ -1132,7 +1132,7 @@
     }
 
     .abt_wrap .choose_circ {
-        margin-left: -4rem;
+        margin-left: -2rem;
     }
 
     .about_pic {
@@ -1154,7 +1154,7 @@
     .abt_points_head1 {
         font-size: 0.75rem;
         position: relative;
-        right: 2.9rem;
+        right: 1.4rem;
         white-space: nowrap;
         margin-top: -0.5rem !important;
     }
@@ -1162,9 +1162,9 @@
     .abt_points_txt1 {
         width: auto !important;
         font-size: 0.65rem;
-        text-align: left;
+        text-align: center;
         position: relative;
-        right: 1.5rem;
+        right: 0.4rem;
     }
 }
 
