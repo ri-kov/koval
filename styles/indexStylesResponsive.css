@@ -1266,6 +1266,15 @@
     .about_footer {
         border: none;
         margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .about_footer_divider {
+        width: 25rem;
+        height: 0.06rem;
+        border-top: 0.09rem solid rgba(98, 98, 98, 0.2);
+        border-radius: 10px;
+        display: block !important;
     }
 }
 
