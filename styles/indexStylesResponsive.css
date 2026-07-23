@@ -1150,7 +1150,9 @@
     }
 
     .about_pic3 {
-        margin-left: -2rem;
+        position: relative;
+        left: 3.4rem;
+        margin-top: 0.8rem;
     }
 
     .abt_points_head1 {
@@ -1181,6 +1183,10 @@
 
     .abt_points_txt2 {
         width: auto !important;
+    }
+
+    .abt_points_txt3 {
+        right: 6.3rem !important;
     }
 }
 
