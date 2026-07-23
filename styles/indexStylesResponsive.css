@@ -1238,6 +1238,19 @@
     .abt_pic_box {
         margin-top: 1rem !important;
     }
+
+    .about_num {
+        font-size: 1.5rem;
+    }
+
+    .about_foot_head {
+        font-size: 1rem;
+    }
+
+    .about_foot_txt {
+        font-size: 0.8rem;
+    }
+ 
 }
 
 @media (max-width: 429px) {
