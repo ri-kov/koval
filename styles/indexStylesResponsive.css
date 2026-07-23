@@ -1275,6 +1275,22 @@
         border-top: 0.09rem solid rgba(98, 98, 98, 0.2);
         border-radius: 10px;
         display: block !important;
+        margin-top: -0.2rem;
+    }
+
+    .about_div {
+        height: 5.5rem !important;
+        margin-left: 3.4rem;
+        margin-right: 1.4rem;
+    }
+
+    .about_foot_head2 {
+        margin-left: 1rem;
+    }
+
+    .about_foot_txt2 {
+        width: 8rem !important;
+        margin-left: 1.4rem;
     }
 }
 
