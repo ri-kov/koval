@@ -1349,7 +1349,29 @@
 
     /*sct8 end*/
     /*sct9 start*/
-    
+
+    #ContactUs {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+
+    .cont_div {
+        width: 6.2rem !important;
+        margin-left: 0rem !important;
+        margin-top: 0;
+    }
+
+    .contact_head {
+        justify-self: baseline;
+        text-align: justify;
+        font-size: 2rem;
+    }
+
+    .contact_text {
+        justify-self: baseline;
+        text-align: justify;
+        margin-left: 0 !important;
+    }
 }
 
 @media (max-width: 429px) {
