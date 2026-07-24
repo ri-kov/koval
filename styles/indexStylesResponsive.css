@@ -1382,6 +1382,14 @@
         width: 2.5rem;
         height: 2.5rem;
     }
+
+    .contact_info_name {
+        font-size: 0.95rem !important;
+    }
+
+    .contact_info_txt {
+        font-size: 0.85rem !important;
+    }
 }
 
 @media (max-width: 429px) {
