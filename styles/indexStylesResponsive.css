@@ -1473,6 +1473,11 @@
     .phone_fl_row {
         flex-direction: row !important;
     }
+
+    #contactTimeIcon {
+        margin-left: 0.2rem;
+        margin-top: 0.1rem;
+    }
 }
 
 @media (max-width: 429px) {
