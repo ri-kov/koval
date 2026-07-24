@@ -1409,8 +1409,9 @@
     }
 
     #contactForm {
-        margin: 0 0 2rem 0rem !important;
+        margin: 1.5rem 0 2rem 0rem !important;
         width: 25.3rem !important;
+        height: 33.5rem !important;
     }
 
     .cont_form_circ {
@@ -1438,6 +1439,26 @@
 
     .contact_inp_cont {
         width: 11rem !important;
+    }
+
+    .contact_form_more {
+        margin-left: -1.3rem !important;
+    }
+
+    #inpMore {
+        height: 6rem !important;
+        width: 23.2rem !important;
+    }
+
+    .cont_form_btn {
+        margin-top: 0rem;
+        margin-left: -1.2rem;
+    }
+
+    .form_send_msg {
+        height: 3rem;
+        width: 11rem;
+        font-size: 1rem !important;
     }
 }
 
