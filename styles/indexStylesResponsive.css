@@ -1469,6 +1469,10 @@
         font-size: 1.3rem !important;
     }
     /*sect9 end*/
+
+    .phone_fl_row {
+        flex-direction: row !important;
+    }
 }
 
 @media (max-width: 429px) {

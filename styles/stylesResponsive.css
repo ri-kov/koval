@@ -115,7 +115,48 @@
     .footer_logo {
         width: 12rem;
         height: 4.666rem;
-        margin-top: -7rem;
-        margin-left: 7rem;
+        margin-left: 0rem;
+    }
+
+    .foot_div {
+        display: none !important;
+    }
+
+    .footer_links {
+        white-space: nowrap;
+        font-size: 0.8rem !important;
+        margin-right: 4rem;
+    }
+
+    .foot_txt_box {
+        width: 10rem !important;
+        margin-left: 1.3rem;
+    }
+
+    .footer_head {
+        font-size: 1rem !important;
+        white-space: nowrap;
+        margin-top: 1rem !important;
+        margin-left: 1rem !important;
+        margin-bottom: 0.2rem !important;
+    }
+
+    .footer_logo_text {
+        width: 100% !important;
+        font-size: 0.76rem !important;
+        margin: 0 0 0 1.2rem !important;
+        font-weight: 500 !important;
+    }
+
+    .footer_links_wrap {
+        justify-content: start !important;
+    }
+
+    .foot_link_inv {
+        margin-left: 3.7rem;
+    }
+
+    .foot_link_sell {
+        margin-left: -0.1rem !important;
     }
 }
