@@ -1390,6 +1390,19 @@
     .contact_info_txt {
         font-size: 0.85rem !important;
     }
+
+    .contact_box1 {
+        margin-top: 0rem !important;
+    }
+
+    .contact_box2 {
+        margin-left: 2.5rem;
+    }
+
+    .contact_info_div {
+        margin: 0rem 0rem 1rem 0rem !important;
+            width: 25rem !important;
+    }
 }
 
 @media (max-width: 429px) {
