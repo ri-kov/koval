@@ -1401,7 +1401,43 @@
 
     .contact_info_div {
         margin: 0rem 0rem 1rem 0rem !important;
-            width: 25rem !important;
+        width: 25rem !important;
+    }
+
+    .about_footer.phone_d_block {
+        margin-bottom: 3rem !important;
+    }
+
+    #contactForm {
+        margin: 0 0 2rem 0rem !important;
+        width: 25.3rem !important;
+    }
+
+    .cont_form_circ {
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+
+    .cont_form_icon {
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+
+    .contact_form_name {
+        font-size: 0.9rem !important;
+    }
+
+    .cont_form_gr1 {
+        margin-left: -1.3rem;
+        display: flex !important;
+    }
+
+    .contact_form_inp::placeholder {
+        font-size: 0.85rem !important;
+    }
+
+    .contact_inp_cont {
+        width: 11rem !important;
     }
 }
 
