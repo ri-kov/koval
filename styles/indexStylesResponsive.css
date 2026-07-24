@@ -1301,15 +1301,38 @@
     .abt_foot_box3 .about_foot_txt {
         position: relative;
         left: 0.6rem;
+        width: 8rem !important;
     }
 
     .about_div2 {
-        margin-left: 3.17rem !important;
+        margin-left: 3.7rem !important;
         margin-top: 0rem !important;
     }
 
     .about_div {
         border-radius: 0;
+    }
+
+    .about_num4 {
+        position: relative;
+        left: 0.7rem;
+    }
+
+    .about_foot_head4 {
+        position: relative;
+        left: 1.25rem;
+    }
+
+    .about_foot_txt4 {
+        width: 8rem !important;
+        position: relative;
+        left: 1.35rem;
+    }
+
+    .about_foot_box_main {
+        border: 1.5px solid rgba(98, 98, 98, 0.25);
+        border-radius: 12px;
+        width: 25rem;
     }
 }
 
