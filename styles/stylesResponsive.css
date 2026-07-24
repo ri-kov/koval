@@ -159,4 +159,18 @@
     .foot_link_sell {
         margin-left: -0.1rem !important;
     }
+    /*temp*/
+    .foot_contact_info {
+        margin-top: 5rem;
+    }
+
+    #footBuy {
+        margin-left: 0.2rem;
+        margin-right: 2.8rem !important;
+    }
+
+    #footMaint {
+        margin-left: 0.93rem;
+        margin-right: 2.7rem !important;
+    }
 }
