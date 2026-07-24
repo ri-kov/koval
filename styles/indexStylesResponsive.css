@@ -1292,6 +1292,16 @@
         width: 8rem !important;
         margin-left: 1.4rem;
     }
+
+    .abt_foot_box3 .about_foot_head {
+        position: relative;
+        left: 0.6rem;
+    }
+
+    .abt_foot_box3 .about_foot_txt {
+        position: relative;
+        left: 0.6rem;
+    }
 }
 
 @media (max-width: 429px) {
