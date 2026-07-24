@@ -1302,6 +1302,15 @@
         position: relative;
         left: 0.6rem;
     }
+
+    .about_div2 {
+        margin-left: 3.17rem !important;
+        margin-top: 0rem !important;
+    }
+
+    .about_div {
+        border-radius: 0;
+    }
 }
 
 @media (max-width: 429px) {
