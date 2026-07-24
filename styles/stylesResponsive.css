@@ -181,4 +181,9 @@
     .foot_last_box {
         margin-top: 5rem;
     }
+    /*footer end*/
+    /*btm footer*/
+    .btm_txt {
+        font-size: 0.7rem;
+    }
 }
