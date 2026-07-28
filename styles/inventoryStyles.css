@@ -51,10 +51,14 @@ body {
     text-align: justify !important;
 }
 
-.hero_btn {
+.hero_btn_txt {
     font-size: 15px !important;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: 0.7rem;
     margin-bottom: 0;
     font-weight: 600;
+}
+
+.hero_btn {
+    height: 4rem !important;
 }
