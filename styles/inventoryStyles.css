@@ -29,3 +29,11 @@
 .head_inv {
     overflow-y: clip;
 }
+
+.hero_note {
+    color: #1F71CE;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
