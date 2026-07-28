@@ -94,3 +94,8 @@ body {
 .hero_div1 {
     margin-left: -1.5rem !important;
 }
+
+.veh_av {
+    width: 2rem;
+    height: 2rem;
+}
