@@ -67,3 +67,23 @@ body {
     border-radius: 12px;
     border: 2px solid rgb(255 255 255 / 20%);
 }
+
+.hero_stats_main {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.hero_stats_txt {
+    font-weight: 400;
+    font-size: 0.85rem;
+    width: 15rem;
+    opacity: 0.9;
+}
+
+.hero_stat {
+    margin-top: 1.5rem !important;
+}
+
+.hero_div {
+    margin-top: 2rem !important;
+}
