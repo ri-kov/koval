@@ -1,3 +1,7 @@
+body {
+    font-family: "Montserrat", sans-serif !important;
+}
+
 #hero_section {
     position: relative;
     overflow: hidden;
@@ -45,4 +49,12 @@
     flex-direction: column;
     justify-self: baseline;
     text-align: justify !important;
+}
+
+.hero_btn {
+    font-size: 15px !important;
+    font-size: 1rem;
+    margin: 0.7rem;
+    margin-bottom: 0;
+    font-weight: 600;
 }
