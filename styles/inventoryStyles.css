@@ -37,3 +37,12 @@
     font-weight: 700;
 }
 
+.hero_slogan_word {
+    color: #1F71CE;
+}
+
+.hero_slogan {
+    flex-direction: column;
+    justify-self: baseline;
+    text-align: justify !important;
+}
