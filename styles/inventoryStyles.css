@@ -5,8 +5,8 @@ body {
 #hero_section {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
-                url(../pictures/background.PNG);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 28%, rgba(0, 0, 0, 0.9) 48%, rgba(0, 0, 0, 0.6) 72%, rgba(0, 0, 0, 0.3) 100%),
+                linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.05) 55%, rgba(0, 0, 0, 0.42) 100%),url("../pictures/background.PNG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,4 +60,10 @@ body {
 
 .hero_btn {
     height: 4rem !important;
+}
+
+.hero_wrap {
+    background-color: #000000f3;
+    border-radius: 12px;
+    border: 2px solid rgb(255 255 255 / 20%);
 }
