@@ -11,7 +11,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 840px;
+    height: 44rem;
     /*display: flex;*/
     justify-content: center;
     align-items: center;
@@ -52,8 +52,7 @@ body {
 }
 
 .hero_btn_txt {
-    font-size: 15px !important;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0.7rem;
     margin-bottom: 0;
     font-weight: 600;
