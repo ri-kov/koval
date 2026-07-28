@@ -71,6 +71,7 @@ body {
 .hero_stats_main {
     font-weight: 600;
     margin-bottom: 0.4rem;
+    white-space: nowrap;
 }
 
 .hero_stats_txt {
@@ -78,6 +79,7 @@ body {
     font-size: 0.85rem;
     width: 12rem;
     opacity: 0.9;
+    margin-bottom: 1.5rem;
 }
 
 .hero_stat {
