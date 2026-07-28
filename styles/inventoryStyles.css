@@ -66,6 +66,7 @@ body {
     background-color: #000000f3;
     border-radius: 12px;
     border: 2px solid rgb(255 255 255 / 20%);
+    margin-top: 4rem;
 }
 
 .hero_stats_main {
