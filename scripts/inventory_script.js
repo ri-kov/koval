@@ -462,3 +462,78 @@ carImg6.addEventListener("pointerup", (e) => {
 
     updateImage6();
 });
+
+const carImages7 = [
+    '../pictures/cars/2019sonatasample/1.JPG',
+    '../pictures/cars/2019sonatasample/2.JPG',
+    '../pictures/cars/2019sonatasample/3.JPG',
+    '../pictures/cars/2019sonatasample/4.JPG',
+    '../pictures/cars/2019sonatasample/5.JPG',
+    '../pictures/cars/2019sonatasample/6.JPG',
+    '../pictures/cars/2019sonatasample/7.JPG'
+];
+
+let currentImgIndex7 = 0;
+
+const carImg7 = document.getElementById('carImage7');
+const nextImg7 = document.getElementById('btnNext7');
+const prevImg7 = document.getElementById('btnPrev7');
+const imgCounter7 = document.getElementById('imgCounter7');
+let startX7 = 0;
+
+function updateImage7() {
+    carImg7.src = carImages7[currentImgIndex7];
+    imgCounter7.textContent = `${currentImgIndex7+1} / ${carImages7.length}`;
+};
+
+updateImage7();
+
+nextImg7.addEventListener('click', () => {
+    currentImgIndex7++;
+    
+    if (currentImgIndex7 >= carImages7.length) {
+        currentImgIndex7 = 0;
+    }
+
+    updateImage7();
+});
+
+prevImg7.addEventListener('click', () => {
+    currentImgIndex7--;
+
+    if (currentImgIndex7 < 0) {
+        currentImgIndex7 = carImages7.length - 1;
+    }
+
+    updateImage7();
+});
+
+
+carImg7.addEventListener("pointerdown", (e) => {
+    startX7 = e.clientX;
+});
+
+carImg7.addEventListener("pointerup", (e) => {
+    const endX7 = e.clientX;
+    const swipeDistance7 = endX7 - startX7;
+
+    if (Math.abs(swipeDistance7) < 40) {
+        return;
+    }
+
+    if (swipeDistance7 < 0) {
+        currentImgIndex7++;
+
+        if (currentImgIndex7 >= carImages7.length) {
+            currentImgIndex7 = 0;
+        }
+    } else {
+        currentImgIndex7--;
+
+        if (currentImgIndex7 < 0) {
+            currentImgIndex7 = carImages7.length - 1;
+        }
+    }
+
+    updateImage7();
+});
