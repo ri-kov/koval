@@ -115,7 +115,7 @@ body {
 .car_display_card {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 20rem;
-    height: 22rem;
+    height: 22.5rem;
     background-color: white;
     color: black;
     border-radius: 15px;
@@ -171,7 +171,7 @@ body {
     position: absolute;
     border-radius: 6px;
     right: 1rem;
-    bottom: 11.5rem;
+    bottom: 12rem;
     font-size: 0.6rem;
 }
 
