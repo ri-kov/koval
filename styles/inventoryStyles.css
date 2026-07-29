@@ -212,12 +212,32 @@ body {
     font-size: 1rem;
 }
 
+.car_card_sold_note {
+    display: none;
+}
+
 .card_sold {
     overflow: hidden;
 }
 
 .car_card_sold {
     opacity: 0;
+    display: none;
+}
+
+.card_sold .car_card_sold_note {
+    display: flex;
+    font-size: 0.9rem !important;
+    color: rgb(111, 111, 111);
+    font-weight: 700 !important;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.3);
+    border: none !important;
+}
+
+.card_sold .car_card_vd {
+    display: none;
 }
 
 .card_sold .car_card_sold {
@@ -230,7 +250,7 @@ body {
     border-radius: 8px;
     width: 23.8rem;
     height: 4rem;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     position: relative;
     bottom: 8rem;
@@ -256,4 +276,19 @@ body {
     content: '';
     background-color: grey !important;
     color: grey;
+}
+
+.card_sold .car_card_make {
+    margin-top: -3rem;
+}
+
+.car_card_vd:hover {
+    background-color: #1F71CE;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.car_card_vd:hover i {
+    color: white !important;
+    transition: 0.3s ease;
 }
