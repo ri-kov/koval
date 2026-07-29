@@ -103,7 +103,7 @@ body {
 }
 
 #num_veh_available {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 1rem;
     align-items: center;
     justify-content: center;
@@ -291,4 +291,8 @@ body {
 .car_card_vd:hover i {
     color: white !important;
     transition: 0.3s ease;
+}
+
+.wcu_section {
+    background-color: #f6f6f6;
 }
