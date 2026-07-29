@@ -196,5 +196,13 @@ body {
 .car_card_icon {
     height: 1rem;
     width: 1rem;
-    margin: 0px 0.3rem 0px 2rem;
+    margin: 0px 0.3rem 0px 1.6rem;
+}
+
+#vd_btn1 {
+    height: 1.9rem;
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    width: 18rem;
 }
