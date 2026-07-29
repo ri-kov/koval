@@ -132,12 +132,45 @@ body {
 }
 
 .btn_arrow_move {
-     width: 2rem;
+    width: 2rem;
     height: 2rem;
     border-radius: 50px;
     color: #1F71CE;
     background-color: rgba(255, 255, 255);
     border: 0;
     position: absolute;
-    top: 7.325rem;
+    top: 4.5rem;
+}
+
+.car_card_note {
+    width: 4rem;
+    height: 1.2rem;
+    color: white;
+    background-color: rgb(0, 0, 141);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.6rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.img_card_count {
+    width: 3.5rem;
+    height: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 6px;
+    right: 1rem;
+    bottom: 12.5rem;
+    font-size: 0.6rem;
 }
