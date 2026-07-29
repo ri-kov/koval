@@ -537,3 +537,84 @@ carImg7.addEventListener("pointerup", (e) => {
 
     updateImage7();
 });
+
+const carImages8 = [
+    '../pictures/cars/2017subarusample/1.jpg',
+    '../pictures/cars/2017subarusample/2.jpg',
+    '../pictures/cars/2017subarusample/3.jpg',
+    '../pictures/cars/2017subarusample/4.jpg',
+    '../pictures/cars/2017subarusample/5.jpg',
+    '../pictures/cars/2017subarusample/6.jpg',
+    '../pictures/cars/2017subarusample/7.jpg',
+    '../pictures/cars/2017subarusample/8.jpg',
+    '../pictures/cars/2017subarusample/9.jpg',
+    '../pictures/cars/2017subarusample/10.jpg',
+    '../pictures/cars/2017subarusample/11.jpg',
+    '../pictures/cars/2017subarusample/12.jpg',
+    '../pictures/cars/2017subarusample/13.jpg',
+];
+
+let currentImgIndex8 = 0;
+
+const carImg8 = document.getElementById('carImage8');
+const nextImg8 = document.getElementById('btnNext8');
+const prevImg8 = document.getElementById('btnPrev8');
+const imgCounter8 = document.getElementById('imgCounter8');
+let startX8 = 0;
+
+function updateImage8() {
+    carImg8.src = carImages8[currentImgIndex8];
+    imgCounter8.textContent = `${currentImgIndex8+1} / ${carImages8.length}`;
+};
+
+updateImage8();
+
+nextImg8.addEventListener('click', () => {
+    currentImgIndex8++;
+    
+    if (currentImgIndex8 >= carImages8.length) {
+        currentImgIndex8 = 0;
+    }
+
+    updateImage8();
+});
+
+prevImg8.addEventListener('click', () => {
+    currentImgIndex8--;
+
+    if (currentImgIndex8 < 0) {
+        currentImgIndex8 = carImages8.length - 1;
+    }
+
+    updateImage8();
+});
+
+
+carImg8.addEventListener("pointerdown", (e) => {
+    startX8 = e.clientX;
+});
+
+carImg8.addEventListener("pointerup", (e) => {
+    const endX8 = e.clientX;
+    const swipeDistance8 = endX8 - startX8;
+
+    if (Math.abs(swipeDistance8) < 40) {
+        return;
+    }
+
+    if (swipeDistance8 < 0) {
+        currentImgIndex8++;
+
+        if (currentImgIndex8 >= carImages8.length) {
+            currentImgIndex8 = 0;
+        }
+    } else {
+        currentImgIndex8--;
+
+        if (currentImgIndex8 < 0) {
+            currentImgIndex8 = carImages8.length - 1;
+        }
+    }
+
+    updateImage8();
+});
