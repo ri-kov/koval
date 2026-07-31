@@ -390,6 +390,7 @@ body {
     display: flex;
     padding: 1rem;
     justify-content: center;
+
 }
 
 .inventory_btm_box_circ {
@@ -431,4 +432,19 @@ body {
 
 .inventory_btm_box_icon {
     margin: 0 1rem 0 1rem;
+}
+
+.inventory_btm_note_link {
+    color: #1F71CE;
+    text-decoration: none;
+}
+
+.inventory_btm_note_link:hover {
+    color: #123d6f;
+    transition: 0.3s ease;
+}
+
+.inventory_btm_note_link:hover i {
+    color: #123d6f !important;
+    transition: 0.3s ease;
 }
