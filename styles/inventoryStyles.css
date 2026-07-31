@@ -340,8 +340,8 @@ body {
 }
 
 .financing_main_div {
-    height: 0.06rem;
-    width: 36.5rem;
+    height: 0.08rem;
+    width: 36rem;
     margin: 1rem 0rem 1rem 0rem;
     border-bottom: 0.09rem solid rgba(98, 98, 98, 0.2);
     border-radius: 10px;
@@ -362,6 +362,10 @@ body {
     transition: 0.3s ease;
 }
 
-.financing_circ {
-    
+.financing_div {
+    height: 25.5rem;
+    width: 0.08rem;
+    margin: 0rem 1rem 0rem 5rem;
+    border-left: 0.09rem solid rgba(98, 98, 98, 0.2);
+    border-radius: 10px;
 }
