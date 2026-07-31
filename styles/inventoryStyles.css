@@ -394,8 +394,8 @@ body {
 .inventory_btm_box_circ {
     display: flex;
     justify-content: center;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4.2rem;
+    height: 4.2rem;
     border-radius: 50px;
     background-color: #1F71CE;
     margin-right: 2rem;
@@ -403,14 +403,22 @@ body {
 
 .inventory_btm_box_head {
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
     white-space: nowrap;
     margin-bottom: 0.3rem;
 }
 
 .inventory_btm_box_txt {
     font-weight: 550;
-    font-size: 1rem;
+    font-size: 0.9rem;
     opacity: 0.9;
     width: 27rem;
+}
+
+.inventory_btm_box_div {
+    height: 5rem;
+    width: 0.08rem;
+    margin: 0rem 1rem 0rem 1rem;
+    border-left: 0.09rem solid rgba(98, 98, 98, 0.2);
+    border-radius: 10px;
 }
