@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/06d3a59de6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class = "cont_box1">
+    <section class = "cont_box1" id = "home">
         <div id = "header">
             <img src="pictures/logo.png" alt="VALEN logo" id = "logo">
             <button id = "hamburger" class = "hamburger" type = "button">
@@ -32,12 +32,12 @@
             </button>
             <div class = "nav_links" id = "mobileMenu">
                 <img src="pictures/logo.png" alt="VALEN logo" class = "hamburger_logo">
-                <a class = "link home nav_link" href="index.html"><img class = "link_icons" src="pictures/homeIcon.svg" alt="home-icon">Home</a>
+                <a class = "link home nav_link" href="index.html" data-section = "home"><img class = "link_icons" src="pictures/homeIcon.svg" alt="home-icon">Home</a>
                 <a class = "link nav_link" href = "current-vehicles/inventory.html"><img class = "link_icons" src="pictures/carPic7.svg" alt="car-icon">Inventory</a>
-                <a class = "link nav_link" href = "#sellForm"><img class = "link_icons" src="pictures/tagPic6.svg" alt="tag-icon">Sell Your Car</a>
-                <a href="#RepairServices" class = "link nav_link"><img class = "link_icons" src="pictures/repairPic4.svg" alt="wrench-icon">Repair Services</a>
-                <a href = "#AboutUs" class = "link nav_link"><img class = "link_icons" src="pictures/userPic.svg" alt="user-icon">About Us</a>
-                <a href = "#ContactUs" class = "link nav_link"><img class = "link_icons" src="pictures/mailPic3.svg" alt="mail-icon">Contact</a>
+                <a class = "link nav_link" href = "#sellForm" data-section = "sell-your-car"><img class = "link_icons" src="pictures/tagPic6.svg" alt="tag-icon">Sell Your Car</a>
+                <a href="#RepairServices" class = "link nav_link" data-section = "repair-services"><img class = "link_icons" src="pictures/repairPic4.svg" alt="wrench-icon">Repair Services</a>
+                <a href = "#AboutUs" class = "link nav_link" data-section = "about-us"><img class = "link_icons" src="pictures/userPic.svg" alt="user-icon">About Us</a>
+                <a href = "#ContactUs" class = "link nav_link" data-section = "contact"><img class = "link_icons" src="pictures/mailPic3.svg" alt="mail-icon">Contact</a>
                 <a class = "phone_num"><i class="fa-solid fa-phone" style="color: #1F71CE;"></i> (204) 999-9999</a>
                 <a href="#bookRepairModal" data-bs-toggle="modal" class = "head_btn">Book Repair</a>
             </div>
@@ -243,7 +243,7 @@
             </div>
         </div>
     </section>
-    <section class = "sct_gr">
+    <section class = "sct_gr" id = "sell-your-car">
         <div class = "container">
             <div class = "row">
                 <div class = "col-md-5">
@@ -391,7 +391,7 @@
             </div>
         </div>
     </section>
-    <section class = "sct_gr" style = "margin-top: 0rem !important;">
+    <section class = "sct_gr" style = "margin-top: 0rem !important;" id = "repair-services">
         <div style = "margin: 0 0 0 7rem;" id = "sct4Wrap">
             <div id = "RepairServices" class = "quick_card">Repair Services</div>
             <div style = "display: flex;" id = "repHeadWrap">
@@ -983,7 +983,7 @@
             </div>
         </div>
     </section>
-    <section style = "margin-top: 3rem; font-family: 'Montserrat', sans-serif;">
+    <section style = "margin-top: 3rem; font-family: 'Montserrat', sans-serif;" id = "about-us">
         <div class = "container">
             <div class = "row abt_us_box">
                 <div class = "col-md-4">
@@ -1087,7 +1087,7 @@
             </div>
         </div>
     </section>
-    <section style = "margin-top: 3rem; font-family: 'Montserrat', sans-serif;">
+    <section style = "margin-top: 3rem; font-family: 'Montserrat', sans-serif;" id = "contact">
         <div class = "container">
             <div class = "row">
                 <div class = "col-md-5">
