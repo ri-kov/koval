@@ -1,0 +1,15 @@
+@media(max-width: 768px) {
+    #heroCont1 {
+        margin-top: 2rem !important;
+    }
+
+    .hero_note {
+        font-size: 0.9rem;
+    }
+
+    #contText1 {
+        font-size: 0.95rem !important;
+        opacity: 0.9;
+        width: 22rem !important;
+    }
+}
