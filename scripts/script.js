@@ -366,3 +366,31 @@ const modCancel = document.getElementById("modCancel");
 modCancel.addEventListener("click", () => {
     resetRepairBooking();
 });
+
+const hamburger = document.getElementById("hamburger");
+const closeMenu = document.getElementById("closeMenu");
+const mobileMenu = document.getElementById("mobileMenu");
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
+    hamburger.style.display = "none";
+    closeMenu.style.display = "block";
+    document.body.classList.add("menu_open");
+});
+
+closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    hamburger.style.display = "block";
+    closeMenu.style.display = "none";
+    document.body.classList.remove("menu_open");
+});
+
+document.querySelectorAll(".nav_links a").forEach((link) => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+        document.body.classList.remove("menu_open");
+
+        hamburger.style.display = "block";
+        closeMenu.style.display = "none";
+    });
+});

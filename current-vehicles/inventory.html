@@ -541,7 +541,171 @@
     <section class = "btm_foot">
         <p class = "btm_txt" style = "margin: 0.5rem 0 0.5rem 0 !important;">© 2026 VALEN Auto Sales & Repair. All Rights Reserved.</p>
     </section>
+    <div class = "modal fade" id="bookRepairModal" tabindex="-1" aria-hidden="true">
+                <div class = "modal-dialog" style = "margin-left: 16.2rem">
+                    <div class = "modal-content" style = "width: 53.5rem">
+                        <div style = "display: flex; margin: 1.5rem 0 0 1.5rem;">
+                            <div style="display: block;"><div class = "form_circ rep_mod_circ"><img src="../pictures/calendarPic.svg" id = "imgMod" alt="car-icon" width = "48rem" height = "48rem" style = "margin-top: 0.6rem;"></div></div>
+                             <div style = "display: block; margin: 0.2rem 0 0 1.5rem;">
+                                <h2 id = "modHead" style = "font-size: 1.5rem; font-weight: 700;">Book a Repair Service</h2>
+                                <p style = "font-size: 0.9rem; font-weight: 450; width: 30rem;" id = "modText">Fill out the form below and select your preferred date and time. We'll contact you to confirm your appointment.</p>
+                             </div>
+                            <i type = "button" data-bs-dismiss="modal" class="fa-solid fa-xmark rep_mod_close"></i>
+                        </div>
+                        <div class = "modal-body">
+                            <form id = "repairForm">
+                                <div class = "container-fluid">
+                                    <div class = "row">
+                                        <div id = "modBox" class = "col-md-6 d-flex">
+                                        <div style = "display: block;">
+                                            <div class = "d_flex">
+                                                <div style="display: block;">
+                                                    <span class = "mod_labels" id = "modLabel1" style = "font-weight: 550;">Full Name</span>
+                                                    <div class="input-container form_input mod_inp">
+                                                        <input id = "mod_name" class="form-control mod_form formS" maxlength="40" placeholder="Enter your name" required>
+                                                        <span class = "inp_emoji" style = "left: 15px !important; right: 0px !important;"><i class="fa-regular fa-user modEmj" style = "font-size: 1.2rem;"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div style = "display: block;" class = "mod_mg_left">
+                                                    <span class = "mod_labels" style = "font-weight: 550;">Phone Number</span>
+                                                    <div class="input-container form_input mod_inp">
+                                                        <input id = "mod_phone" class="form-control mod_form formS" maxlength="18" inputmode = "tel" placeholder="(204) XXX-XXXX" required>
+                                                        <span class = "inp_emoji" style = "left: 15px !important; right: 0px !important;"><i class="fa-solid fa-phone modEmj" style = "font-size: 1.2rem;"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <!--<span class = "mod_labels" id = "modLabel1" style = "font-weight: 550;">Full Name</span>
+                                            <div class="input-container form_input mod_inp">
+                                                <input id = "mod_name" class="form-control mod_form" maxlength="40" placeholder="Enter your full name" required>
+                                                <span class = "inp_emoji" style = "left: 15px !important; right: 0px !important;"><i class="fa-regular fa-user modEmj" style = "font-size: 1.2rem;"></i></span>
+                                            </div>
+                                            <span class = "mod_labels" style = "font-weight: 550;">Phone Number</span>
+                                            <div class="input-container form_input mod_inp">
+                                                <input id = "mod_phone" class="form-control mod_form" maxlength="18" inputmode = "tel" placeholder="Enter your phone number" required>
+                                                <span class = "inp_emoji" style = "left: 15px !important; right: 0px !important;"><i class="fa-solid fa-phone modEmj" style = "font-size: 1.2rem;"></i></span>
+                                            </div>-->
+                                            <span class = "mod_labels" style = "font-weight: 550;">Email Address</span>
+                                            <div class="input-container form_input mod_inp">
+                                                <input id = "mod_mail" class="form-control mod_form" maxlength="40" inputmode="email" placeholder="Enter your email address">
+                                                <span class = "inp_emoji" style = "left: 15px !important; right: 0px !important;"><i class="fa-regular fa-envelope modEmj" style = "font-size: 1.2rem;"></i></span>
+                                            </div>
+                                            <span class = "mod_labels" style = "font-weight: 550;">Service Type</span>
+                                            <div class="mod_custom_select" id="modConditionSelect" style = "margin: 0.6rem 0 1.4rem 0; position: relative;">
+                                                <button type="button" class="mod_select_trigger" id = "modSelect">
+                                                    <i class="fa-solid fa-wrench mod_emj_wrench"></i>
+                                                    <span class = "mod_selected_text" style = "font-weight: 550; margin-left: 1.4rem; font-size: 0.9rem;">Select a service</span>
+                                                    <span class = "mod_emoji mod_emoji_down"><i class="fa-solid fa-chevron-down" style = "font-size: 1.1rem;"></i></span>
+                                                    <span class = "mod_emoji mod_emoji_up"><i class="fa-solid fa-chevron-up modEmj" style = "font-size: 1.1rem;"></i></span>
+                                                </button>
+                                                <ul class="mod_select_options">
+                                                    <li data-value="oil-change">Engine Oil Change</li>
+                                                    <li data-value="brake-service">Brake Service</li>
+                                                    <li data-value="suspension-and-steering">Suspension & Steering</li>
+                                                    <li data-value="electrical-repair">Electrical Diagnosis & Repair</li>
+                                                    <li data-value="computer-diagnostic">Computer Diagnostics</li>
+                                                    <li data-value="battery-and-charging">Battery & Charging System</li>
+                                                    <li data-value="fluid-inspection">Fluid Inspection/Top-Up</li>
+                                                    <li data-value="general-inspection">General Inspection</li>
+                                                    <li data-value="not-sure">Not Sure</li>
+                                                </ul>
+                                                <input type="hidden" name="mod_sel_serv" id="modSelServ" required>
+                                            </div>
+                                            <span class = "mod_labels" style = "font-weight: 550; margin-top: 1.4rem;">Vehicle Information</span>
+                                            <div class="input-container form_input mod_inp" id = "infoMod">
+                                                <input id = "mod_info" class="form-control mod_form" maxlength="40" placeholder="Make, Model, Year" style = "margin-bottom: 0.35rem !important;" required>
+                                                <span class = "inp_emoji" style = "left: 15px !important; right: 0px !important;"><i class="fa-solid fa-car-rear modEmj" style = "font-size: 1.2rem;"></i></span>
+                                            </div>
+                                            <p class = "mod_note" style = "margin-bottom: 1.4rem !important;">e.g. Toyota Camry, 2009</p>
+                                            <span class = "mod_labels" style = "font-weight: 550; margin-top: 1.4rem;">Additional Message (Optional)</span>
+                                            <div class="input-container form_input mod_inp">
+                                                <textarea id = "mod_more" class="form-control mod_add" maxlength="300" placeholder="Tell us more about your vehicle or repair needs" style = "margin-bottom: 0.35rem !important;"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class = "mod_divider"></div>
+                                        </div>
+                                        <div class = "col-md-6">
+                                            <div class = "calendar">
+                                                <div class = "calendar_header">
+                                                    <button type = "button" id = "prevMonth" class = "calendar_arrow">
+                                                        <i class = "fa-solid fa-chevron-left"></i>
+                                                    </button>
+                                                    <h3 id = "calendarMonth">June 2026</h3>
+                                                    <button type = "button" id = "nextMonth" class = "calendar_arrow">
+                                                        <i class = "fa-solid fa-chevron-right"></i>
+                                                    </button>
+                                                </div>
+                                                <div class = "calendar_weekdays">
+                                                    <span>Mon</span>
+                                                    <span>Tue</span>
+                                                    <span>Wed</span>
+                                                    <span>Thu</span>
+                                                    <span>Fri</span>
+                                                    <span>Sat</span>
+                                                    <span>Sun</span>
+                                                </div>
+                                                <div id = "calendarDays" class = "calendar_days"></div>
+                                                <input type="hidden" id = "selectedRepairDate" name = "repairDate">
+                                            </div>
+                                            <div class = "time_picker">
+                                                <div class = "preferred_time">Select Preferred Time</div>
+                                                <div class = "time_options">
+                                                    <button type = "button" class = "time_btn" data-hour = "9">9:00 AM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "10">10:00 AM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "11">11:00 AM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "12">12:00 PM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "13">1:00 PM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "14">2:00 PM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "15">3:00 PM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "16">4:00 PM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "17">5:00 PM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "18">6:00 PM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "19">7:00 PM</button>
+                                                    <button type = "button" class = "time_btn" data-hour = "20">8:00 PM</button>
+                                                </div>
+                                                <input type="hidden" id = "selectedRepairTime" name = "repairTime">
+                                            </div>
+                                            <div class = "confirm_availability">
+                                                <img class = "av_icon" src="pictures/informationPic.svg" alt="information-icon">
+                                                <p class = "av_text">This is a request, not a confirmed booking.<br>We will contact you to confirm availability.</p>
+                                            </div>
+                                        </div>
+                                        <div class = "btm_mod_divider" style = "margin: 1rem 0 0 0.74rem !important;"></div>
+                                        <div style = "display: flex;" class = "modal_hide">
+                                            <img class = "mod_btm_icon" src="pictures/qualityPic.svg" alt="quality-icon">
+                                            <div style = "display: block;">
+                                                <p class = "mod_btm_head">Quality Service</p>
+                                                <p class = "mod_btm_txt">Expert technicians</p>              
+                                            </div>
+                                            <img class = "mod_btm_icon" src="pictures/quickPic.svg" alt="quick-icon" style = "margin-left: 5rem;">
+                                            <div style = "display: block;">
+                                                <p class = "mod_btm_head">Fast Response</p>
+                                                <p class = "mod_btm_txt">We'll contact you soon</p>
+                                            </div>
+                                            <img class = "mod_btm_icon" src="pictures/lockPic2.svg" alt="lock-icon" style = "margin-left: 5rem;">
+                                            <div style = "display: block;">
+                                                <p class = "mod_btm_head">Your Data is Safe</p>
+                                                <p class = "mod_btm_txt">We respect your privacy</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "btm_mod_divider" id = "modDivHide" style = "margin-top: 0;"></div>
+                                    <div class = "mod_buttons">
+                                        <button id = "modCancel" class = "mod_cancel" type="button" data-bs-dismiss="modal">Cancel</button>
+                                        <button id = "modSubmit" class = "mod_req" type="submit">
+                                            <svg class = "mod_btm_cal" viewBox="0 0 210 297" version="1.1" id="svg1" xml:space="preserve" inkscape:version="1.4.2 (f4327f4, 2025-05-13)" sodipodi:docname="calendarPic2.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#999999" borderopacity="1" inkscape:showpageshadow="2" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:zoom="0.69753788" inkscape:cx="396.39424" inkscape:cy="561.25984" inkscape:window-width="1920" inkscape:window-height="1001" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:window-maximized="1" inkscape:current-layer="layer1"/><defs id="defs1"/><g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1"><path class = "svg_col" style="fill:#ffffff" d="m 53.927375,231.27037 c -4.637698,-0.77114 -8.671303,-2.89653 -12.206769,-6.43199 -3.626771,-3.62677 -5.651732,-7.53502 -6.446893,-12.44273 -0.412732,-2.54737 -0.412732,-92.27931 0,-94.82668 0.795161,-4.90771 2.820122,-8.81595 6.446893,-12.44273 2.726556,-2.72655 5.318283,-4.38841 8.49162,-5.444936 3.058135,-1.01818 5.234626,-1.2989 10.089444,-1.30131 l 4.303889,-0.002 v -3.35444 c 0,-3.121114 0.05466,-3.459074 0.785804,-4.858644 0.636135,-1.2177 1.072304,-1.65387 2.290005,-2.29001 1.921382,-1.00374 3.215888,-1.00374 5.13727,0 1.217701,0.63614 1.653871,1.07231 2.290005,2.29001 0.731146,1.39957 0.785804,1.73753 0.785804,4.858644 v 3.35444 h 12.7 12.700003 v -3.35444 c 0,-3.121114 0.0547,-3.459074 0.7858,-4.858644 0.63614,-1.2177 1.0723,-1.65387 2.29,-2.29001 1.92138,-1.00374 3.21589,-1.00374 5.13727,0 1.2177,0.63614 1.65387,1.07231 2.29,2.29001 0.73115,1.39957 0.78581,1.73753 0.78581,4.858644 v 3.35444 h 12.84111 12.84111 v -3.35444 c 0,-3.121114 0.0547,-3.459074 0.7858,-4.858644 0.63614,-1.2177 1.07231,-1.65387 2.29001,-2.29001 1.92138,-1.00374 3.21589,-1.00374 5.13727,0 1.2177,0.63614 1.65387,1.07231 2.29,2.29001 0.73115,1.39957 0.78581,1.73753 0.78581,4.858644 v 3.35444 l 4.445,0.002 c 4.9935,0.002 7.15505,0.27734 10.23055,1.30131 3.17334,1.056526 5.76507,2.718386 8.49162,5.444936 3.62677,3.62678 5.65173,7.53502 6.4469,12.44273 0.1849,1.14125 0.29802,8.40764 0.29935,19.22945 l 0.002,17.395 -0.7858,1.5042 c -0.63614,1.2177 -1.07231,1.65387 -2.29001,2.29 -1.92138,1.00374 -3.21589,1.00374 -5.13727,0 -1.2177,-0.63613 -1.65387,-1.0723 -2.29,-2.29 l -0.78581,-1.5042 v -17.02833 c 0,-11.53311 -0.1024,-17.51097 -0.31732,-18.52389 -0.9163,-4.31853 -4.3386,-7.74082 -8.65712,-8.65711 -0.82256,-0.17453 -3.33081,-0.31733 -5.57389,-0.31733 h -4.07833 v 3.35443 c 0,3.12111 -0.0547,3.45907 -0.78581,4.85864 -0.63613,1.2177 -1.0723,1.65387 -2.29,2.29001 -1.92138,1.00374 -3.21589,1.00374 -5.13727,0 -1.2177,-0.63614 -1.65387,-1.07231 -2.29001,-2.29001 -0.73114,-1.39957 -0.7858,-1.73753 -0.7858,-4.85864 v -3.35443 h -12.84098 -12.84111 v 3.35443 c 0,3.12111 -0.0547,3.45907 -0.78581,4.85864 -0.63613,1.2177 -1.0723,1.65387 -2.29,2.29001 -1.92138,1.00374 -3.21589,1.00374 -5.13727,0 -1.2177,-0.63614 -1.65386,-1.07231 -2.29,-2.29001 -0.73114,-1.39957 -0.7858,-1.73753 -0.7858,-4.85864 v -3.35443 h -12.700003 -12.7 v 3.35443 c 0,3.12111 -0.05466,3.45907 -0.785804,4.85864 -0.636134,1.2177 -1.072304,1.65387 -2.290005,2.29001 -1.921382,1.00374 -3.215888,1.00374 -5.13727,0 -1.217701,-0.63614 -1.65387,-1.07231 -2.290005,-2.29001 -0.731146,-1.39957 -0.785804,-1.73753 -0.785804,-4.85864 v -3.35443 h -3.93722 c -2.16547,0 -4.61022,0.1428 -5.432777,0.31733 -4.318529,0.91629 -7.740825,4.33858 -8.657122,8.65711 -0.450193,2.12177 -0.450193,90.56045 0,92.68222 0.916297,4.31853 4.338593,7.74083 8.657122,8.65712 1.035983,0.21982 8.419375,0.31733 24.027216,0.31733 h 22.531662 l 1.50419,0.7858 c 1.2177,0.63614 1.65387,1.07231 2.29,2.29001 1.00375,1.92138 1.00375,3.21589 0,5.13727 -0.63613,1.2177 -1.0723,1.65387 -2.29,2.29 l -1.50419,0.78581 -23.180553,-0.033 c -12.749303,-0.0181 -23.858233,-0.14567 -24.686512,-0.28339 z m 87.160395,0.0294 c -14.77232,-2.05399 -26.1733,-12.72206 -29.25122,-27.3708 -0.68978,-3.28286 -0.68978,-9.69936 0,-12.98222 2.18741,-10.41052 8.68982,-19.06897 17.84532,-23.76238 5.24088,-2.68665 9.63088,-3.73511 15.63923,-3.73511 9.69779,0 17.99274,3.55648 24.69951,10.58997 6.20241,6.50456 9.28909,14.27972 9.28909,23.39863 0,2.84516 -0.1536,4.82326 -0.50404,6.49111 -2.89399,13.77335 -13.23754,24.15442 -26.85233,26.94975 -2.71004,0.55641 -8.3267,0.77406 -10.86556,0.42105 z m 7.87422,-11.29928 c 8.11993,-1.31751 15.19243,-7.28013 17.9303,-15.11652 2.90366,-8.31091 0.82703,-17.20818 -5.49104,-23.52626 -5.3066,-5.30659 -12.46539,-7.65975 -19.72104,-6.48248 -8.11993,1.31751 -15.19243,7.28013 -17.9303,15.11651 -2.90366,8.31092 -0.82703,17.20819 5.49105,23.52626 5.30115,5.30116 12.47283,7.65855 19.72103,6.48249 z m -6.20952,-17.70399 c -1.2177,-0.63614 -1.65387,-1.0723 -2.29001,-2.29001 l -0.7858,-1.5042 v -6.84999 -6.84999 l 0.7858,-1.5042 c 0.63614,-1.2177 1.07231,-1.65387 2.29001,-2.29 0.87061,-0.45481 1.95255,-0.78581 2.56863,-0.78581 0.61608,0 1.69803,0.331 2.56864,0.78581 1.2177,0.63613 1.65387,1.0723 2.29,2.29 0.73633,1.4095 0.78581,1.72428 0.78581,4.99975 v 3.49555 h 1.80221 c 2.63668,0 4.5345,1.04305 5.59643,3.07581 0.45481,0.87061 0.7858,1.95256 0.7858,2.56864 0,0.61608 -0.33099,1.69802 -0.7858,2.56863 -0.63614,1.21771 -1.07231,1.65387 -2.29001,2.29001 -1.4855,0.77604 -1.5683,0.7858 -6.66085,0.7858 -5.09256,0 -5.17536,-0.01 -6.66086,-0.7858 z m -75.071102,-1.97556 c -1.217701,-0.63613 -1.65387,-1.0723 -2.290005,-2.29 -1.003742,-1.92138 -1.003742,-3.21589 0,-5.13727 0.636135,-1.2177 1.072304,-1.65387 2.290005,-2.29001 0.87061,-0.45481 1.952556,-0.7858 2.568635,-0.7858 0.616079,0 1.698026,0.33099 2.568635,0.7858 1.217701,0.63614 1.653871,1.07231 2.290005,2.29001 0.454812,0.87061 0.785804,1.95255 0.785804,2.56863 0,0.61608 -0.330992,1.69803 -0.785804,2.56864 -0.636134,1.2177 -1.072304,1.65387 -2.290005,2.29 -0.870609,0.45482 -1.952556,0.78581 -2.568635,0.78581 -0.616079,0 -1.698025,-0.33099 -2.568635,-0.78581 z m 24.553333,0 c -1.217702,-0.63613 -1.653871,-1.0723 -2.290006,-2.29 -1.003741,-1.92138 -1.003741,-3.21589 0,-5.13727 0.636135,-1.2177 1.072304,-1.65387 2.290006,-2.29001 0.870609,-0.45481 1.952556,-0.7858 2.568635,-0.7858 0.616078,0 1.698025,0.33099 2.568632,0.7858 1.2177,0.63614 1.65387,1.07231 2.290012,2.29001 0.45481,0.87061 0.7858,1.95255 0.7858,2.56863 0,0.61608 -0.33099,1.69803 -0.7858,2.56864 -0.636142,1.2177 -1.072312,1.65387 -2.290012,2.29 -0.870607,0.45482 -1.952554,0.78581 -2.568632,0.78581 -0.616079,0 -1.698026,-0.33099 -2.568635,-0.78581 z M 67.681368,175.76762 c -1.217701,-0.63613 -1.65387,-1.0723 -2.290005,-2.29 -1.003742,-1.92139 -1.003742,-3.21589 0,-5.13727 0.636135,-1.21771 1.072304,-1.65387 2.290005,-2.29001 0.87061,-0.45481 1.952556,-0.7858 2.568635,-0.7858 0.616079,0 1.698026,0.33099 2.568635,0.7858 1.217701,0.63614 1.653871,1.0723 2.290005,2.29001 0.454812,0.87061 0.785804,1.95255 0.785804,2.56863 0,0.61608 -0.330992,1.69803 -0.785804,2.56864 -0.636134,1.2177 -1.072304,1.65387 -2.290005,2.29 -0.870609,0.45481 -1.952556,0.78581 -2.568635,0.78581 -0.616079,0 -1.698025,-0.331 -2.568635,-0.78581 z m 24.553333,0 c -1.217702,-0.63613 -1.653871,-1.0723 -2.290006,-2.29 -1.003741,-1.92139 -1.003741,-3.21589 0,-5.13727 0.636135,-1.21771 1.072304,-1.65387 2.290006,-2.29001 0.870609,-0.45481 1.952556,-0.7858 2.568635,-0.7858 0.616078,0 1.698025,0.33099 2.568632,0.7858 1.2177,0.63614 1.65387,1.0723 2.290012,2.29001 0.45481,0.87061 0.7858,1.95255 0.7858,2.56863 0,0.61608 -0.33099,1.69803 -0.7858,2.56864 -0.636142,1.2177 -1.072312,1.65387 -2.290012,2.29 -0.870607,0.45481 -1.952554,0.78581 -2.568632,0.78581 -0.616079,0 -1.698026,-0.331 -2.568635,-0.78581 z M 67.681368,151.21429 c -1.217701,-0.63614 -1.65387,-1.07231 -2.290005,-2.29001 -1.003742,-1.92138 -1.003742,-3.21588 0,-5.13727 0.636135,-1.2177 1.072304,-1.65387 2.290005,-2.29 0.87061,-0.45481 1.952556,-0.78581 2.568635,-0.78581 0.616079,0 1.698026,0.331 2.568635,0.78581 1.217701,0.63613 1.653871,1.0723 2.290005,2.29 0.454812,0.87061 0.785804,1.95256 0.785804,2.56864 0,0.61608 -0.330992,1.69802 -0.785804,2.56863 -0.636134,1.2177 -1.072304,1.65387 -2.290005,2.29001 -0.870609,0.45481 -1.952556,0.7858 -2.568635,0.7858 -0.616079,0 -1.698025,-0.33099 -2.568635,-0.7858 z m 24.553333,0 c -1.217702,-0.63614 -1.653871,-1.07231 -2.290006,-2.29001 -1.003741,-1.92138 -1.003741,-3.21588 0,-5.13727 0.636135,-1.2177 1.072304,-1.65387 2.290006,-2.29 0.870609,-0.45481 1.952556,-0.78581 2.568635,-0.78581 0.616078,0 1.698025,0.331 2.568632,0.78581 1.2177,0.63613 1.65387,1.0723 2.290012,2.29 0.45481,0.87061 0.7858,1.95256 0.7858,2.56864 0,0.61608 -0.33099,1.69802 -0.7858,2.56863 -0.636142,1.2177 -1.072312,1.65387 -2.290012,2.29001 -0.870607,0.45481 -1.952554,0.7858 -2.568632,0.7858 -0.616079,0 -1.698026,-0.33099 -2.568635,-0.7858 z m 24.553319,0 c -1.2177,-0.63614 -1.65387,-1.07231 -2.29,-2.29001 -0.45481,-0.87061 -0.7858,-1.95255 -0.7858,-2.56863 0,-0.61608 0.33099,-1.69803 0.7858,-2.56864 0.63613,-1.2177 1.0723,-1.65387 2.29,-2.29 0.87061,-0.45481 1.95256,-0.78581 2.56864,-0.78581 0.61608,0 1.69803,0.331 2.56864,0.78581 1.2177,0.63613 1.65387,1.0723 2.29,2.29 0.45481,0.87061 0.7858,1.95256 0.7858,2.56864 0,0.61608 -0.33099,1.69802 -0.7858,2.56863 -0.63613,1.2177 -1.0723,1.65387 -2.29,2.29001 -0.87061,0.45481 -1.95256,0.7858 -2.56864,0.7858 -0.61608,0 -1.69803,-0.33099 -2.56864,-0.7858 z m 24.55334,0 c -1.2177,-0.63614 -1.65387,-1.07231 -2.29001,-2.29001 -0.45481,-0.87061 -0.7858,-1.95255 -0.7858,-2.56863 0,-0.61608 0.33099,-1.69803 0.7858,-2.56864 0.63614,-1.2177 1.07231,-1.65387 2.29001,-2.29 0.87061,-0.45481 1.95255,-0.78581 2.56863,-0.78581 0.61608,0 1.69803,0.331 2.56864,0.78581 1.2177,0.63613 1.65387,1.0723 2.29,2.29 0.45481,0.87061 0.78581,1.95256 0.78581,2.56864 0,0.61608 -0.331,1.69802 -0.78581,2.56863 -0.63613,1.2177 -1.0723,1.65387 -2.29,2.29001 -0.87061,0.45481 -1.95256,0.7858 -2.56864,0.7858 -0.61608,0 -1.69802,-0.33099 -2.56863,-0.7858 z" id="path1"/></g></svg>
+                                            <p class = "req_app_mod" style = "margin: 0.75rem 0 0 0">Request Appointment</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
     <script src = "../scripts/script.js"></script>
     <script src = "../scripts/inventory_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
