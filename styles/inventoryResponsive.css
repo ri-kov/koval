@@ -118,4 +118,23 @@
     .hero_wrap {
         margin-top: 3rem !important;
     }
+
+    .quick_card {
+        font-size: 0.9rem !important;
+    }
+
+    .sect2 {
+        margin-top: 2rem !important;
+    }
+
+    .feat_main {
+        white-space: normal !important;
+        font-size: 2.4rem !important;
+        min-width: 25rem !important;
+        margin-top: 0.3rem !important;
+    }
+
+    .feat_main_txt {
+        font-size: 0.9rem;
+    }
 }
