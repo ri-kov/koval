@@ -142,6 +142,7 @@
         width: 24rem !important;
         height: 10.5rem !important;
         display: flex;
+        margin-left: 0 !important;
     }
 
     .car_card_img {
@@ -180,5 +181,66 @@
         margin-top: 1rem !important;
         font-size: 1.15rem !important;
         display: flex;
+    }
+
+    .btn_arrow_move {
+        display: none;
+    }
+
+    .exp_car_link {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .feat_desc {
+        font-size: 0.7rem !important;
+        margin-top: 1.2rem !important;
+    }
+
+    .feat_km {
+        width: 4.25rem;
+        white-space: nowrap;
+    }
+
+    .feat_icons {
+        margin: 0 0.5rem 0 0.5rem !important;
+    }
+
+    .feat_btm_icon {
+        right: 13.6rem;
+        top: 1.7rem;
+        position: relative;
+    }
+
+    .feat_btm_text {
+        position: relative;
+        right: 13.6rem;
+        top: 1.9rem;
+        white-space: nowrap;
+    }
+
+    .car_card_icon {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    .exp_car {
+        display: block !important;
+        font-size: 1.8rem;
+        margin-left: 6.5rem;
+    }
+
+    .mt1 {
+        margin-top: 1rem !important;
+    }
+
+    .card_sold .car_card_sold {
+        top: -10rem;
+        width: 12rem;
+        height: 3rem;
+        font-size: 2rem;
+        right: 3rem;
+        min-width: 15rem;
+        rotate: -25deg;
     }
 }
