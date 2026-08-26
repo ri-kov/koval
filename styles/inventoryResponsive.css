@@ -10,6 +10,112 @@
     #contText1 {
         font-size: 0.95rem !important;
         opacity: 0.9;
+        margin-top: 1.5rem !important;
         width: 22rem !important;
+    }
+
+    #heroBtn1 {
+        width: 11rem !important;
+        height: 3.2rem !important;
+        margin-top: 1.5rem;
+    }
+
+    .hero_btn_txt {
+        font-size: 0.85rem;
+        white-space: nowrap;
+        margin-left: 0rem !important;
+        align-self: center;
+        margin-top: 0 !important;
+    }
+
+    #heroBtn2 {
+        width: 11rem !important;
+        height: 3.2rem !important;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .slogan.hero_slogan {
+        font-size: 2.4rem;
+    }
+
+    .car_logo1 {
+        width: 2.2rem !important;
+        height: 2.2rem !important;
+        margin-right: 0.2rem;
+    }
+
+    .car_logo2 {
+        width: 2.8rem !important;
+        height: 2.8rem !important;
+        margin-left: 3.5rem !important;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero_stats_main {
+        font-size: 0.85rem;
+    }
+
+    .hero_stats_txt {
+        font-size: 0.7rem;
+        width: 11rem !important;
+        text-align: center;
+        margin-bottom: 0.9rem;
+    }
+
+    .hero_text_wrap {
+        margin-left: 0.4rem !important;
+    }
+
+    .hero_stat {
+        margin-top: 0.5rem !important;
+    }
+
+    #heroBlock2 {
+        margin-left: 2rem;
+    }
+
+    .hero_stats_txt1 {
+        margin-left: -0.7rem !important;
+    }
+
+    #heroBlockPic2 {
+        margin-left: 4.3rem !important;
+    }
+
+    #heroBlockPic3 {
+        margin-left: 4.2rem !important;
+    }
+
+    #heroStat4 {
+        margin-left: 2.8rem;
+    }
+
+    .hero_phone_div2 {
+        border-bottom: 0.09rem solid rgba(255, 255, 255, 0.4);
+        width: 23rem;
+        margin-left: 1rem;
+        height: 0.08rem;
+    }
+
+    .hero_phone_div1 {
+        border-right: 0.09rem solid rgba(255, 255, 255, 0.4);
+        height: 15.5rem;
+        margin-left: 12.2rem;
+        margin-top: 1rem;
+        width: 0.08rem;
+        position: absolute;
+    }
+
+    .hero_stats_txt4 {
+        margin-left: -1.3rem !important;
+    }
+
+    #heroBlockPic4 {
+        margin-left: 3rem !important;
+    }
+
+    .hero_wrap {
+        margin-top: 3rem !important;
     }
 }

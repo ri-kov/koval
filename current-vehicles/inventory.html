@@ -10,7 +10,7 @@
     <link rel = "stylesheet" href = "../styles/stylesResponsive.css"></link>
     <link rel = "stylesheet" href = "../styles/inventoryResponsive.css"></link>
     <link rel = "stylesheet" href = "../styles/index_style.css"></link>
-    <link rel = "stylesheet" href = "../styles/indexStylesResponsive.css"></link>
+
     <link rel="preconnect" href="https://fonts.googleapis.com"></link>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
@@ -50,52 +50,54 @@
                     <h2 class = "slogan hero_slogan">Find Your Next<br><span class = "hero_slogan_word">Vehicle.</span></h2>
                     <h1 class = "cont1_txt" style = "width: 25rem;" id = "contText1">Browse our selection of quality, inspected vehicles. New inventory added regularly.</h1>
                     <div style = "display: flex;" class = "hero_buttons">
-                        <a href = "current-vehicles/inventory.html" type="button" class = "btn-primary align-items-center options opt1 hero_btn">
+                        <a href = "current-vehicles/inventory.html" type="button" class = "btn-primary align-items-center options opt1 hero_btn" id = "heroBtn1">
                             <div style = "display: flex;"><img src="../pictures/carPic1.svg" alt="car-logo-1" class = "car_logo1">
                                 <p class = "hero_btn_txt">Browse Inventory</p>
                             </div>
                         </a>
-                        <a href = "#sellForm" type="button" class = "btn-primary align-items-center options opt2 hero_btn" style = "    border: 2px solid rgb(255 255 255 / 20%);">
+                        <a href = "#sellForm" type="button" class = "btn-primary align-items-center options opt2 hero_btn" id = "heroBtn2" style = "border: 2px solid rgb(255 255 255 / 20%);">
                             <div style = "display: flex;"><img src="../pictures/phonePic3.svg" alt="car-logo-1" class = "car_logo1" style = "margin-top: -6px;">
                                     <p class = "hero_btn_txt" style = "margin-top: 0.5rem;">Call Us</p>
                             </div>
                         </a>
                     </div>
-                    <div style = "display: flex;" class = "stats_main_wrap hero_wrap">
+                    <div style = "display: flex;" class = "stats_main_wrap hero_wrap phone_d_block">
                         <div class = "stats_little_wrap wrap1" style = "display: flex;">
-                            <div class = "stat hero_stat">
+                            <div class = "stat hero_stat phone_d_block">
                                 <img src="../pictures/verifyPic.svg" alt="verify-icon" class = "car_logo2" style = "margin-left: 1rem;">
-                                <div style = "margin-left: 1rem;">
+                                <div style = "margin-left: 1rem;" class = "hero_text_wrap">
                                     <p class = "hero_stats_main">Inspected & Certified</p>
-                                    <p class = "hero_stats_txt" style= "width: 15rem;">Every vehicle is thoroughly inspected for your safety.</p>
+                                    <p class = "hero_stats_txt hero_stats_txt1" style= "width: 15rem;">Every vehicle is thoroughly inspected for your safety.</p>
                                 </div>
                             </div>
-                            <div class = "divider hero_div hero_div1"></div>
-                            <div class = "stat hero_stat">
-                                <img src="../pictures/dollarSignPic3.svg" alt="verify-icon" class = "car_logo2">
-                                <div style = "margin-left: 1rem;">
+                            <div class = "hero_phone_div1"></div>
+                            <div class = "divider hero_div hero_div1 phone_d_none"></div>
+                            <div class = "stat hero_stat phone_d_block" id = "heroBlock2">
+                                <img src="../pictures/dollarSignPic3.svg" alt="verify-icon" class = "car_logo2" id = "heroBlockPic2">
+                                <div style = "margin-left: 1rem;" class = "hero_text_wrap">
                                     <p class = "hero_stats_main">Fair & Transparent Pricing</p>
                                     <p class = "hero_stats_txt">No hidden fees. Just honest prices you can trust.</p>
                                 </div>
                             </div>
                             <div class = "divider hero_div"></div>
                         </div>
-                        <div class = "wraps_div"></div>
-                        <div class = "wraps_div" id = "wrapsDiv1" style = "rotate: 90deg; width: 10rem !important; margin-left: 7.3rem;"></div>
+                        <div class = "wraps_div phone_d_none"></div>
+                        <div class = "hero_phone_div2"></div>
+                        <div class = "wraps_div phone_d_none" id = "wrapsDiv1" style = "rotate: 90deg; width: 10rem !important; margin-left: 7.3rem;"></div>
                         <div class = "stats_little_wrap" style = "display: flex;">
-                            <div class = "stat hero_stat">
-                                <img src="../pictures/historyPic2.svg" alt="verify-icon" class = "car_logo2">
-                                <div style = "margin-left: 1rem;">
+                            <div class = "stat hero_stat phone_d_block">
+                                <img src="../pictures/historyPic2.svg" alt="verify-icon" class = "car_logo2" id = "heroBlockPic3">
+                                <div style = "margin-left: 1rem;" class = "hero_text_wrap">
                                     <p class = "hero_stats_main">Vehicle History Available</p>
                                     <p class = "hero_stats_txt">Review available reports before you buy.</p>
                                 </div>
                             </div>
-                            <div class = "divider hero_div"></div>
-                            <div class = "stat hero_stat">
-                                <img src="../pictures/reusePic.svg" alt="verify-icon" class = "car_logo2">
-                                <div style = "margin-left: 1rem;">
+                            <div class = "divider hero_div phone_d_none"></div>
+                            <div class = "stat hero_stat phone_d_block" id = "heroStat4">
+                                <img src="../pictures/reusePic.svg" alt="verify-icon" class = "car_logo2" id = "heroBlockPic4">
+                                <div style = "margin-left: 1rem;" class = "hero_text_wrap">
                                     <p class = "hero_stats_main">Trade-In Welcome</p>
-                                    <p class = "hero_stats_txt">Get top value for your current vehicle.</p>
+                                    <p class = "hero_stats_txt hero_stats_txt4">Get top value for your current vehicle.</p>
                                 </div>
                             </div>
                         </div>
