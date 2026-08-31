@@ -12,13 +12,14 @@ public class HelloController {
         return "Hello from backend";
     }
 
-    public Map<String, Object> getCar() {
-        Map<String, Object> car = new HashMap<>();
-
-        car.put("make", "Mazda");
-        car.put("model", "Mazda 3");
-        car.put("year", "2018");
-        car.put("price", 12500);
+    public Vehicle getCar() {
+        Vehicle car = new Vehicle(
+                "Mazda",
+                "Mazda 3",
+                2018,
+                192500,
+                12500
+        );
 
         return car;
     }
