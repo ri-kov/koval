@@ -14,4 +14,24 @@ public class Vehicle {
         this.mileage = mileage;
         this.price = price;
     }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getMileage() {
+        return mileage;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }
