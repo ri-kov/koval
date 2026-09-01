@@ -143,6 +143,9 @@
         height: 10.5rem !important;
         display: flex;
         margin-left: 0 !important;
+        margin-right: 0 !important;
+        justify-self: center !important;
+        align-self: center;
     }
 
     .car_card_img {
@@ -242,5 +245,27 @@
         right: 3rem;
         min-width: 15rem;
         rotate: -25deg;
+    }
+
+    .sold_car_wrap {
+        position: absolute;
+        left: 10rem;
+        display: ruby;
+    }
+
+    .ov_hid {
+        overflow: hidden;
+    }
+
+    #vd_btn1 {
+        margin-top: 4rem;
+    }
+
+    .card_sold .car_card_make {
+        margin-top: 0.8rem;
+    }
+
+    .feat_desc_sold {
+        margin-top: 1.2rem !important;
     }
 }
