@@ -1,6 +1,7 @@
 package com.valenauto.backend;
 
 public class Vehicle {
+    private Long id;
     private String make;
     private String model;
     private int year;
@@ -17,6 +18,10 @@ public class Vehicle {
         this.year = year;
         this.mileage = mileage;
         this.price = price;
+    }
+
+    public Long geiId() {
+        return id;
     }
 
     public String getMake() {
@@ -37,6 +42,10 @@ public class Vehicle {
 
     public double getPrice() {
         return price;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public void setMake(String make) {

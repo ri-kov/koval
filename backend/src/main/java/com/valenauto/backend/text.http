@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/vehicles
+Content-Type: application/json
+
+{
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2017,
+    "mileage": 145000,
+    "price": 13900
+}
