@@ -120,14 +120,18 @@
 
     /*footer start*/
     
+    .phone_fl_row {
+        flex-direction: row !important;
+    }
+    
     .footer {
         display: block !important;
     }
 
     .footer_logo {
-        width: 12rem;
-        height: 4.666rem;
-        margin-left: 0rem;
+        width: 12rem !important;
+        height: 4.666rem !important;
+        margin-left: 0rem !important;
     }
 
     .foot_div {

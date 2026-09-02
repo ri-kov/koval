@@ -1414,7 +1414,7 @@ h1 {
 .footer_head {
     font-weight: 700;
     font-size: 1.05rem;
-    margin: 2rem 0 0.7rem 0 !important;
+    margin: 2rem 0 0.7rem 0;
 }
 
 .footer_links {
@@ -1423,6 +1423,10 @@ h1 {
     margin-bottom: 0.4rem;
     color: #000000;
     text-decoration: none;
+}
+
+.btm_txt {
+    font-family: "Montserrat", sans-serif;
 }
 
 .foot_links_hov:hover {

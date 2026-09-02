@@ -412,13 +412,13 @@
             </div>
         </div>
     </section>
-    <section class = "wcu_section">
-        <div class = "choose_why" id = "sellCard" style = "position: relative; margin-top: 2rem;">Why Buy From Us</div>
-        <h2 class = "choose_head" id = "repHead" style = "margin-right: 0.2rem;">Your Satisfaction Is <span class = "hero_slogan_word" style = "margin-left: 0.9rem;">Our Priority.</span></h2>
-        <p class = "choose_text">We make car buying simple, transparent, and worry-free.</p>
+    <section class = "wcu_section cont_card_wrap">
+        <div class = "quick_card" id = "contCard" style = "position: relative; margin-top: 2rem; justify-self: center;">Why Buy From Us</div>
+        <h2 class = "choose_head contactHead" id = "repHead" style = "margin-right: 0.2rem;">Your Satisfaction Is <span class = "hero_slogan_word" style = "margin-left: 0.9rem;">Our Priority.</span></h2>
+        <p class = "choose_text cont_text">We make car buying simple, transparent, and worry-free.</p>
         <div class = "container">
-            <div class = "row">
-                <div class = "buy_card">
+            <div class = "row cont_card_wrap">
+                <div class = "buy_card buy_card1">
                     <div class = "buy_circ">
                         <img src="../pictures/safetyPic.svg" alt="shield-icon" class = "buy_icon" style = "margin-top: 0.35rem;">
                     </div>
@@ -445,7 +445,7 @@
                         <p class = "buy_card_txt" style = "width: 12rem;">Get the full history report on every vehicle for complete peace of mind.</p>
                     </div>
                 </div>
-                <div class = "buy_card" style = "margin-left: -2rem; position: relative; left: 4rem;">
+                <div class = "buy_card buy_card4" style = "margin-left: -2rem; position: relative; left: 4rem;">
                     <div class = "buy_circ">
                         <img src="../pictures/handshakePic.svg" alt="handshake-icon" class = "buy_icon" style = "margin-top: 0.35rem;">
                     </div>
@@ -457,26 +457,32 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class = "inventory_btm_box" id = "ContactInformation">
-            <div class = "inventory_btm_box_circ">
-                <img src="../pictures/phonePic5.svg" alt="phone-icon" style = "width: 3.5rem; height: 3.5rem;">
+    <section class = "cont_card_wrap">
+        <div class = "inventory_btm_box phone_d_block" id = "ContactInformation">
+            <div style = "display: flex;">
+                <div class = "inventory_btm_box_circ">
+                    <img src="../pictures/phonePic5.svg" alt="phone-icon" style = "width: 3.5rem; height: 3.5rem;" class = "inventory_btm_box_img">
+                </div>
+                <div>
+                    <p class = "inventory_btm_box_head">Have Questions? We're Here for You.</p>
+                    <p class = "inventory_btm_box_txt">Call, email, or visit us in person - we're happy to help you find the right vehicle and financing options.</p>
+                </div>
+                <div class = "inventory_btm_box_div phone_d_none"></div>
+            </div>    
+            <div style = "display: flex;" class = "contact_wrap">
+                <i class="fa-solid fa-phone inventory_btm_box_icon" style="color: #1f71ce;"></i>
+                <p class = "inventory_btm_note_txt">(204) 999-9999</p>
+                <div class = "inventory_btm_box_div"></div>
+                <i class="fa-regular fa-envelope inventory_btm_box_icon" style="color: #1f71ce;"></i>
+                <p class = "inventory_btm_note_txt">info@valenauto.ca</p>
+                <div class = "inventory_btm_box_div phone_d_none"></div>
             </div>
-            <div>
-                <p class = "inventory_btm_box_head">Have Questions? We're Here for You.</p>
-                <p class = "inventory_btm_box_txt">Call, email, or visit us in person - we're happy to help you find the right vehicle and financing options.</p>
-            </div>
-            <div class = "inventory_btm_box_div"></div>
-            <i class="fa-solid fa-phone inventory_btm_box_icon" style="color: #1f71ce;"></i>
-            <p class = "inventory_btm_note_txt">(204) 999-9999</p>
-            <div class = "inventory_btm_box_div"></div>
-            <i class="fa-regular fa-envelope inventory_btm_box_icon" style="color: #1f71ce;"></i>
-            <p class = "inventory_btm_note_txt">info@valenauto.ca</p>
-            <div class = "inventory_btm_box_div"></div>
-            <i class="fa-solid fa-location-dot inventory_btm_box_icon" style="color: #1f71ce;"></i>
-            <div>
-                <p class = "inventory_btm_note_txt">123 Main St, winnipeg, MB</p>
-                <a href="" class = "inventory_btm_note_txt inventory_btm_note_link">Get Directions <i class="fa-solid fa-arrow-right" style="color: #1f71ce;"></i></a>
+            <div style = "display: flex;" class = "contact_wrap">
+                <i class="fa-solid fa-location-dot inventory_btm_box_icon" style="color: #1f71ce;"></i>
+                <div>
+                    <p class = "inventory_btm_note_txt">123 Main St, winnipeg, MB</p>
+                    <a href="" class = "inventory_btm_note_txt inventory_btm_note_link">Get Directions <i class="fa-solid fa-arrow-right" style="color: #1f71ce;"></i></a>
+                </div>
             </div>
         </div>
         <div style = "height: 3rem;"></div>

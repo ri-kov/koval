@@ -356,4 +356,78 @@
         margin-left: -0.3rem !important;
         margin-right: -0.9rem !important;
     }
+
+    #contCard {
+        margin-top: -1rem !important;
+    }
+
+    .contactHead {
+        font-size: 2.2rem !important;
+        display: block !important;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    .cont_text {
+        font-size: 0.85rem !important;
+    }
+
+    .buy_card {
+        margin-left: 0 !important;
+    }
+
+    .cont_card_wrap {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .buy_card4 {
+        left: 0 !important;
+    }
+
+    .buy_card1 {
+        margin-top: 0.5rem !important;
+    }
+
+    .inventory_btm_box {
+        width: 25.5rem !important;
+        justify-self: center !important;
+        margin-left: 0 !important;
+        padding-top: 0.2rem !important;
+    }
+
+    .inventory_btm_box_circ {
+        flex-shrink: 0 !important;
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1rem !important;
+    }
+
+    .inventory_btm_box_img {
+        width: 3.2rem !important;
+        height: 3.2rem !important;
+    }
+
+    .inventory_btm_box_head {
+        font-size: 0.95rem !important;
+    }
+
+    .inventory_btm_box_txt {
+        font-size: 0.8rem;
+        width: 19rem;
+    }
+
+    .inventory_btm_note_txt {
+        white-space: nowrap;
+    }
+
+    .inventory_btm_box_div {
+        height: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .contact_wrap {
+        margin-top: -1rem;
+    }
 }
