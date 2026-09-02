@@ -321,4 +321,28 @@
     .financing_little_txt3 {
         margin-top: -0.3rem;
     }
+
+    .financing_pics {
+        width: 3.4rem !important;
+        height: 3.4rem !important;
+        margin-right: 1.5rem !important;
+    }
+
+    .financing_note_head {
+        font-size: 0.85rem;
+    }
+
+    .financing_note_txt {
+        font-size: 0.75rem;
+        max-width: 20rem;
+        white-space: normal !important;
+    }
+
+    .financing_phone_div {
+        border-bottom: 0.09rem solid rgba(98, 98, 98, 0.2);
+        height: 0.9rem;
+        width: 22rem !important;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
 }
