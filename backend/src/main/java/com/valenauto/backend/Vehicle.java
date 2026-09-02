@@ -7,6 +7,10 @@ public class Vehicle {
     private int mileage;
     private double price;
 
+    public Vehicle() {
+
+    }
+
     public Vehicle(String make, String model, int year, int mileage, double price) {
         this.make = make;
         this.model = model;
@@ -33,5 +37,25 @@ public class Vehicle {
 
     public double getPrice() {
         return price;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }

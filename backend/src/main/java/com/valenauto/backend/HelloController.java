@@ -1,6 +1,8 @@
 package com.valenauto.backend;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +27,7 @@ public class HelloController {
         return car;
     }
 
-    @GetMapping("/api/vehicles")
+    @GetMapping("/api/vehicles") //recievce data
     public List<Vehicle> getVehicles() {
         List<Vehicle> vehicles = new ArrayList<>();
 
@@ -56,4 +58,8 @@ public class HelloController {
         return vehicles;
     }
 
+    @PostMapping("/api/vehicles") //send data
+    public Vehicle addVehicle(@RequestBody Vehicle vehicle) { //spring converts json to vehicle info
+        return vehicle;
+    }
 }
