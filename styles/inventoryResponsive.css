@@ -326,6 +326,7 @@
         width: 3.4rem !important;
         height: 3.4rem !important;
         margin-right: 1.5rem !important;
+        margin-left: 0.6rem;
     }
 
     .financing_note_head {
@@ -334,7 +335,7 @@
 
     .financing_note_txt {
         font-size: 0.75rem;
-        max-width: 20rem;
+        max-width: 19rem;
         white-space: normal !important;
     }
 
@@ -343,6 +344,16 @@
         height: 0.9rem;
         width: 22rem !important;
         margin-left: 1rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.6rem;
+    }
+
+    #financingPics1 {
+        margin-left: 0 !important;
+        margin-right: 1rem !important;
+    }
+
+    #financingPics2 {
+        margin-left: -0.3rem !important;
+        margin-right: -0.9rem !important;
     }
 }
