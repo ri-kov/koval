@@ -3,6 +3,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -36,6 +37,11 @@ public class HelloController {
     @GetMapping("/api/vehicles") //recievce data
     public List<Vehicle> getVehicles() {
         return vehicleRepository.findAll();
+    }
+
+    @GetMapping("/api/vehicles/{id}")
+    public Vehicle getVehicleById(@PathVariable Long id) {
+        return vehicleRepository.findById(id).orElse(null);
     }
 
     @PostMapping("/api/vehicles") //send data
