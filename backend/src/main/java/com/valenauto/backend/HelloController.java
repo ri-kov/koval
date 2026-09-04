@@ -4,11 +4,17 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 public class HelloController {
+
+    private final VehicleRepository vehicleRepository;
+
+    public HelloController(VehicleRepository vehicleRepository) {
+        this.vehicleRepository = vehicleRepository;
+    }
+
     @GetMapping("/api/hello")
     public String hello() {
         return "Hello from backend";
@@ -29,37 +35,11 @@ public class HelloController {
 
     @GetMapping("/api/vehicles") //recievce data
     public List<Vehicle> getVehicles() {
-        List<Vehicle> vehicles = new ArrayList<>();
-
-        vehicles.add(new Vehicle (
-                "Mazda",
-                "Mazda 3",
-                2018,
-                192500,
-                12500
-        ));
-
-        vehicles.add(new Vehicle (
-                "Honda",
-                "Civic",
-                2015,
-                180000,
-                9500
-        ));
-
-        vehicles.add(new Vehicle (
-                "Subaru",
-                "Legacy",
-                2016,
-                160000,
-                11000
-        ));
-
-        return vehicles;
+        return vehicleRepository.findAll();
     }
 
     @PostMapping("/api/vehicles") //send data
     public Vehicle addVehicle(@RequestBody Vehicle vehicle) { //spring converts json to vehicle info
-        return vehicle;
+        return vehicleRepository.save(vehicle);
     }
 }
