@@ -11,7 +11,9 @@
     align-items: center;
     width: 100vw;
     height: 85px;
+    overflow: hidden;
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(110deg, #05080c 0%, #0b1118 55%, #111c27 100%);
 }
 
 #logo {
@@ -541,8 +543,4 @@
     .nav_links .phone_num {
         margin-top: 0.5rem;
     }
-}
-
-.sep_hero_sect {
-    font-family: "Montserrat", sans-serif;
 }
