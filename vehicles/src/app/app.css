@@ -550,8 +550,8 @@
     color: #2a2a2a;
     opacity: 0.9;
     font-size: 0.9rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
     font-weight: 400;
 }
 
@@ -561,12 +561,21 @@
     opacity: 1;
 }
 
-.dir_arr {
-    color: #2a2a2a;
-    font-weight: 400;
-}
-
 .sep_hero_sect {
    padding-left: 4rem;
    padding-top: 1rem;
+   padding-right: 4rem;
+}
+
+.back_link {
+    text-decoration: none;
+    color: #1F71CE;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-left: 0.3rem;
+}
+
+.back_link:hover {
+    transition: 0.3s ease;
+    color: #12457e;
 }

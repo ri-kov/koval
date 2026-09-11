@@ -22,12 +22,17 @@
     </div>
 </div>
 <section class = "sep_hero_sect">
-    <div style = "display: flex;">
-        <a href="" class = "web_directions_link" style = "margin-left: 0;">Home</a>
-        <i class="fa-solid fa-chevron-right" style="color: #1f71ce;"></i>
-        <a href="" class = "web_directions_link">Inventory</a>
-        <span class = "dir_arr">></span>
-        <a href="" class = "web_directions_link">{{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }} {{ vehicle.trim }}</a>
-        <a>Back to Inventory</a>
+    <div style = "display: flex; justify-content: space-between;">
+        <div style="display: flex; align-items: center;">
+            <a href="" class = "web_directions_link" style = "margin-left: 0;">Home</a>
+            <i class="fa-solid fa-chevron-right" style="color: #2a2a2ac6; font-size: 0.8rem;"></i>
+            <a href="" class = "web_directions_link">Inventory</a>
+            <i class="fa-solid fa-chevron-right" style="color: #2a2a2ac6; font-size: 0.8rem;"></i>
+            <a href="" class = "web_directions_link">{{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }} {{ vehicle.trim }}</a>
+        </div>       
+        <div style = "display: flex; align-self: right; align-items: center;">
+            <i class="fa-solid fa-chevron-left" style="color: #1f71ce; font-size: 0.8rem;"></i>
+            <a href ="" class = "back_link">Back to Inventory</a>
+        </div>
     </div>
 </section>
