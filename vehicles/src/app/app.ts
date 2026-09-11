@@ -9,4 +9,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('vehicles');
+
+  vehicle = {
+    year: 2019,
+    make: 'Hyundai',
+    model: 'Sonata',
+    trim: 'LE',
+    price: 11995,
+    mileage: 89500
+  }
 }

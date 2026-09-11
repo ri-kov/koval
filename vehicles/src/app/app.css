@@ -544,3 +544,29 @@
         margin-top: 0.5rem;
     }
 }
+
+.web_directions_link {
+    text-decoration: none;
+    color: #2a2a2a;
+    opacity: 0.9;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-weight: 400;
+}
+
+.web_directions_link:hover {
+    transition: 0.3s ease;
+    color: #131313 !important;
+    opacity: 1;
+}
+
+.dir_arr {
+    color: #2a2a2a;
+    font-weight: 400;
+}
+
+.sep_hero_sect {
+   padding-left: 4rem;
+   padding-top: 1rem;
+}
