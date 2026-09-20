@@ -588,7 +588,16 @@ div:has(.back_link:hover) .back_inv {
 .thumbnails {
     display: flex;
     width: 100%;
-    
+    gap: 0.4rem;
+    margin-top: 0.2rem;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.thumbnails::-webkit-scrollbar {
+    display: none;
 }
 
 .car_gallery {
@@ -602,4 +611,14 @@ div:has(.back_link:hover) .back_inv {
     object-fit: cover;
     object-position: center;
     border-radius: 7px;
+}
+
+.thumbnail {
+    flex: 0 0 120px;
+    min-width: 0;
+    aspect-ratio: 5/3;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+    cursor: pointer;
 }
