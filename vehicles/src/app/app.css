@@ -579,3 +579,8 @@
     transition: 0.3s ease;
     color: #12457e;
 }
+
+.back_link:hover .back_inv {
+    transition: 0.3s ease;
+    color: #12457e !important;
+}
