@@ -35,4 +35,12 @@
             <a href ="" class = "back_link">Back to Inventory</a>
         </div>
     </div>
+    <div class = "car_gallery">
+        <img class = "main_car_img" [src]="selectedImage" alt="Vehicle">
+        <div class = "thumbnails">
+            @for (image of vehicle.carImages; track image) {
+                <img class = "thumbnail" [class.active] = "image === selectedImage" [src]="image" alt="Vehicle" (click)="selectImage(image)">
+            }      
+        </div>
+    </div>
 </section>
