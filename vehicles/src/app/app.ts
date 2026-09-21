@@ -1,6 +1,5 @@
-import { Component, signal } from '@angular/core';
 import { Vehicle } from './vehicle';
-import { ElementRef, ViewChild } from '@angular/core'
+import { AfterViewInit, Component, signal, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +7,7 @@ import { ElementRef, ViewChild } from '@angular/core'
   styleUrl: './app.css'
 })
 
-export class App {
+export class App implements AfterViewInit{
   protected readonly title = signal('vehicles');
 
   vehicle: Vehicle = {
@@ -42,6 +41,9 @@ export class App {
 
   selectedImage = this.vehicle.carImages[0];
 
+  showLeftArrow = false;
+  showRightArrow = true;
+
   selectImage(image: string) {
     this.selectedImage = image;
   }
@@ -50,9 +52,23 @@ export class App {
   thumbnailsContainer!: ElementRef;
 
   scrollThumbnails(direction: number) {
-    this.thumbnailsContainer.nativeElement.scrollBy({
+    const container = this.thumbnailsContainer.nativeElement;
+
+    container.scrollBy({
       left: direction * 250,
       behaviour: 'smooth'
     });
+  }
+
+  updateArrows() {
+    const container = this.thumbnailsContainer.nativeElement;
+
+    this.showLeftArrow = container.scrollLeft > 0;
+
+    this.showRightArrow = container.scrollLeft + container.clientWidth < container.scrollWidth - 1;
+  }
+
+  ngAfterViewInit() {
+    this.updateArrows();
   }
 }

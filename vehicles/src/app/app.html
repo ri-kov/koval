@@ -38,17 +38,22 @@
     <div class = "car_gallery">
         <img class = "main_car_img" [src]="selectedImage" alt="Vehicle">
         <div class = "thumb_wrap">
-            <button class = "arrow left" (click) = "scrollThumbnails(-1)">
-                <i class="fa-solid fa-chevron-left" style="color: #1f71ce; font-size: 1.1rem;"></i>
-            </button>
-            <div class = "thumbnails" #thumbnailsContainer>
+            @if (showLeftArrow) {
+                <button class = "arrow left" (click) = "scrollThumbnails(-1)">
+                    <i class="fa-solid fa-chevron-left" style="color: #1f71ce; font-size: 1.1rem;"></i>
+                </button>
+            }
+            <div class = "thumbnails" #thumbnailsContainer (scroll)="updateArrows()">
                 @for (image of vehicle.carImages; track image) {
                     <img class = "thumbnail" [class.active] = "image === selectedImage" [src]="image" alt="Vehicle" (click)="selectImage(image)">
                 }      
             </div>
-            <button class = "arrow right" (click) = "scrollThumbnails(1)">
-                <i class="fa-solid fa-chevron-right" style="color: #1f71ce; font-size: 1.1rem;"></i>
-            </button>
+            @if (showRightArrow) {
+                <button class = "arrow right" (click) = "scrollThumbnails(1)">
+                    <i class="fa-solid fa-chevron-right" style="color: #1f71ce; font-size: 1.1rem;"></i>
+                </button>
+            }
+            
         </div>
     </div>
 </section>
