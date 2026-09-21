@@ -69,4 +69,17 @@ export class App implements AfterViewInit{
   ngAfterViewInit() {
     this.updateArrows();
   }
+
+  showPreviousImage() {
+    const currentIndex = this.vehicle.carImages.indexOf(this.selectedImage);
+    if (currentIndex > 0) {
+      this.selectedImage = this.vehicle.carImages[currentIndex - 1];
+    }
+  }
+  showNextImage() {
+    const currentIndex = this.vehicle.carImages.indexOf(this.selectedImage);
+    if (currentIndex < this.vehicle.carImages.length) {
+      this.selectedImage = this.vehicle.carImages[currentIndex +1];
+    }
+  }
 }
