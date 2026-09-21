@@ -13,6 +13,7 @@ export interface Vehicle {
     intColor: string;
     seats: number;
     certification: string;
+    special: string;
     title: string;
     owners: number;
     description: string;

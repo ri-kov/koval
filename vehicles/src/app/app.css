@@ -664,3 +664,19 @@ div:has(.back_link:hover) .back_inv {
     width: 3rem !important;
     height: 3rem !important;
 }
+
+.badges_wrap {
+    position: relative;
+    display: flex;
+    gap: 0.6rem;
+    z-index: 10;
+    position: absolute;
+}
+
+.special_badge {
+    background-color: #361fce;
+    border-radius: 12px;
+    text-transform: uppercase;
+    width: 6rem;
+    height: 2rem;
+}
