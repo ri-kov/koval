@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { Vehicle } from './vehicle';
+import { ElementRef, ViewChild } from '@angular/core'
 
 @Component({
   selector: 'app-root',
@@ -43,5 +44,15 @@ export class App {
 
   selectImage(image: string) {
     this.selectedImage = image;
+  }
+
+  @ViewChild('thumbnailsContainer')
+  thumbnailsContainer!: ElementRef;
+
+  scrollThumbnails(direction: number) {
+    this.thumbnailsContainer.nativeElement.scrollBy({
+      left: direction * 250,
+      behaviour: 'smooth'
+    });
   }
 }

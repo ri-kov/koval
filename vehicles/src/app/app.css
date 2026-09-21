@@ -622,3 +622,32 @@ div:has(.back_link:hover) .back_inv {
     border-radius: 7px;
     cursor: pointer;
 }
+
+.arrow {
+    background-color: #ffffff;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: none;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.thumb_wrap {
+    position: relative;
+}
+
+.arrow.left {
+    left: 0.5rem;
+}
+
+.arrow.right {
+    right: 0.5rem;
+}
