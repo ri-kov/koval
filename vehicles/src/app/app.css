@@ -651,3 +651,7 @@ div:has(.back_link:hover) .back_inv {
 .arrow.right {
     right: 0.5rem;
 }
+
+.thumbnail.active {
+    border: 3px solid #12457e;
+}
