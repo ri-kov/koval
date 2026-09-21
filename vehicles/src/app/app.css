@@ -655,3 +655,12 @@ div:has(.back_link:hover) .back_inv {
 .thumbnail.active {
     border: 3px solid #12457e;
 }
+
+.main_img_wrap {
+    position: relative;
+}
+
+.main_arr {
+    width: 3rem !important;
+    height: 3rem !important;
+}
