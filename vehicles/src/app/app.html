@@ -36,10 +36,22 @@
         </div>
     </div>
     <div class = "car_gallery">
-        <img class = "main_car_img" [src]="selectedImage" alt="Vehicle">
+        <div class = "main_img_wrap">
+            @if (vehicle.carImages.indexOf(selectedImage) > 0) {
+                <button class = "arrow left" (click) = "showPreviousImage()">
+                    <i class="fa-solid fa-chevron-left" style="color: #1f71ce; font-size: 1.1rem;"></i>
+                </button>
+            }
+            <img class = "main_car_img" [src]="selectedImage" alt="Vehicle">
+            @if (vehicle.carImages.indexOf(selectedImage) < vehicle.carImages.length - 1) {
+                <button class = "arrow right" (click) = "scrollThumbnails(1)">
+                    <i class="fa-solid fa-chevron-right" style="color: #1f71ce; font-size: 1.1rem;"></i>
+                </button>
+            }
+        </div>
         <div class = "thumb_wrap">
             @if (showLeftArrow) {
-                <button class = "arrow left" (click) = "scrollThumbnails(-1)">
+                <button class = "arrow left" (click) = "showNextImage()">
                     <i class="fa-solid fa-chevron-left" style="color: #1f71ce; font-size: 1.1rem;"></i>
                 </button>
             }
@@ -52,8 +64,7 @@
                 <button class = "arrow right" (click) = "scrollThumbnails(1)">
                     <i class="fa-solid fa-chevron-right" style="color: #1f71ce; font-size: 1.1rem;"></i>
                 </button>
-            }
-            
+            }       
         </div>
     </div>
 </section>
