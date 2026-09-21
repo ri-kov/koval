@@ -16,6 +16,8 @@ export interface Vehicle {
     special: string;
     title: string;
     owners: number;
+    bodyStyle: string;
+    engineSize: number;
     description: string;
     carImages: string[];
 }
