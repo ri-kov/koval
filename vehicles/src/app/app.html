@@ -39,9 +39,15 @@
         <div class = "main_img_wrap">
             @if (selectedImage === vehicle.carImages[0]) {
                 <div class = "badges_wrap">
-                    <div class = "special_badge">{{ vehicle.special }}</div>
-                    <div class = "cert_badge">{{ vehicle.certification }}</div>
-                    <div class = "title_badge">{{ vehicle.title }}</div>
+                    <div class = "special_badge badges">{{ vehicle.special }}</div>
+                    <div class = "cert_badge badges">
+                        <i class="fa-solid fa-file-shield" style="color: #1f71ce; font-size: 1.1rem;"></i>
+                        {{ vehicle.certification }}
+                    </div>
+                    <div class = "cert_badge badges">
+                        <i class="fa-solid fa-square-check" style="color: #0b8500; font-size: 1.1rem;"></i>
+                        {{ vehicle.title }}
+                    </div>
                 </div>
             }
             @if (vehicle.carImages.indexOf(selectedImage) > 0) {
@@ -73,5 +79,8 @@
                 </button>
             }       
         </div>
+    </div>
+    <div class = "car_info">
+        <h1 class = "car_name">{{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }} {{ vehicle.trim}}</h1>
     </div>
 </section>

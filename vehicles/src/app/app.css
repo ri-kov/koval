@@ -671,12 +671,33 @@ div:has(.back_link:hover) .back_inv {
     gap: 0.6rem;
     z-index: 10;
     position: absolute;
+    transform: translateY(-50%);
+    top: 8%;
+    left: 2%;
 }
 
 .special_badge {
-    background-color: #361fce;
-    border-radius: 12px;
+    background-color: #0e0067;
+    color: white;
+}
+
+.badges {
+    border-radius: 5px;
     text-transform: uppercase;
-    width: 6rem;
-    height: 2rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.cert_badge {
+    background-color: white;
+    gap: 0.4rem;
+}
+
+.car_info {
+    padding-top: 1rem;
+    width: 47%;
 }
