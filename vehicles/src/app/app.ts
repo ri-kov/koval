@@ -49,7 +49,7 @@ export class App implements AfterViewInit{
   }
 
   @ViewChild('thumbnailsContainer')
-  thumbnailsContainer!: ElementRef;
+  thumbnailsContainer!: ElementRef; //saves as a variable to work w it later
 
   scrollThumbnails(direction: number) {
     const container = this.thumbnailsContainer.nativeElement;
@@ -62,9 +62,7 @@ export class App implements AfterViewInit{
 
   updateArrows() {
     const container = this.thumbnailsContainer.nativeElement;
-
     this.showLeftArrow = container.scrollLeft > 0;
-
     this.showRightArrow = container.scrollLeft + container.clientWidth < container.scrollWidth - 1;
   }
 
