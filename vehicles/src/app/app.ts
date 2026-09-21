@@ -74,12 +74,33 @@ export class App implements AfterViewInit{
     const currentIndex = this.vehicle.carImages.indexOf(this.selectedImage);
     if (currentIndex > 0) {
       this.selectedImage = this.vehicle.carImages[currentIndex - 1];
+
+      this.scrollSelectedThumbnailIntoView();
     }
   }
+
   showNextImage() {
     const currentIndex = this.vehicle.carImages.indexOf(this.selectedImage);
-    if (currentIndex < this.vehicle.carImages.length) {
+    if (currentIndex < this.vehicle.carImages.length-1) {
       this.selectedImage = this.vehicle.carImages[currentIndex +1];
+
+      this.scrollSelectedThumbnailIntoView();
     }
+  }
+
+  scrollSelectedThumbnailIntoView() {
+    setTimeout(() => {
+      const container = this.thumbnailsContainer.nativeElement;
+
+      const activeThumbnail = container.querySelector('.thumbnail.active');
+
+      if(activeThumbnail) {
+        activeThumbnail.scrollIntoView({
+          behaviour: 'smooth',
+          inline: 'nearest',
+          block: 'nearest'
+        });
+      }
+    });
   }
 }
