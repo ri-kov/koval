@@ -827,7 +827,8 @@ div:has(.back_link:hover) .back_inv {
     font-size: 0.95rem;
     margin-top: 0;
     margin-bottom: 0.2rem;
-    color: black;
+    color: rgb(20, 20, 20);
+    opacity: 0.9;
 }
 
 .feat_btm_text {
@@ -835,11 +836,12 @@ div:has(.back_link:hover) .back_inv {
     font-size: 0.85rem;
     margin-top: 0;
     margin-bottom: 0rem;
-    color: black;
-    opacity: 0.9;
+    color: rgb(20, 20, 20);
+    opacity: 0.8;
 }
 
 .feat_info_icons {
     width: 2.5rem;
     height: 2.5rem;
+    opacity: 0.9;
 }
