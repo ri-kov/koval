@@ -181,5 +181,33 @@
             <p class = "car_info_text">Ready for the road</p>
         </div>
         <div class = "car_info_divider"></div>
+        <div class = "info_img_circ">
+            <img src="pictures/shieldPic3.svg" alt="shield-icon" class = "info_img">
+        </div>
+        <div>
+            <p class = "car_info_head">{{ vehicle.title }}</p>
+            <p class = "car_info_text">No Issues</p>
+        </div>
+        <div class = "car_info_divider"></div>
+        <div class = "info_img_circ">
+            <img src="pictures/peoplePic2.svg" alt="people-icon" class = "info_img">
+        </div>
+        <div>
+            @if (vehicle.owners <= 1) {
+                <p class = "car_info_head">{{ vehicle.owners }} Owner</p>
+            }
+            @else {
+                <p class = "car_info_head">{{ vehicle.owners }} Owners</p>
+            }
+            <p class = "car_info_text">(estimated)</p>
+        </div>
+        <div class = "car_info_divider"></div>
+        <div class = "info_img_circ">
+            <img src="pictures/maintenancePic.svg" alt="maintenance-icon" class = "info_img">
+        </div>
+        <div>
+            <p class = "car_info_head">Recent Maintenance</p>
+            <p class = "car_info_text">Well maintained</p>
+        </div>
     </div>
 </section>
