@@ -3,7 +3,7 @@ export interface Vehicle {
     make: string;
     model: string;
     trim: string;
-    price: number;
+    price: string;
     mileage: number;
     engine: string;
     transmission: string;

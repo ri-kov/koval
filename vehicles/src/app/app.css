@@ -717,3 +717,9 @@ div:has(.back_link:hover) .back_inv {
     margin-top: 0.3rem !important;
     font-size: 1.05rem;
 }
+
+.car_price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1F71CE;
+}
