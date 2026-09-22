@@ -210,11 +210,24 @@
             <p class = "car_info_text">Well maintained</p>
         </div>
     </div>
-    <div style = "width: 53%; display: flex; align-items: center;">
-        <div style = "width: 100%;">
-            <p class = "abt_head">About this Vehicle</p>
-            <p class = "car_description">{{ vehicle.description }}</p>
+    <div style = "display: flex;">
+        <div style = "width: 53%; display: flex; align-items: center;">
+            <div style = "width: 100%;">
+                <p class = "abt_head">About this Vehicle</p>
+                <p class = "car_description">{{ vehicle.description }}</p>
+            </div>
+            <div class = "desc_divider"></div>
         </div>
-        <div class = "desc_divider"></div>
+        <div style = "width: 47%;">
+            <p class = "abt_head">Features</p>
+            <div class = "features_grid">
+                @for(feature of vehicle.features; track feature) {
+                    <div class = "feature">
+                        <img src="pictures/checkPic.svg" alt="check-mark" class = "features_checkmark">
+                        <p>{{ feature }}</p>
+                    </div>
+                }
+            </div>
+        </div>
     </div>
 </section>
