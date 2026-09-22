@@ -846,3 +846,27 @@ div:has(.back_link:hover) .back_inv {
     height: 2.2rem;
     opacity: 0.9;
 }
+
+.info_img_circ {
+    border-radius: 50%;
+    color: #3386e439;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 0.5rem;
+}
+
+.info_img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.car_info_head {
+    color: rgb(20, 20, 20);
+    opacity: 0.9;
+    font-weight: 550;
+    font-size: 0.95rem;
+}
