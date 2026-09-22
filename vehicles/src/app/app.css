@@ -760,7 +760,6 @@ div:has(.back_link:hover) .back_inv {
     transition: 0.3s ease;
 }
 
-
 .car_contact_button:hover i {
     color: rgb(224, 224, 224) !important;
     transition: 0.3s ease;
@@ -821,4 +820,26 @@ div:has(.back_link:hover) .back_inv {
 .car_book_button:hover i {
     color: #3d3d3d !important;
     transition: 0.3s ease;
+}
+
+.feat_info {
+    font-weight: 615;
+    font-size: 0.95rem;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    color: black;
+}
+
+.feat_btm_text {
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-top: 0;
+    margin-bottom: 0rem;
+    color: black;
+    opacity: 0.9;
+}
+
+.feat_info_icons {
+    width: 2.5rem;
+    height: 2.5rem;
 }

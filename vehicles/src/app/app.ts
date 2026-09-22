@@ -16,7 +16,7 @@ export class App implements AfterViewInit{
     model: 'Sonata',
     trim: 'LE',
     price: '11,995',
-    mileage: 89500,
+    mileage: '89,500',
     engine: '2.4L 4-Cylinder',
     transmission: 'Automatic',
     fuel: 'Gasoline',
