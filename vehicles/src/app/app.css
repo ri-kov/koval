@@ -900,8 +900,8 @@ div:has(.back_link:hover) .back_inv {
     padding-right: 0.5rem;
 }
 
-.car_carFax_link:hover .car_carFax_text{
-    color: #0d315b;
+.car_carFax_link:hover .car_info_text{
+    color: #0d315b !important;
     transition: 0.3s ease;
 }
 
