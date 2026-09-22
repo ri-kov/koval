@@ -732,6 +732,8 @@ div:has(.back_link:hover) .back_inv {
     border-radius: 7px;
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
+    margin-left: 0.7rem;
+    text-decoration: none;
 }
 
 .car_contact_button {
