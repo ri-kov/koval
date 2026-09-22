@@ -966,3 +966,73 @@ div:has(.back_link:hover) .back_inv {
     height: 1.7rem;
     width: 1.7rem;
 }
+
+.contact_circ {
+    border-radius: 50%;
+    background-color: #001f4112;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-right: 1.2rem;
+}
+
+.contact_pic {
+    width: 4rem;
+    height: 4rem;
+}
+
+.contact_text1 {
+    text-transform: uppercase;
+    color: #1F71CE;
+    font-size: 0.8rem;
+    font-weight: 450;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+
+.contact_text2 {
+    font-size: 1.4rem;
+    font-weight: 650;
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+}
+
+.contact_text3 {
+    opacity: 0.8;
+    font-size: 0.95rem;
+    font-weight: 450;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact_sect {
+    background-color: #f2f2f2;
+    padding-top: 3rem;
+    margin-top: 2rem;
+}
+
+.contact_wrap {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 80%;
+    justify-self: center;
+    background-color: white;
+    padding: 2rem 1rem 2rem 1rem;
+    border-radius: 8px;
+}
+
+.contact_text {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-left: 0.rem;
+}
+
+.contact_divider {
+    margin: 0 1.2rem 0 1.2rem;
+    width: 0.02rem;
+    height: 1.7rem;
+    border-right: 0.12rem solid #6d6d6d35;
+}
