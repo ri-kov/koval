@@ -854,20 +854,19 @@ div:has(.back_link:hover) .back_inv {
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 3.5rem;
-    height: 3.5rem;
-    margin-right: 0.5rem;
+    width: 3.7rem;
+    height: 3.7rem;
+    margin-right: 1.2rem;
 }
 
 .info_img {
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 3rem;
+    height: 3rem;
 }
 
 .car_info_head {
     color: rgb(20, 20, 20);
-    opacity: 0.9;
-    font-weight: 550;
+    font-weight: 600;
     font-size: 0.95rem;
     margin-bottom: 0.4rem;
     margin-top: 0;
@@ -880,8 +879,8 @@ div:has(.back_link:hover) .back_inv {
     cursor: pointer;
 }
 
-.car_carFax_text {
-    font-weight: 450;
+.car_info_text {
+    font-weight: 500;
     margin-bottom: 0;
     margin-top: 0;
     margin-right: 0.2rem;
@@ -892,11 +891,28 @@ div:has(.back_link:hover) .back_inv {
 .car_info_box {
     display: flex;
     border-top: 0.12rem solid #6d6d6d35;
-    border-bottom: 0.1rem solid #6d6d6d35;
+    border-bottom: 0.12rem solid #6d6d6d35;
     margin-top: 2rem;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     align-items: center;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+
+.car_carFax_link:hover .car_carFax_text{
+    color: #0d315b;
+    transition: 0.3s ease;
+}
+
+.car_carFax_link:hover i{
+    color: #0d315b !important;
+    transition: 0.3s ease;
+}
+
+.car_info_divider {
+    width: 0.02rem;
+    height: 3.5rem;
+    border-right: 0.12rem solid #6d6d6d35;
+    margin: 0 2.7rem 0 2.7rem;
 }
