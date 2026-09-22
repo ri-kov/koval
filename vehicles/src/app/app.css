@@ -916,3 +916,24 @@ div:has(.back_link:hover) .back_inv {
     border-right: 0.12rem solid #6d6d6d35;
     margin: 0 2.7rem 0 2.7rem;
 }
+
+.abt_head {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 650;
+}
+
+.car_description {
+    margin-top: 0;
+    opacity: 0.9;
+    font-weight: 450;
+    font-size: 1rem;
+    width: 95%;
+    margin-bottom: 1rem;
+}
+
+.desc_divider {
+    width: 0.02rem;
+    height: 8.5rem;
+    border-right: 0.12rem solid #6d6d6d35;
+}
