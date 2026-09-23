@@ -1056,6 +1056,7 @@ div:has(.back_link:hover) .back_inv {
     align-items: center;
     padding-right: 0.5rem;
     margin-bottom: 0.6rem;
+    cursor: pointer;
 }
 
 .contact_book_button {
@@ -1067,6 +1068,7 @@ div:has(.back_link:hover) .back_inv {
     display: flex;
     font-family: "Montserrat", sans-serif;
     align-items: center;
+    cursor: pointer;
 }
 
 .contact_button_text {
@@ -1095,4 +1097,37 @@ div:has(.back_link:hover) .back_inv {
 .contact_btm_image {
     width: 1rem;
     height: 1rem;
+}
+
+.contact_message_button:hover {
+    transition: 0.3s ease;
+    background-color: #0a2a4d;
+    border: 2px solid #0a2a4d;
+}
+
+.contact_message_button:hover .contact_button_text {
+    color: rgba(224, 224, 224) !important;
+    transition: 0.3s ease;
+}
+
+.contact_message_button:hover i {
+    color: rgba(224, 224, 224) !important;
+    transition: 0.3s ease;
+}
+
+
+.contact_book_button:hover {
+    transition: 0.3s ease;
+    background-color: rgb(224, 224, 224);
+    border: 2px solid #3d3d3d;
+}
+
+.contact_book_button:hover .contact_button_text {
+    color: #3d3d3d !important;
+    transition: 0.3s ease;
+}
+
+.contact_book_button:hover i {
+    color: #3d3d3d !important;
+    transition: 0.3s ease;
 }
