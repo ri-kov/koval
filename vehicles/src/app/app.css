@@ -1012,6 +1012,7 @@ div:has(.back_link:hover) .back_inv {
     background-color: #f2f2f2;
     padding-top: 3rem;
     margin-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .contact_wrap {
@@ -1020,8 +1021,9 @@ div:has(.back_link:hover) .back_inv {
     width: 80%;
     justify-self: center;
     background-color: white;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     border-radius: 8px;
+    margin-bottom: 2rem;
 }
 
 .contact_text {
@@ -1038,7 +1040,7 @@ div:has(.back_link:hover) .back_inv {
 }
 
 .contact_full_divider {
-    margin: 0 2rem 0 0;
+    margin: 0 4rem 0 0;
     width: 0.02rem;
     height: 10rem;
     border-right: 0.12rem solid #6d6d6d35;
