@@ -1028,7 +1028,7 @@ div:has(.back_link:hover) .back_inv {
 .contact_text {
     font-size: 0.95rem;
     font-weight: 500;
-    margin-left: 0.rem;
+    margin-left: 0.5rem;
 }
 
 .contact_divider {
