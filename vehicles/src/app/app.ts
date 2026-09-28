@@ -11,6 +11,7 @@ export class App implements AfterViewInit{
   protected readonly title = signal('vehicles');
 
   vehicle: Vehicle = {
+    id: 1,
     year: 2019,
     make: 'Hyundai',
     model: 'Sonata',
@@ -106,5 +107,14 @@ export class App implements AfterViewInit{
         });
       }
     });
+  }
+
+  menuOpen = false;
+  openMenu(): void {
+    this.menuOpen = true;
+  }
+
+  closeMenu(): void {
+    this.menuOpen = false;
   }
 }
