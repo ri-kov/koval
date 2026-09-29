@@ -1442,7 +1442,8 @@ div:has(.back_link:hover) .back_inv {
     }
 
     .car_info_box {
-        border: none;
+        border: 2px solid #6d6d6d35;
+        border-radius: 8px;
         margin-top: 0.5rem;
         display: block;
     }
@@ -1469,6 +1470,7 @@ div:has(.back_link:hover) .back_inv {
     .car_info_text {
         font-size: 0.75rem;
         font-weight: 450;
+        white-space: nowrap;
     }
 
     .ml14 {
