@@ -167,7 +167,7 @@
     </div>
     <div class = "car_info_box">
         <div style = "display: flex; align-items: center;">
-            <div style = "display: flex; align-items: center;">
+            <div style = "display: flex; align-items: center;" class = "mb1">
                 <div class = "info_img_circ">
                     <img src="pictures/carFaxPic.svg" alt="carFax-icon" class = "info_img">
                 </div>
@@ -180,7 +180,7 @@
                 </div>
             </div>    
             <div class = "car_info_divider phone_d_none"></div>
-            <div style = "display: flex; align-items: center;">
+            <div style = "display: flex; align-items: center;" class = "ml14 mb1">
                 <div class = "info_img_circ">
                     <img src="pictures/safetyPic3.svg" alt="safety-icon" class = "info_img">
                 </div>
@@ -192,29 +192,31 @@
         </div>
         <div class = "car_info_divider phone_d_none"></div>
         <div style = "display: flex; align-items: center;">
-            <div class = "info_img_circ">
-                <img src="pictures/shieldPic3.svg" alt="shield-icon" class = "info_img">
+            <div style = "display: flex; align-items: center;" class = "mb1">
+                <div class = "info_img_circ">
+                    <img src="pictures/shieldPic3.svg" alt="shield-icon" class = "info_img">
+                </div>
+                <div>
+                    <p class = "car_info_head">{{ vehicle.title }}</p>
+                    <p class = "car_info_text">No Issues</p>
+                </div>
             </div>
-            <div>
-                <p class = "car_info_head">{{ vehicle.title }}</p>
-                <p class = "car_info_text">No Issues</p>
+            <div class = "car_info_divider phone_d_none"></div>
+            <div style = "display: flex; align-items: center;" class = "ml408 mb1">
+                <div class = "info_img_circ">
+                    <img src="pictures/peoplePic2.svg" alt="people-icon" class = "info_img">
+                </div>
+                <div>
+                    @if (vehicle.owners <= 1) {
+                        <p class = "car_info_head">{{ vehicle.owners }} Owner</p>
+                    }
+                    @else {
+                        <p class = "car_info_head">{{ vehicle.owners }} Owners</p>
+                    }
+                    <p class = "car_info_text">(estimated)</p>
+                </div>
             </div>
-        </div>
-        <div class = "car_info_divider phone_d_none"></div>
-        <div style = "display: flex; align-items: center;">
-            <div class = "info_img_circ">
-                <img src="pictures/peoplePic2.svg" alt="people-icon" class = "info_img">
-            </div>
-            <div>
-                @if (vehicle.owners <= 1) {
-                    <p class = "car_info_head">{{ vehicle.owners }} Owner</p>
-                }
-                @else {
-                    <p class = "car_info_head">{{ vehicle.owners }} Owners</p>
-                }
-                <p class = "car_info_text">(estimated)</p>
-            </div>
-        </div>
+        </div>    
         <div class = "car_info_divider phone_d_none"></div>
         <div style = "display: flex; align-items: center;">
             <div class = "info_img_circ">

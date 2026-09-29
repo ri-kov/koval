@@ -1443,7 +1443,43 @@ div:has(.back_link:hover) .back_inv {
 
     .car_info_box {
         border: none;
-        margin-top: 0rem;
+        margin-top: 0.5rem;
         display: block;
+    }
+
+    .info_img_circ {
+        flex-shrink: 0;
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-right: 0.7rem;
+    }
+
+    .info_img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .car_info_head {
+        font-size: 0.85rem;
+        font-weight: 550;
+        margin-bottom: 0.3rem;
+        white-space: nowrap;
+    }
+
+    .car_info_text {
+        font-size: 0.75rem;
+        font-weight: 450;
+    }
+
+    .ml14 {
+        margin-left: 1.4rem;
+    }
+
+    .ml408 {
+        margin-left: 4.08rem;
+    }
+
+    .mb1 {
+        margin-bottom: 1rem;
     }
 }
