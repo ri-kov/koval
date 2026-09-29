@@ -1358,4 +1358,74 @@ div:has(.back_link:hover) .back_inv {
     .thumbnail {
         flex: 0 0 87px !important;
     }
- }
+
+    .car_info {
+        width: 100%;
+    }
+
+    .car_name {
+        white-space: nowrap;
+        font-size: 1.7rem;
+    }
+
+    .car_base_details {
+        margin-top: 0.2rem !important;
+        font-size: 0.95rem;
+    }
+
+    .car_price {
+        font-size: 1.9rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .fa-solid .fa-envelope {
+        font-size: 1rem !important;
+    }
+
+    .car_book_buttons p {
+        font-size: 0.9rem;
+        margin: 0 0 0 0.5rem !important;
+    }
+
+    .car_book_buttons i {
+        font-size: 1.1rem !important;
+    }
+
+    .car_book_buttons {
+        padding: 0.8rem 1rem 0.8rem 1rem;
+    }
+
+    .car_call_button {
+        margin-bottom: 1rem;
+    }
+
+    .car_contact_button  {
+        margin-bottom: 1rem;
+    }
+
+    .car_book_button {
+        margin-left: 0 !important;
+    }
+
+    .feat_info_icons {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .feat_info {
+        font-size: 0.8rem;
+    }
+
+    .feat_btm_text {
+        font-size: 0.7rem;
+    }
+
+    .mg2 {
+        margin-top: 2rem !important;
+    }
+
+    .mg02 {
+        margin-left: 0.2rem !important;
+    }
+}

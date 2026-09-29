@@ -85,79 +85,92 @@
             <h1 class = "car_name">{{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }} {{ vehicle.trim}}</h1>
             <p class = "car_base_details">{{ vehicle.bodyStyle }} · {{ vehicle.engineSize }} · {{ vehicle.transmission }}</p>
             <p class = "car_price">${{ vehicle.price }}</p>
-            <div style = "display: flex;">
-                <button class = "car_contact_button car_book_buttons" style = "margin-left: 0;">
-                    <i class="fa-solid fa-envelope" style="color: #ffffff; font-size: 1.2rem;"></i>
-                    <p>Contact Us</p>
-                </button>
-                <a class = "car_call_button car_book_buttons">
-                    <i class="fa-solid fa-phone" style="color: #1f71ce; font-size: 1.2rem;"></i>
-                    <p style = "color: #1F71CE;">Call Now</p>
-                </a>
+            <div style = "display: flex;" class="phone_d_block">
+                <div style = "display: flex;">
+                    <button class = "car_contact_button car_book_buttons" style = "margin-left: 0;">
+                        <i class="fa-solid fa-envelope" style="color: #ffffff; font-size: 1.2rem;"></i>
+                        <p>Contact Us</p>
+                    </button>
+                    <a class = "car_call_button car_book_buttons">
+                        <i class="fa-solid fa-phone" style="color: #1f71ce; font-size: 1.2rem;"></i>
+                        <p style = "color: #1F71CE;">Call Now</p>
+                    </a>
+                </div>            
                 <button class = "car_book_button car_book_buttons">
                     <i class="fa-solid fa-calendar-days" style="color: #000000; font-size: 1.2rem;"></i>
                     <p>Book a Test Drive</p>
                 </button>
             </div>
-            <div style = "display: flex; margin-top: 3.5rem;">
+            <div style = "display: flex; margin-top: 3.5rem;" class = "mg2">
                 <div style = "display: flex;">
                     <img alt = "mileage-icon" src = "pictures/mileagePic2.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;">
+                    <div style = "margin-left: 0.5rem;" class = "mg02">
                         <p class = "feat_info">{{ vehicle.mileage }} km</p>
                         <p class = "feat_btm_text">Mileage</p>
                     </div>
                 </div>
                 <div style = "display: flex; margin-left: 1.5rem;">
                     <img alt = "engine-icon" src = "pictures/enginePic.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;">
+                    <div style = "margin-left: 0.5rem;" class = "mg02">
                         <p class = "feat_info">{{ vehicle.engine }}</p>
                         <p class = "feat_btm_text">Engine</p>
                     </div>
                 </div>
                 <div style = "display: flex; margin-left: 1.5rem;">
                     <img alt = "transmission-icon" src = "pictures/transmissionPic2.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;">
+                    <div style = "margin-left: 0.5rem;" class = "mg02">
                         <p class = "feat_info">{{ vehicle.transmission }}</p>
                         <p class = "feat_btm_text">Transmission</p>
                     </div>
                 </div>
-                <div style = "display: flex; margin-left: 1.5rem;">
+                <div style = "display: flex; margin-left: 1.5rem;" class = "phone_d_none">
                     <img alt = "gas-icon" src = "pictures/gasStationPic2.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;">
+                    <div style = "margin-left: 0.5rem;" class = "mg02">
                         <p class = "feat_info">{{ vehicle.fuel }}</p>
                         <p class = "feat_btm_text">Fuel Type</p>
                     </div>
                 </div>
             </div>
-            <div style = "display: flex; margin-top: 1.5rem;">
+            <div style = "display: flex; margin-top: 1.5rem;" class = "phone_d_block">
                 <div style = "display: flex;">
-                    <img alt = "drivetrain-icon" src = "pictures/wheelDrivePic.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;">
-                        <p class = "feat_info">{{ vehicle.drivetrain }}</p>
-                        <p class = "feat_btm_text">Drivetrain</p>
+                    <div style = "display: flex; margin-left: 1.5rem; display: none;" class = "phone_d_flex">
+                        <img alt = "gas-icon" src = "pictures/gasStationPic2.svg" class = "feat_info_icons">
+                        <div style = "margin-left: 0.5rem;" class = "mg02">
+                            <p class = "feat_info">{{ vehicle.fuel }}</p>
+                            <p class = "feat_btm_text">Fuel Type</p>
+                        </div>
                     </div>
-                </div>
-                <div style = "display: flex; margin-left: 2.5rem;">
-                    <img alt = "color-palette-icon" src = "pictures/colorPic.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;">
-                        <p class = "feat_info">{{ vehicle.extColor }}</p>
-                        <p class = "feat_btm_text">Exterior Color</p>
+                    <div style = "display: flex;">
+                        <img alt = "drivetrain-icon" src = "pictures/wheelDrivePic.svg" class = "feat_info_icons">
+                        <div style = "margin-left: 0.5rem;" class = "mg02">
+                            <p class = "feat_info">{{ vehicle.drivetrain }}</p>
+                            <p class = "feat_btm_text">Drivetrain</p>
+                        </div>
                     </div>
-                </div>
-                <div style = "display: flex; margin-left: 3.1rem;">
-                    <img alt = "person-icon" src = "pictures/personPic.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;">
-                        <p class = "feat_info">{{ vehicle.intColor }}</p>
-                        <p class = "feat_btm_text">Interior Color</p>
+                    <div style = "display: flex; margin-left: 2.5rem;">
+                        <img alt = "color-palette-icon" src = "pictures/colorPic.svg" class = "feat_info_icons">
+                        <div style = "margin-left: 0.5rem;" class = "mg02">
+                            <p class = "feat_info">{{ vehicle.extColor }}</p>
+                            <p class = "feat_btm_text">Exterior Color</p>
+                        </div>
                     </div>
-                </div>
-                <div style = "display: flex; margin-left: 1.7rem;">
-                    <img alt = "people-icon" src = "pictures/peoplePic.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;">
-                        <p class = "feat_info">{{ vehicle.seats }}</p>
-                        <p class = "feat_btm_text">Seats</p>
+                </div>        
+                <div style = "display: flex;">
+                    <div style = "display: flex; margin-left: 3.1rem;">
+                        <img alt = "person-icon" src = "pictures/personPic.svg" class = "feat_info_icons">
+                        <div style = "margin-left: 0.5rem;" class = "mg02">
+                            <p class = "feat_info">{{ vehicle.intColor }}</p>
+                            <p class = "feat_btm_text">Interior Color</p>
+                        </div>
                     </div>
-                </div>
+                    <div style = "display: flex; margin-left: 1.7rem;">
+                        <img alt = "people-icon" src = "pictures/peoplePic.svg" class = "feat_info_icons">
+                        <div style = "margin-left: 0.5rem;" class = "mg02">
+                            <p class = "feat_info">{{ vehicle.seats }}</p>
+                            <p class = "feat_btm_text">Seats</p>
+                        </div>
+                    </div>
+                </div>        
             </div>
         </div>
     </div>
