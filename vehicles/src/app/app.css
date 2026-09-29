@@ -949,7 +949,7 @@ div:has(.back_link:hover) .back_inv {
 
 .feature {
     display: flex;
-    /*align-items: center;*/
+    align-items: center;
     gap: 0.3rem;
     min-width: 0;
 }
@@ -1483,5 +1483,69 @@ div:has(.back_link:hover) .back_inv {
 
     .mb1 {
         margin-bottom: 1rem;
+    }
+
+    .abtwrap {
+        width: 100% !important;
+    }
+
+    .desc_divider {
+        display: none;
+    }
+
+    .car_description {
+        width: 100% !important;
+    }
+
+    .mt05 {
+        margin-top: 0.5rem !important;
+    }
+
+    .features_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact_wrap {
+        display: block;
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+
+    .contact_circ {
+        flex-shrink: 0;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .contact_pic {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .contact_text1 {
+        white-space: nowrap;
+        font-size: 0.78rem;
+    }
+
+    .contact_text2 {
+        font-size: 1.5rem;
+        width: 15rem;
+    }
+
+    .contact_text3 {
+        font-size: 0.9rem;
+        width: 15rem !important;
+    }
+
+    .contact_text {
+        white-space: nowrap;
+        font-size: 0.85rem !important;
+    }
+
+    .btm_icon {
+        font-size: 0.9rem;
+    }
+
+    #locName {
+        margin-top: -1rem;
     }
 }

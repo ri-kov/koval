@@ -228,16 +228,16 @@
             </div>
         </div>
     </div>
-    <div style = "display: flex;">
-        <div style = "width: 53%; display: flex; align-items: center;">
+    <div style = "display: flex;" class = "phone_d_block">
+        <div style = "width: 53%; display: flex; align-items: center;" class = "abtwrap">
             <div style = "width: 100%;">
                 <p class = "abt_head">About this Vehicle</p>
                 <p class = "car_description">{{ vehicle.description }}</p>
             </div>
             <div class = "desc_divider"></div>
         </div>
-        <div style = "width: 47%;">
-            <p class = "abt_head">Features</p>
+        <div style = "width: 47%;" class = "car_description">
+            <p class = "abt_head mt05">Features</p>
             <div class = "features_grid">
                 @for(feature of vehicle.features; track feature) {
                     <div class = "feature">
@@ -260,18 +260,23 @@
                     <div>
                         <p class = "contact_text1">interest in this vehicle?</p>
                         <p class = "contact_text2">Let's Get You Behind the Wheel</p>
-                        <p class = "contact_text3">Have a question or want to book a test drive?<br>We're here to help.</p>
+                        <p class = "contact_text3" style = "width: 24rem;">Have a question or want to book a test drive? We're here to help.</p>
                     </div>
                 </div>
-                <div style = "display: flex; align-items: center; margin-top: 1rem;">
-                    <i class="fa-solid fa-phone" style="color: #1f71ce;"></i>
-                    <p class = "contact_text">(204) 999-9999</p>
-                    <div class = "contact_divider"></div>
-                    <i class="fa-regular fa-envelope" style="color: #1f71ce;"></i>
-                    <p class = "contact_text">info@valenauto.com</p>
-                    <div class = "contact_divider"></div>
-                    <i class="fa-solid fa-location-dot" style="color: #1f71ce;"></i>
-                    <p class = "contact_text">1 Main St., Winnipeg, MB</p>
+                <div style = "display: flex; align-items: center; margin-top: 1rem;" class = "phone_d_block">
+                    <div style = "display: flex; align-items: center;">
+                        <i class="fa-solid fa-phone btm_icon" style="color: #1f71ce;"></i>
+                        <p class = "contact_text">(204) 999-9999</p>
+                        <div class = "contact_divider"></div>
+                        <i class="fa-regular fa-envelope btm_icon" style="color: #1f71ce;"></i>
+                        <p class = "contact_text">info@valenauto.com</p>
+                        <div class = "contact_divider phone phone_d_none"></div>
+                    </div>
+                    <div style = "display: flex; align-items: center;" id = "locName">
+                        <i class="fa-solid fa-location-dot btm_icon" style="color: #1f71ce;"></i>
+                        <p class = "contact_text">1 Main St., Winnipeg, MB</p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
