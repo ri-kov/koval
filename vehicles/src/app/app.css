@@ -1195,6 +1195,12 @@ div:has(.back_link:hover) .back_inv {
     margin-top: 0;
 }
 
+@media (min-width: 768px) {
+    #hamburger {
+        display: none !important;
+    }
+}
+
 @media (max-width: 768px) {
     .phone_d_flex {
         display: flex !important;
@@ -1299,5 +1305,57 @@ div:has(.back_link:hover) .back_inv {
         width: 13rem;
         text-align: center;
         margin-left: 0rem !important;
+    }
+
+    .sep_hero_sect {
+        z-index: 1;
+        position: relative;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    #mobileMenu {
+        z-index: 999;
+    }
+
+    .web_directions_link {
+        white-space: nowrap;
+        font-size: 0.75rem;
+    }
+
+    .move_back {
+        font-size: 0.6rem !important;
+    }
+
+    .car_gallery {
+        width: 100%;
+    }
+
+    .badges {
+        font-size: 0.65rem;
+        padding: 0.4rem;
+        font-weight: 600;
+    }
+
+    .cert_badge.badges i {
+        font-size: 0.9rem !important;
+    }
+
+    .cert_badge {
+        gap: 0.2rem;
+    }
+
+    .main_arr {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+    }
+
+    .arrow.main_arr i {
+        font-size: 1.3rem !important;
+    }
+
+    .thumbnail {
+        flex: 0 0 87px !important;
     }
  }
