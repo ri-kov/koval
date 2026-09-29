@@ -1546,6 +1546,34 @@ div:has(.back_link:hover) .back_inv {
     }
 
     #locName {
-        margin-top: -1rem;
+        margin-top: -0.8rem;
+    }
+
+    .contact_full_divider {
+        display: none;
+    }
+
+    .contact_message_button i {
+        font-size: 1rem !important;
+    }
+
+    .contact_message_button {
+        padding: 0.8rem 0.5rem;
+    }
+
+    .contact_button_text {
+        font-size: 0.9rem;
+    }
+
+    .contact_message_button .fa-chevron-right {
+        margin-left: 1rem;
+    }
+
+    .contact_book_button {
+        padding: 0.8rem 0.5rem;
+    }
+
+    .contact_button_text {
+        font-size: 0.9rem;
     }
 }
