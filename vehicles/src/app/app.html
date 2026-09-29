@@ -101,126 +101,129 @@
                     <p>Book a Test Drive</p>
                 </button>
             </div>
-            <div style = "display: flex; margin-top: 3.5rem;" class = "mg2">
-                <div style = "display: flex;">
-                    <img alt = "mileage-icon" src = "pictures/mileagePic2.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;" class = "mg02">
-                        <p class = "feat_info">{{ vehicle.mileage }} km</p>
-                        <p class = "feat_btm_text">Mileage</p>
+            <div class = "phone_d_flex">
+                <div style = "display: flex; margin-top: 3.5rem;" class = "mg2 phone_d_block">
+                    <div style = "display: flex;" class = "mb08">
+                        <img alt = "mileage-icon" src = "pictures/mileagePic2.svg" class = "feat_info_icons">
+                        <div style = "margin-left: 0.5rem;" class = "mg02">
+                            <p class = "feat_info">{{ vehicle.mileage }} km</p>
+                            <p class = "feat_btm_text">Mileage</p>
+                        </div>
                     </div>
-                </div>
-                <div style = "display: flex; margin-left: 1.5rem;">
-                    <img alt = "engine-icon" src = "pictures/enginePic.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;" class = "mg02">
-                        <p class = "feat_info">{{ vehicle.engine }}</p>
-                        <p class = "feat_btm_text">Engine</p>
+                    <div style = "display: flex; margin-left: 1.5rem;" class = "ml0 mb08">
+                        <img alt = "engine-icon" src = "pictures/enginePic.svg" class = "feat_info_icons">
+                        <div style = "margin-left: 0.5rem;" class = "mg02">
+                            <p class = "feat_info">{{ vehicle.engine }}</p>
+                            <p class = "feat_btm_text">Engine</p>
+                        </div>
                     </div>
-                </div>
-                <div style = "display: flex; margin-left: 1.5rem;">
-                    <img alt = "transmission-icon" src = "pictures/transmissionPic2.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;" class = "mg02">
-                        <p class = "feat_info">{{ vehicle.transmission }}</p>
-                        <p class = "feat_btm_text">Transmission</p>
+                    <div style = "display: flex; margin-left: 1.5rem;" class = "ml0 mb08">
+                        <img alt = "transmission-icon" src = "pictures/transmissionPic2.svg" class = "feat_info_icons">
+                        <div style = "margin-left: 0.5rem;" class = "mg02">
+                            <p class = "feat_info">{{ vehicle.transmission }}</p>
+                            <p class = "feat_btm_text">Transmission</p>
+                        </div>
                     </div>
-                </div>
-                <div style = "display: flex; margin-left: 1.5rem;" class = "phone_d_none">
-                    <img alt = "gas-icon" src = "pictures/gasStationPic2.svg" class = "feat_info_icons">
-                    <div style = "margin-left: 0.5rem;" class = "mg02">
-                        <p class = "feat_info">{{ vehicle.fuel }}</p>
-                        <p class = "feat_btm_text">Fuel Type</p>
-                    </div>
-                </div>
-            </div>
-            <div style = "display: flex; margin-top: 1.5rem;" class = "phone_d_block">
-                <div style = "display: flex;">
-                    <div style = "display: flex; margin-left: 1.5rem; display: none;" class = "phone_d_flex">
+                    <div style = "display: flex; margin-left: 1.5rem;" class = "ml0 mb08">
                         <img alt = "gas-icon" src = "pictures/gasStationPic2.svg" class = "feat_info_icons">
                         <div style = "margin-left: 0.5rem;" class = "mg02">
                             <p class = "feat_info">{{ vehicle.fuel }}</p>
                             <p class = "feat_btm_text">Fuel Type</p>
                         </div>
                     </div>
-                    <div style = "display: flex;">
+                </div>
+                <div style = "display: flex; margin-top: 1.5rem;" class = "phone_d_block ml3 mg2">
+                    <div style = "display: flex;" class = "mb08">
                         <img alt = "drivetrain-icon" src = "pictures/wheelDrivePic.svg" class = "feat_info_icons">
                         <div style = "margin-left: 0.5rem;" class = "mg02">
                             <p class = "feat_info">{{ vehicle.drivetrain }}</p>
                             <p class = "feat_btm_text">Drivetrain</p>
                         </div>
                     </div>
-                    <div style = "display: flex; margin-left: 2.5rem;">
+                    <div style = "display: flex; margin-left: 2.5rem;" class = "ml0 mb08">
                         <img alt = "color-palette-icon" src = "pictures/colorPic.svg" class = "feat_info_icons">
                         <div style = "margin-left: 0.5rem;" class = "mg02">
                             <p class = "feat_info">{{ vehicle.extColor }}</p>
                             <p class = "feat_btm_text">Exterior Color</p>
                         </div>
                     </div>
-                </div>        
-                <div style = "display: flex;">
-                    <div style = "display: flex; margin-left: 3.1rem;">
+                    <div style = "display: flex; margin-left: 3.1rem;" class = "ml0 mb08">
                         <img alt = "person-icon" src = "pictures/personPic.svg" class = "feat_info_icons">
                         <div style = "margin-left: 0.5rem;" class = "mg02">
                             <p class = "feat_info">{{ vehicle.intColor }}</p>
                             <p class = "feat_btm_text">Interior Color</p>
                         </div>
                     </div>
-                    <div style = "display: flex; margin-left: 1.7rem;">
+                    <div style = "display: flex; margin-left: 1.7rem;" class = "ml0 mb08">
                         <img alt = "people-icon" src = "pictures/peoplePic.svg" class = "feat_info_icons">
                         <div style = "margin-left: 0.5rem;" class = "mg02">
                             <p class = "feat_info">{{ vehicle.seats }}</p>
                             <p class = "feat_btm_text">Seats</p>
                         </div>
                     </div>
-                </div>        
+                </div>
             </div>
         </div>
     </div>
     <div class = "car_info_box">
-        <div class = "info_img_circ">
-            <img src="pictures/carFaxPic.svg" alt="carFax-icon" class = "info_img">
+        <div style = "display: flex; align-items: center;">
+            <div style = "display: flex; align-items: center;">
+                <div class = "info_img_circ">
+                    <img src="pictures/carFaxPic.svg" alt="carFax-icon" class = "info_img">
+                </div>
+                <div>
+                    <p class = "car_info_head">CarFax Available</p>
+                    <a class = "car_carFax_link">
+                        <p class = "car_info_text">View Report</p>
+                        <i class="fa-solid fa-arrow-right" style="color: #1f71ce; opacity: 0.8; font-size: 0.9rem;"></i>
+                    </a>
+                </div>
+            </div>    
+            <div class = "car_info_divider phone_d_none"></div>
+            <div style = "display: flex; align-items: center;">
+                <div class = "info_img_circ">
+                    <img src="pictures/safetyPic3.svg" alt="safety-icon" class = "info_img">
+                </div>
+                <div>
+                    <p class = "car_info_head">{{ vehicle.certification }}</p>
+                    <p class = "car_info_text">Ready for the road</p>
+                </div>
+            </div> 
         </div>
-        <div>
-            <p class = "car_info_head">CarFax Available</p>
-            <a class = "car_carFax_link">
-                <p class = "car_info_text">View Report</p>
-                <i class="fa-solid fa-arrow-right" style="color: #1f71ce; opacity: 0.8; font-size: 0.9rem;"></i>
-            </a>
+        <div class = "car_info_divider phone_d_none"></div>
+        <div style = "display: flex; align-items: center;">
+            <div class = "info_img_circ">
+                <img src="pictures/shieldPic3.svg" alt="shield-icon" class = "info_img">
+            </div>
+            <div>
+                <p class = "car_info_head">{{ vehicle.title }}</p>
+                <p class = "car_info_text">No Issues</p>
+            </div>
         </div>
-        <div class = "car_info_divider"></div>
-        <div class = "info_img_circ">
-            <img src="pictures/safetyPic3.svg" alt="safety-icon" class = "info_img">
+        <div class = "car_info_divider phone_d_none"></div>
+        <div style = "display: flex; align-items: center;">
+            <div class = "info_img_circ">
+                <img src="pictures/peoplePic2.svg" alt="people-icon" class = "info_img">
+            </div>
+            <div>
+                @if (vehicle.owners <= 1) {
+                    <p class = "car_info_head">{{ vehicle.owners }} Owner</p>
+                }
+                @else {
+                    <p class = "car_info_head">{{ vehicle.owners }} Owners</p>
+                }
+                <p class = "car_info_text">(estimated)</p>
+            </div>
         </div>
-        <div>
-            <p class = "car_info_head">{{ vehicle.certification }}</p>
-            <p class = "car_info_text">Ready for the road</p>
-        </div>
-        <div class = "car_info_divider"></div>
-        <div class = "info_img_circ">
-            <img src="pictures/shieldPic3.svg" alt="shield-icon" class = "info_img">
-        </div>
-        <div>
-            <p class = "car_info_head">{{ vehicle.title }}</p>
-            <p class = "car_info_text">No Issues</p>
-        </div>
-        <div class = "car_info_divider"></div>
-        <div class = "info_img_circ">
-            <img src="pictures/peoplePic2.svg" alt="people-icon" class = "info_img">
-        </div>
-        <div>
-            @if (vehicle.owners <= 1) {
-                <p class = "car_info_head">{{ vehicle.owners }} Owner</p>
-            }
-            @else {
-                <p class = "car_info_head">{{ vehicle.owners }} Owners</p>
-            }
-            <p class = "car_info_text">(estimated)</p>
-        </div>
-        <div class = "car_info_divider"></div>
-        <div class = "info_img_circ">
-            <img src="pictures/maintenancePic.svg" alt="maintenance-icon" class = "info_img">
-        </div>
-        <div>
-            <p class = "car_info_head">Recent Maintenance</p>
-            <p class = "car_info_text">Well maintained</p>
+        <div class = "car_info_divider phone_d_none"></div>
+        <div style = "display: flex; align-items: center;">
+            <div class = "info_img_circ">
+                <img src="pictures/maintenancePic.svg" alt="maintenance-icon" class = "info_img">
+            </div>
+            <div>
+                <p class = "car_info_head">Recent Maintenance</p>
+                <p class = "car_info_text">Well maintained</p>
+            </div>
         </div>
     </div>
     <div style = "display: flex;">

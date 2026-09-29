@@ -1428,4 +1428,22 @@ div:has(.back_link:hover) .back_inv {
     .mg02 {
         margin-left: 0.2rem !important;
     }
+
+    .ml0 {
+        margin-left: 0 !important;
+    }
+
+    .ml3 {
+        margin-left: 3rem;
+    }
+
+    .mb08 {
+        margin-bottom: 0.8rem !important;
+    }
+
+    .car_info_box {
+        border: none;
+        margin-top: 0rem;
+        display: block;
+    }
 }
