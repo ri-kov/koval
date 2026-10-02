@@ -21,19 +21,6 @@ public class HelloController {
         return "Hello from backend";
     }
 
-    @GetMapping("/api/car")
-    public Vehicle getCar() {
-        Vehicle car = new Vehicle(
-                "Mazda",
-                "Mazda 3",
-                2018,
-                192500,
-                12500
-        );
-
-        return car;
-    }
-
     @GetMapping("/api/vehicles") //recievce data
     public List<Vehicle> getVehicles() {
         return vehicleRepository.findAll();
