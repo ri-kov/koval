@@ -35,6 +35,7 @@ public class Vehicle {
     private Double engineSize;
     private String description;
     private String status;
+    private String slug;
 
     public Vehicle() {
 
@@ -42,7 +43,7 @@ public class Vehicle {
 
     public Vehicle(Long id, String make, String model, int year, int mileage, double price, String trim, String engine, String transmission,
                    String fuel, String drivetrain, String extColor, String intColor, Integer seats, String certification, String special, String title,
-                   Integer owners, String bodyStyle, Double engineSize, String description, String status) {
+                   Integer owners, String bodyStyle, Double engineSize, String description, String status, String slug) {
         this.id = id;
         this.make = make;
         this.model = model;
@@ -65,6 +66,7 @@ public class Vehicle {
         this.engineSize = engineSize;
         this.description = description;
         this.status = status;
+        this.slug = slug;
     }
 
     public Long geiId() {
@@ -93,6 +95,14 @@ public class Vehicle {
 
     public String getStatus() {
         return status;
+    }
+
+    public String getSlug() {
+        return slug;
+    }
+
+    public void setSlug(String slug) {
+        this.slug = slug;
     }
 
     public void setStatus(String status) { this.status = status;}
