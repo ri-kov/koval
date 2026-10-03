@@ -3,6 +3,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Column;
 
 @Entity
 public class Vehicle {
@@ -19,24 +20,29 @@ public class Vehicle {
     private String transmission;
     private String fuel;
     private String drivetrain;
+    @Column(name = "extcolor")
     private String extColor;
+    @Column(name = "intcolor")
     private String intColor;
-    private int seats;
+    private Integer seats;
     private String certification;
     private String special;
     private String title;
-    private int owners;
+    private Integer owners;
+    @Column(name = "bodystyle")
     private String bodyStyle;
-    private double engineSize;
+    @Column(name = "enginesize")
+    private Double engineSize;
     private String description;
+    private String status;
 
     public Vehicle() {
 
     }
 
     public Vehicle(Long id, String make, String model, int year, int mileage, double price, String trim, String engine, String transmission,
-                   String fuel, String drivetrain, String extColor, String intColor, int seats, String certification, String special, String title,
-                   int owners, String bodyStyle, double engineSize, String description) {
+                   String fuel, String drivetrain, String extColor, String intColor, Integer seats, String certification, String special, String title,
+                   Integer owners, String bodyStyle, Double engineSize, String description, String status) {
         this.id = id;
         this.make = make;
         this.model = model;
@@ -58,6 +64,7 @@ public class Vehicle {
         this.bodyStyle = bodyStyle;
         this.engineSize = engineSize;
         this.description = description;
+        this.status = status;
     }
 
     public Long geiId() {
@@ -83,6 +90,12 @@ public class Vehicle {
     public double getPrice() {
         return price;
     }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) { this.status = status;}
 
     public void setId(Long id) {
         this.id = id;
@@ -135,7 +148,7 @@ public class Vehicle {
         this.intColor = intColor;
     }
 
-    public void setSeats(int seats) {
+    public void setSeats(Integer seats) {
         this.seats = seats;
     }
 
@@ -151,7 +164,7 @@ public class Vehicle {
         this.title = title;
     }
 
-    public void setOwners(int owners) {
+    public void setOwners(Integer owners) {
         this.owners = owners;
     }
 
@@ -159,7 +172,7 @@ public class Vehicle {
         this.bodyStyle = bodyStyle;
     }
 
-    public void setEngineSize(double engineSize) {
+    public void setEngineSize(Double engineSize) {
         this.engineSize = engineSize;
     }
 
@@ -195,7 +208,7 @@ public class Vehicle {
         return intColor;
     }
 
-    public int getSeats() {
+    public Integer getSeats() {
         return seats;
     }
 
@@ -211,7 +224,7 @@ public class Vehicle {
         return title;
     }
 
-    public int getOwners() {
+    public Integer getOwners() {
         return owners;
     }
 
@@ -219,7 +232,7 @@ public class Vehicle {
         return bodyStyle;
     }
 
-    public double getEngineSize() {
+    public Double getEngineSize() {
         return engineSize;
     }
 
