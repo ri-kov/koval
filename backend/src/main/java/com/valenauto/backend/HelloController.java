@@ -49,4 +49,9 @@ public class HelloController {
     public List<VehicleImage> getVehicleImages(@PathVariable Long id) {
         return vehicleImageRepository.findByVehicleIdOrderBySortOrderAsc(id);
     }
+
+    @GetMapping("/api/vehicles/slug/{slug}")
+    public Vehicle getVehicleBySlug(@PathVariable String slug) {
+        return vehicleRepository.findBySlug(slug).orElse(null);
+    }
 }
