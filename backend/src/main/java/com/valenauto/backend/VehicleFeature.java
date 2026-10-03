@@ -24,6 +24,10 @@ public class VehicleFeature {
         this.feature = feature;
     }
 
+    public VehicleFeature() {
+
+    }
+
     public Long getId() {
         return id;
     }

@@ -11,9 +11,11 @@ import java.util.List;
 public class HelloController {
 
     private final VehicleRepository vehicleRepository;
+    private final VehicleFeatureRepository vehicleFeatureRepository;
 
-    public HelloController(VehicleRepository vehicleRepository) {
+    public HelloController(VehicleRepository vehicleRepository, VehicleFeatureRepository vehicleFeatureRepository) {
         this.vehicleRepository = vehicleRepository;
+        this.vehicleFeatureRepository = vehicleFeatureRepository;
     }
 
     @GetMapping("/api/hello")
@@ -34,5 +36,10 @@ public class HelloController {
     @PostMapping("/api/vehicles") //send data
     public Vehicle addVehicle(@RequestBody Vehicle vehicle) { //spring converts json to vehicle info
         return vehicleRepository.save(vehicle);
+    }
+
+    @GetMapping("/api/vehicles/{id}/features")
+    public List<VehicleFeature> getVehicleFeatures(@PathVariable Long id) {
+        return vehicleFeatureRepository.findByVehicleId(id);
     }
 }
