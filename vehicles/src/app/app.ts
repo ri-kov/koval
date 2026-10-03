@@ -1,10 +1,12 @@
 import { Vehicle } from './vehicle';
 import { AfterViewInit, Component, signal, ElementRef, ViewChild } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  imports: [RouterOutlet]
 })
 
 export class App implements AfterViewInit{

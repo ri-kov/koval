@@ -1,3 +1,8 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { VehiclePage } from './vehicle-page/vehicle-page';
+export const routes: Routes = [
+    {
+        path: 'inventory/:slug',
+        component: VehiclePage
+    }
+];
