@@ -12,10 +12,12 @@ public class HelloController {
 
     private final VehicleRepository vehicleRepository;
     private final VehicleFeatureRepository vehicleFeatureRepository;
+    private final VehicleImageRepository vehicleImageRepository;
 
-    public HelloController(VehicleRepository vehicleRepository, VehicleFeatureRepository vehicleFeatureRepository) {
+    public HelloController(VehicleRepository vehicleRepository, VehicleFeatureRepository vehicleFeatureRepository, VehicleImageRepository vehicleImageRepository) {
         this.vehicleRepository = vehicleRepository;
         this.vehicleFeatureRepository = vehicleFeatureRepository;
+        this.vehicleImageRepository = vehicleImageRepository;
     }
 
     @GetMapping("/api/hello")
@@ -41,5 +43,10 @@ public class HelloController {
     @GetMapping("/api/vehicles/{id}/features")
     public List<VehicleFeature> getVehicleFeatures(@PathVariable Long id) {
         return vehicleFeatureRepository.findByVehicleId(id);
+    }
+
+    @GetMapping("/api/vehicles/{id}/images")
+    public List<VehicleImage> getVehicleImages(@PathVariable Long id) {
+        return vehicleImageRepository.findByVehicleIdOrderBySortOrderAsc(id);
     }
 }
