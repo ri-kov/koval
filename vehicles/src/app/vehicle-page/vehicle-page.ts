@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { VehicleService } from '../services/vehicle.service';
 import { Vehicle } from '../vehicle';
@@ -9,7 +9,7 @@ import { Vehicle } from '../vehicle';
     templateUrl: './vehicle-page.html',
     styleUrl: './vehicle-page.css'
 })
-export class VehiclePage {
+export class VehiclePage implements OnInit, AfterViewInit {
     vehicle?: Vehicle;
     features: string[] = [];
     carImages: string[] = [];
@@ -34,8 +34,44 @@ export class VehiclePage {
 
                 this.vehicleService.getImages(vehicle.id).subscribe(images => {
                     this.carImages = images.map(item => item.imageUrl);
+                    this.selectedImage = this.carImages[0] ?? '';
+
+                    setTimeout(() => {
+                    this.updateArrows();
+                    });
                 });
             });
         });
+    }
+
+    selectedImage = '';
+
+    showLeftArrow = false;
+    showRightArrow = true;
+
+    selectImage(image: string) {
+    this.selectedImage = image;
+    }
+
+    @ViewChild('thumbnailsContainer')
+    thumbnailsContainer!: ElementRef; //saves as a variable to work w it later
+
+    scrollThumbnails(direction: number) {
+    const container = this.thumbnailsContainer.nativeElement;
+
+    container.scrollBy({
+      left: direction * 250,
+      behaviour: 'smooth'
+    });
+  }
+
+    updateArrows() {
+        const container = this.thumbnailsContainer.nativeElement;
+        this.showLeftArrow = container.scrollLeft > 0;
+        this.showRightArrow = container.scrollLeft + container.clientWidth < container.scrollWidth - 1;
+    }
+
+    ngAfterViewInit() {
+        this.updateArrows();
     }
 }
