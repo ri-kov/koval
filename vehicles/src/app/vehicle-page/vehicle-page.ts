@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { VehicleService } from '../services/vehicle.service';
 import { Vehicle } from '../vehicle';
@@ -9,7 +9,7 @@ import { Vehicle } from '../vehicle';
     templateUrl: './vehicle-page.html',
     styleUrl: './vehicle-page.css'
 })
-export class VehiclePage implements OnInit, AfterViewInit {
+export class VehiclePage implements OnInit {
     vehicle?: Vehicle;
     features: string[] = [];
     carImages: string[] = [];
@@ -69,10 +69,6 @@ export class VehiclePage implements OnInit, AfterViewInit {
         const container = this.thumbnailsContainer.nativeElement;
         this.showLeftArrow = container.scrollLeft > 0;
         this.showRightArrow = container.scrollLeft + container.clientWidth < container.scrollWidth - 1;
-    }
-
-    ngAfterViewInit() {
-        this.updateArrows();
     }
 
     showPreviousImage() {
