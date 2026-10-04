@@ -14,11 +14,11 @@ export class VehicleService {
         return this.http.get<any>(`${this.apiUrl}/slug/${slug}`);
     }
 
-    getFeatures(id: number): Observable<any> {
-        return this.http.get<any[]>(`${this.apiUrl}/${id}/features`);
+    getFeatures(id: number): Observable<{ feature: string }[]> {
+        return this.http.get<{ feature: string }[]>(`${this.apiUrl}/${id}/features`);
     }
 
-    getImages(id: number): Observable<any> {
-        return this.http.get<any[]>(`${this.apiUrl}/${id}/images`);
+    getImages(id: number): Observable<{ imageUrl: string }[]> {
+        return this.http.get<{ imageUrl: string }[]>(`${this.apiUrl}/${id}/images`);
     }
 }
