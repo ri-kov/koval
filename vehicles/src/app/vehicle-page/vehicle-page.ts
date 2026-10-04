@@ -54,9 +54,12 @@ export class VehiclePage implements OnInit {
     }
 
     @ViewChild('thumbnailsContainer')
-    thumbnailsContainer!: ElementRef; //saves as a variable to work w it later
+    thumbnailsContainer?: ElementRef; //saves as a variable to work w it later
 
     scrollThumbnails(direction: number) {
+        if (!this.thumbnailsContainer) {
+            return;
+        }
     const container = this.thumbnailsContainer.nativeElement;
 
     container.scrollBy({
@@ -66,6 +69,9 @@ export class VehiclePage implements OnInit {
   }
 
     updateArrows() {
+        if (!this.thumbnailsContainer) {
+            return;
+        }
         const container = this.thumbnailsContainer.nativeElement;
         this.showLeftArrow = container.scrollLeft > 0;
         this.showRightArrow = container.scrollLeft + container.clientWidth < container.scrollWidth - 1;
@@ -91,6 +97,7 @@ export class VehiclePage implements OnInit {
     
     scrollSelectedThumbnailIntoView() {
         setTimeout(() => {
+            if (!this.thumbnailsContainer) {return;}
           const container = this.thumbnailsContainer.nativeElement;
 
           const activeThumbnail = container.querySelector('.thumbnail.active');
