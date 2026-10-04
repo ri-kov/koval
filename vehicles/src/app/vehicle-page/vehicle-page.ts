@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { VehicleService } from '../services/vehicle.service';
 import { Vehicle } from '../vehicle';
@@ -16,7 +16,8 @@ export class VehiclePage implements OnInit {
 
     constructor(
         private route: ActivatedRoute,
-        private vehicleService: VehicleService
+        private vehicleService: VehicleService,
+        private cdr: ChangeDetectorRef
     ) {}
 
     ngOnInit(): void {
@@ -28,13 +29,17 @@ export class VehiclePage implements OnInit {
 
             this.vehicleService.getVehicleBySlug(slug).subscribe(vehicle => {
                 this.vehicle = vehicle;
+                this.cdr.markForCheck();
                 this.vehicleService.getFeatures(vehicle.id).subscribe(features => {
                     this.features = features.map(item => item.feature);
+                    this.cdr.markForCheck();
                 });
 
                 this.vehicleService.getImages(vehicle.id).subscribe(images => {
                     this.carImages = images.map(item => '/' + item.imageUrl);
                     this.selectedImage = this.carImages[0] ?? '';
+
+                    this.cdr.markForCheck();
 
                     setTimeout(() => {
                     this.updateArrows();
@@ -75,6 +80,8 @@ export class VehiclePage implements OnInit {
         const container = this.thumbnailsContainer.nativeElement;
         this.showLeftArrow = container.scrollLeft > 0;
         this.showRightArrow = container.scrollLeft + container.clientWidth < container.scrollWidth - 1;
+
+        this.cdr.markForCheck();
     }
 
     showPreviousImage() {
