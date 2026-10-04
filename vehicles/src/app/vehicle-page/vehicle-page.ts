@@ -61,7 +61,7 @@ export class VehiclePage implements OnInit, AfterViewInit {
 
     container.scrollBy({
       left: direction * 250,
-      behaviour: 'smooth'
+      behavior: 'smooth'
     });
   }
 
@@ -73,5 +73,48 @@ export class VehiclePage implements OnInit, AfterViewInit {
 
     ngAfterViewInit() {
         this.updateArrows();
+    }
+
+    showPreviousImage() {
+        const currentIndex = this.carImages.indexOf(this.selectedImage);
+        if (currentIndex > 0) {
+        this.selectedImage = this.carImages[currentIndex - 1];
+
+          this.scrollSelectedThumbnailIntoView();
+        }
+      }
+
+      showNextImage() {
+        const currentIndex = this.carImages.indexOf(this.selectedImage);
+        if (currentIndex < this.carImages.length-1) {
+          this.selectedImage = this.carImages[currentIndex +1];
+
+          this.scrollSelectedThumbnailIntoView();
+        }
+    }
+    
+    scrollSelectedThumbnailIntoView() {
+        setTimeout(() => {
+          const container = this.thumbnailsContainer.nativeElement;
+
+          const activeThumbnail = container.querySelector('.thumbnail.active');
+
+        if(activeThumbnail) {
+            activeThumbnail.scrollIntoView({
+              behavior: 'smooth',
+              inline: 'nearest',
+              block: 'nearest'
+            });
+        }
+    });
+  }
+
+    menuOpen = false;
+    openMenu(): void {
+        this.menuOpen = true;
+    }
+
+    closeMenu(): void {
+        this.menuOpen = false;
     }
 }
