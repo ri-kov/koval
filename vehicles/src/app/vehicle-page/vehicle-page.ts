@@ -33,7 +33,7 @@ export class VehiclePage implements OnInit {
                 });
 
                 this.vehicleService.getImages(vehicle.id).subscribe(images => {
-                    this.carImages = images.map(item => item.imageUrl);
+                    this.carImages = images.map(item => '/' + item.imageUrl);
                     this.selectedImage = this.carImages[0] ?? '';
 
                     setTimeout(() => {
