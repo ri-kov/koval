@@ -20,6 +20,5 @@ export interface Vehicle {
     bodyStyle: string;
     engineSize: number;
     description: string;
-    features: string[];
-    carImages: string[];
+    slug: string;
 }
