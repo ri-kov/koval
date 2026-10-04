@@ -69,7 +69,7 @@ public class Vehicle {
         this.slug = slug;
     }
 
-    public Long geiId() {
+    public Long getId() {
         return id;
     }
 
