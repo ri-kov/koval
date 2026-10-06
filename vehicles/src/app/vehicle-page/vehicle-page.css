@@ -1014,6 +1014,9 @@ div:has(.back_link:hover) .back_inv {
     background-color: #f2f2f2;
     padding-top: 3rem;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact_wrap {
@@ -1366,7 +1369,6 @@ div:has(.back_link:hover) .back_inv {
     }
 
     .car_name {
-        white-space: nowrap;
         font-size: 1.7rem;
     }
 
@@ -1466,13 +1468,11 @@ div:has(.back_link:hover) .back_inv {
         font-size: 0.85rem;
         font-weight: 550;
         margin-bottom: 0.3rem;
-        white-space: nowrap;
     }
 
     .car_info_text {
         font-size: 0.75rem;
         font-weight: 450;
-        white-space: nowrap;
     }
 
     .ml14 {
