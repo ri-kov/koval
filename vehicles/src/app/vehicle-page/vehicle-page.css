@@ -75,10 +75,6 @@
 
 }
 
-.modal-dialog {
-    font-family: "Montserrat", sans-serif;
-}
-
 .modal-title {
     font-weight: 800;
 }
@@ -1683,4 +1679,26 @@ div:has(.back_link:hover) .back_inv {
     .btm_txt {
         font-size: 0.7rem;
     }
+}
+
+body.modal-open {
+    padding-right: 0 !important;
+}
+
+    .modal-dialog {
+    font-family: "Montserrat", sans-serif;
+}
+
+.modal-title {
+    font-weight: 800;
+}
+
+.modal-header {
+    display: block !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+.modal-footer {
+    justify-content: center !important;
 }
