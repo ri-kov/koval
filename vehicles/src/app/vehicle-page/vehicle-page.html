@@ -26,11 +26,11 @@
 <section class = "sep_hero_sect">
     <div style = "display: flex; justify-content: space-between;">
         <div style="display: flex; align-items: center;">
-            <a href="" class = "web_directions_link" style = "margin-left: 0;">Home</a>
+            <a href="https://ri-kov.github.io/koval/" class = "web_directions_link" style = "margin-left: 0;">Home</a>
             <i class="fa-solid fa-chevron-right move_back" style="color: #2a2a2ac6; font-size: 0.8rem;"></i>
-            <a href="" class = "web_directions_link">Inventory</a>
+            <a href="https://ri-kov.github.io/koval/current-vehicles/inventory.html" class = "web_directions_link">Inventory</a>
             <i class="fa-solid fa-chevron-right move_back" style="color: #2a2a2ac6; font-size: 0.8rem;"></i>
-            <a href="" class = "web_directions_link">{{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }} {{ vehicle.trim }}</a>
+            <a href="https://ri-kov.github.io/koval/angular-car/#/inventory/2010-volkswagen-jetta-s" class = "web_directions_link">{{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }} {{ vehicle.trim }}</a>
         </div>       
         <div style = "display: flex; align-self: right; align-items: center;" class = "phone_d_none">
             <i class="fa-solid fa-chevron-left back_inv" style="color: #1f71ce; font-size: 0.8rem;"></i>
@@ -42,7 +42,7 @@
             <div class = "main_img_wrap">
                 @if (selectedImage === carImages[0]) {
                     <div class = "badges_wrap">
-                        <div class = "special_badge badges">{{ vehicle.special }}</div>
+                        <div class = "special_badge badges">{{ vehicle.special }} Title</div>
                         <div class = "cert_badge badges">
                             <i class="fa-solid fa-file-shield" style="color: #1f71ce; font-size: 1.1rem;"></i>
                             {{ vehicle.certification }}
@@ -312,8 +312,8 @@
             <p class = "footer_head">Quick Links</p>
             <div class = "foot_txt_box" style = "display: flex; flex-direction: column; justify-content: center;">
                 <div class = "phone_fl_row footer_links_wrap" style = "display: flex; flex-direction: column; justify-content: center;">
-                    <a class = "footer_links foot_links_hov" href="index.html">Home</a>
-                    <a class = "footer_links foot_links_hov foot_link_inv" href="">Inventory</a>
+                    <a class = "footer_links foot_links_hov" href="https://ri-kov.github.io/koval/">Home</a>
+                    <a class = "footer_links foot_links_hov foot_link_inv" href="https://ri-kov.github.io/koval/current-vehicles/inventory.html">Inventory</a>
                     <a class = "footer_links foot_links_hov foot_link_sell" href="#sellForm">Sell Your Car</a>
                 </div>
                 <div class = "phone_fl_row footer_links_wrap" style = "display: flex; flex-direction: column; justify-content: center;">

@@ -13,8 +13,8 @@ public class Vehicle {
     private String make;
     private String model;
     private int year;
-    private int mileage;
-    private double price;
+    private String mileage;
+    private String price;
     private String trim;
     private String engine;
     private String transmission;
@@ -41,7 +41,7 @@ public class Vehicle {
 
     }
 
-    public Vehicle(Long id, String make, String model, int year, int mileage, double price, String trim, String engine, String transmission,
+    public Vehicle(Long id, String make, String model, int year, String mileage, String price, String trim, String engine, String transmission,
                    String fuel, String drivetrain, String extColor, String intColor, Integer seats, String certification, String special, String title,
                    Integer owners, String bodyStyle, Double engineSize, String description, String status, String slug) {
         this.id = id;
