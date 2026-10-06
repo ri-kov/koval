@@ -226,18 +226,18 @@ carImg3.addEventListener("pointerup", (e) => {
 });
 
 const carImages4 = [
-    '../pictures/cars/2012acurasample/1.jpg',
-    '../pictures/cars/2012acurasample/2.jpg',
-    '../pictures/cars/2012acurasample/3.jpg',
-    '../pictures/cars/2012acurasample/4.jpg',
-    '../pictures/cars/2012acurasample/5.jpg',
-    '../pictures/cars/2012acurasample/6.jpg',
-    '../pictures/cars/2012acurasample/7.jpg',
-    '../pictures/cars/2012acurasample/8.jpg',
-    '../pictures/cars/2012acurasample/9.jpg',
-    '../pictures/cars/2012acurasample/10.jpg',
-    '../pictures/cars/2012acurasample/11.jpg',
-    '../pictures/cars/2012acurasample/12.jpg',
+    '../pictures/cars/2011grandcherokeesample/1.JPG',
+    '../pictures/cars/2011grandcherokeesample/2.JPG',
+    '../pictures/cars/2011grandcherokeesample/3.JPG',
+    '../pictures/cars/2011grandcherokeesample/4.JPG',
+    '../pictures/cars/2011grandcherokeesample/5.JPG',
+    '../pictures/cars/2011grandcherokeesample/6.JPG',
+    '../pictures/cars/2011grandcherokeesample/7.JPG',
+    '../pictures/cars/2011grandcherokeesample/8.JPG',
+    '../pictures/cars/2011grandcherokeesample/9.JPG',
+    '../pictures/cars/2011grandcherokeesample/10.JPG',
+    '../pictures/cars/2011grandcherokeesample/11.JPG',
+    '../pictures/cars/2011grandcherokeesample/12.JPG',
 ];
 
 let currentImgIndex4 = 0;
