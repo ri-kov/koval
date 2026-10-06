@@ -306,13 +306,16 @@ carImg4.addEventListener("pointerup", (e) => {
 });
 
 const carImages5 = [
-    '../pictures/cars/2019sonatasample/1.JPG',
-    '../pictures/cars/2019sonatasample/2.JPG',
-    '../pictures/cars/2019sonatasample/3.JPG',
-    '../pictures/cars/2019sonatasample/4.JPG',
-    '../pictures/cars/2019sonatasample/5.JPG',
-    '../pictures/cars/2019sonatasample/6.JPG',
-    '../pictures/cars/2019sonatasample/7.JPG'
+    '../pictures/cars/2013focussample/1.JPG',
+    '../pictures/cars/2013focussample/2.JPG',
+    '../pictures/cars/2013focussample/3.JPG',
+    '../pictures/cars/2013focussample/4.JPG',
+    '../pictures/cars/2013focussample/5.JPG',
+    '../pictures/cars/2013focussample/6.JPG',
+    '../pictures/cars/2013focussample/7.JPG',
+    '../pictures/cars/2013focussample/8.JPG',
+    '../pictures/cars/2013focussample/9.JPG',
+    '../pictures/cars/2013focussample/10.JPG'
 ];
 
 let currentImgIndex5 = 0;
