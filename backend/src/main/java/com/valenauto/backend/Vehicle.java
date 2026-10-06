@@ -85,11 +85,11 @@ public class Vehicle {
         return year;
     }
 
-    public int getMileage() {
+    public String getMileage() {
         return mileage;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
@@ -123,11 +123,11 @@ public class Vehicle {
         this.year = year;
     }
 
-    public void setMileage(int mileage) {
+    public void setMileage(String mileage) {
         this.mileage = mileage;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
     public void setTrim(String trim) {
