@@ -158,8 +158,6 @@ const carImages3 = [
     '../pictures/cars/2010jettasample/3.JPG',
     '../pictures/cars/2010jettasample/4.JPG',
     '../pictures/cars/2010jettasample/5.JPG',
-    '../pictures/cars/2010jettasample/6.JPG',
-    '../pictures/cars/2019sonatasample/7.JPG'
 ];
 
 let currentImgIndex3 = 0;
