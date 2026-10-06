@@ -539,19 +539,7 @@ carImg7.addEventListener("pointerup", (e) => {
 });
 
 const carImages8 = [
-    '../pictures/cars/2017subarusample/1.jpg',
-    '../pictures/cars/2017subarusample/2.jpg',
-    '../pictures/cars/2017subarusample/3.jpg',
-    '../pictures/cars/2017subarusample/4.jpg',
-    '../pictures/cars/2017subarusample/5.jpg',
-    '../pictures/cars/2017subarusample/6.jpg',
-    '../pictures/cars/2017subarusample/7.jpg',
-    '../pictures/cars/2017subarusample/8.jpg',
-    '../pictures/cars/2017subarusample/9.jpg',
-    '../pictures/cars/2017subarusample/10.jpg',
-    '../pictures/cars/2017subarusample/11.jpg',
-    '../pictures/cars/2017subarusample/12.jpg',
-    '../pictures/cars/2017subarusample/13.jpg',
+    '../pictures/cars/2005rx330sample/1.JPG',
 ];
 
 let currentImgIndex8 = 0;
