@@ -55,6 +55,22 @@
         height: 2.5rem !important;
     }
 
+    .wraps_div_vert {
+        rotate: 0deg !important;
+        width: 0.01rem !important;
+        height: 10rem !important;
+        align-self: center !important;
+        justify-self: center !important;
+        border-right: 1.5px solid rgba(98, 98, 98, 0.33) !important;
+        margin-left: -0.5rem !important;
+    }
+
+    .wraps_div_hor {
+        margin-top: -4.7rem !important;
+        width: 95% !important;
+        justify-self: center !important;
+    }
+
     .main_stat {
         font-size: 1.3rem !important;
     }
@@ -85,7 +101,7 @@
     }
 
     .stats_pics2 {
-        margin-left: 4.5rem !important;
+        margin-left: 4rem !important;
     }
 
     .wrap1 {
