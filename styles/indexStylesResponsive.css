@@ -22,10 +22,15 @@
         display: block !important;
     }
 
+    .slogan {
+        text-align: left !important;
+    } 
+
     .options {
-        width: 24rem !important;
+        width: 75% !important;
+        padding: 0.5rem 0.3rem 0.5rem 1rem !important;
+        height: auto !important;
         margin-left: 0rem !important;
-        height: 3.5rem !important;
         font-size: 0.9rem !important;
         justify-content: left !important;
         margin-top: 0.5rem !important;
@@ -34,7 +39,11 @@
     .hero_buttons img {
         width: 2.5rem !important;
         height: 2.5rem !important;
-        margin: 0.2rem 0.7rem 0 1rem !important;
+        margin: 0rem 0.7rem 0 0 !important;
+    }
+
+    .font_set {
+        margin: 0;
     }
 
     .stats_main_wrap {
@@ -1465,29 +1474,5 @@
     #contactTimeIcon {
         margin-left: 0.2rem;
         margin-top: 0.1rem;
-    }
-}
-
-@media (max-width: 429px) {
-    /* hero section */
-    .slogan.tle {
-        text-align: left !important;
-    }
-
-    .options {
-        width: 20rem !important;
-    }
-
-    #wrapsDiv1 {
-        margin-left: 5rem !important;
-    }
-
-    .car_logo2 {
-        width: 3rem !important;
-        height: 2rem !important;
-    }
-    
-    .stats_pics2 {
-        margin-left: 3.5rem !important;
     }
 }
