@@ -1,0 +1,29 @@
+import "./App.css";
+
+function App() {
+  return (
+    <div id = "header">
+        <img src="pictures/logo.png" alt="VALEN logo" id = "logo" />
+        <button id = "hamburger" class = "hamburger" type = "button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="" class = "phone_head_link"><i class="fa-solid fa-phone" style="color: #1f71ce;"></i></a>
+        <button class = "close_menu" id = "closeMenu" type = "button">
+          <i class = "fa-solid fa-xmark"></i>
+        </button>
+        <div class = "nav_links" id = "mobileMenu">
+          <img src="pictures/logo.png" alt="VALEN logo" class = "hamburger_logo" />
+          <a class = "link home nav_link" href="index.html" data-section = "home"><img class = "link_icons" src="pictures/homeIcon.svg" alt="home-icon" />Home</a>
+          <a class = "link nav_link" href = "current-vehicles/inventory.html"><img class = "link_icons" src="pictures/carPic7.svg" alt="car-icon" />Inventory</a>
+          <a class = "link nav_link" href = "#sellForm" data-section = "sell-your-car"><img class = "link_icons" src="pictures/tagPic6.svg" alt="tag-icon" />Sell Your Car</a>
+          <a href="#RepairServices" class = "link nav_link" data-section = "repair-services"><img class = "link_icons" src="pictures/repairPic4.svg" alt="wrench-icon" />Repair Services</a>
+          <a href = "#AboutUs" class = "link nav_link" data-section = "about-us"><img class = "link_icons" src="pictures/userPic.svg" alt="user-icon" />About Us</a>
+          <a href = "#ContactUs" class = "link nav_link" data-section = "contact"><img class = "link_icons" src="pictures/mailPic3.svg" alt="mail-icon" />Contact</a>
+          <a class = "phone_num"><i class="fa-solid fa-phone" style="color: #1F71CE;"></i> (204) 999-9999</a>
+          <a href="#bookRepairModal" data-bs-toggle="modal" class = "head_btn">Book Repair</a>
+        </div>
+    </div>
+  )
+}
