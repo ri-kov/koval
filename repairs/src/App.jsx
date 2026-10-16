@@ -2,7 +2,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div id = "header">
+    <section class = "hero_section">
+      <div id = "header">
         <img src="pictures/logo.png" alt="VALEN logo" id = "logo" />
         <button id = "hamburger" class = "hamburger" type = "button">
           <span></span>
@@ -24,6 +25,7 @@ function App() {
           <a class = "phone_num"><i class="fa-solid fa-phone" style="color: #1F71CE;"></i> (204) 999-9999</a>
           <a href="#bookRepairModal" data-bs-toggle="modal" class = "head_btn">Book Repair</a>
         </div>
-    </div>
+      </div>
+    </section>
   )
 }
